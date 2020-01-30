@@ -101,3 +101,9 @@ deploy:
   type: git
   repository: https://github.com/luoquanquan/luoquanquan.github.io.git
   branch: master
+# 搜索
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
