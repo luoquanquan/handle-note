@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
+title: 圈圈的随手笔记
+subtitle: 路漫漫其修远兮, 吾将上下而求索
+description: 技术学习, 读书笔记, 生活感悟~
+keywords: 前端, JavaScript, Node, 全栈, 读书
+author: 圈圈的圈
+language: zh-CN
 timezone: ''
 
 # URL
