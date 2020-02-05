@@ -5,22 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 4.2.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/handle-note/images/favicon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/handle-note/images/favicon.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/handle-note/images/favicon.png">
-  <link rel="mask-icon" href="/handle-note/images/logo.svg" color="#222">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-<link rel="stylesheet" href="/handle-note/css/main.css">
+<link rel="stylesheet" href="/css/main.css">
 
 
-<link rel="stylesheet" href="/handle-note/lib/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
 
 
 <script id="hexo-configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    hostname: new URL('https://luoquanquan.github.io/handle-note').hostname,
-    root: '/handle-note/',
+    hostname: new URL('http://note.niubishanshan.top').hostname,
+    root: '/',
     scheme: 'Gemini',
     version: '7.7.0',
     exturl: false,
@@ -49,7 +49,7 @@
   <meta name="description" content="基础知识 Math.ceil(n) 向上取整, 返回大于等于 n 的整数  Math.floor(n) 向下取整, 返回 n 的整数部分  parseInt(n) 向下取整, 返回 n 的整数部分  Math.round(n) 四舍五入取整, 返回 n 四舍五入后的整数  Math.random(n) 生成 [0, 1) 的随机数  Math.ceil(Math.random()*10) 均衡获取">
 <meta property="og:type" content="article">
 <meta property="og:title" content="生成随机数">
-<meta property="og:url" content="https://luoquanquan.github.io/handle-note/2020/02/03/basic-js/%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E6%95%B0/index.html">
+<meta property="og:url" content="http://note.niubishanshan.top/2020/02/03/basic-js/%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E6%95%B0/index.html">
 <meta property="og:site_name" content="圈圈的随手笔记">
 <meta property="og:description" content="基础知识 Math.ceil(n) 向上取整, 返回大于等于 n 的整数  Math.floor(n) 向下取整, 返回 n 的整数部分  parseInt(n) 向下取整, 返回 n 的整数部分  Math.round(n) 四舍五入取整, 返回 n 四舍五入后的整数  Math.random(n) 生成 [0, 1) 的随机数  Math.ceil(Math.random()*10) 均衡获取">
 <meta property="og:locale" content="zh_CN">
@@ -61,7 +61,7 @@
 <meta property="article:tag" content="Random">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://luoquanquan.github.io/handle-note/2020/02/03/basic-js/%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E6%95%B0/">
+<link rel="canonical" href="http://note.niubishanshan.top/2020/02/03/basic-js/%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E6%95%B0/">
 
 
 <script id="page-configurations">
@@ -115,7 +115,7 @@
   <div class="site-meta">
 
     <div>
-      <a href="/handle-note/" class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">圈圈的随手笔记</span>
         <span class="logo-line-after"><i></i></span>
@@ -139,27 +139,27 @@
   <ul id="menu" class="menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/handle-note/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
 
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/handle-note/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/handle-note/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/handle-note/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
 
   </li>
         <li class="menu-item menu-item-about">
 
-    <a href="/handle-note/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -213,10 +213,10 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://luoquanquan.github.io/handle-note/2020/02/03/basic-js/%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E6%95%B0/">
+    <link itemprop="mainEntityOfPage" href="http://note.niubishanshan.top/2020/02/03/basic-js/%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E6%95%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/handle-note/images/avatar.jpeg">
+      <meta itemprop="image" content="/images/avatar.jpeg">
       <meta itemprop="name" content="圈圈的圈">
       <meta itemprop="description" content="技术学习, 读书笔记, 生活感悟~">
     </span>
@@ -251,7 +251,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/handle-note/categories/JavaScript/" itemprop="url" rel="index">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
                     <span itemprop="name">JavaScript</span>
                   </a>
                 </span>
@@ -371,7 +371,7 @@
 <h2 id="生成一个-min-max-的随机整数"><a href="#生成一个-min-max-的随机整数" class="headerlink" title="生成一个 [min, max] 的随机整数"></a>生成一个 [min, max] 的随机整数</h2><ul>
 <li>生成随机数坑定要用到 <code>Math.random() -&gt; [0, 1)</code></li>
 <li>可以把一个数变成整数的方法有: <code>parseInt() Math.floor() Math.round() Math.ceil()</code></li>
-<li>这里选择功能强劲(<a href="https://luoquanquan.github.io/note/2020/02/04/basic-js/parseInt-vs-Math-floor">为什么这么说呢</a>)的 parseInt 直接截取数字的整数部分向下取整</li>
+<li>这里选择功能强劲(<a href="https://luoquanquan.github.io/note/2020/02/04/basic-js/parseInt-vs-Math-floor" target="_blank" rel="noopener">为什么这么说呢</a>)的 parseInt 直接截取数字的整数部分向下取整</li>
 <li>那么不难得到 <code>parseInt(Math.random() * 10) -&gt; [0, 9]</code></li>
 <li>所以, 如果我们想要得到一个 [0, max] 的随机数只需要 <code>parseInt(Math.random() * (max + 1))</code></li>
 <li>想要得到一个 [1, max] 的随机数只需要 <code>parseInt(Math.random() * (max - 1 + 1)) + 1</code></li>
@@ -406,9 +406,9 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/handle-note/tags/JavaScript/" rel="tag"># JavaScript</a>
-              <a href="/handle-note/tags/Math/" rel="tag"># Math</a>
-              <a href="/handle-note/tags/Random/" rel="tag"># Random</a>
+              <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+              <a href="/tags/Math/" rel="tag"># Math</a>
+              <a href="/tags/Random/" rel="tag"># Random</a>
           </div>
 
         
@@ -417,11 +417,11 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/handle-note/2020/02/02/tips/%E5%90%8C%E6%97%B6%E9%85%8D%E7%BD%AE%20gitlab%20%E5%92%8C%20github/" rel="prev" title="同时配置 gitlab 和 github">
+    <a href="/2020/02/02/tips/%E5%90%8C%E6%97%B6%E9%85%8D%E7%BD%AE%20gitlab%20%E5%92%8C%20github/" rel="prev" title="同时配置 gitlab 和 github">
       <i class="fa fa-chevron-left"></i> 同时配置 gitlab 和 github
     </a></div>
       <div class="post-nav-item">
-    <a href="/handle-note/2020/02/04/basic-js/9%20%E7%A7%8D%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/" rel="next" title="9 种方式实现数组去重">
+    <a href="/2020/02/04/basic-js/9%20%E7%A7%8D%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/" rel="next" title="9 种方式实现数组去重">
       9 种方式实现数组去重 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
@@ -490,27 +490,27 @@
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image" alt="圈圈的圈"
-      src="/handle-note/images/avatar.jpeg">
+      src="/images/avatar.jpeg">
   <p class="site-author-name" itemprop="name">圈圈的圈</p>
   <div class="site-description" itemprop="description">技术学习, 读书笔记, 生活感悟~</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
-          <a href="/handle-note/archives/">
+          <a href="/archives/">
         
           <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
-            <a href="/handle-note/categories/">
+            <a href="/categories/">
           
         <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
-            <a href="/handle-note/tags/">
+            <a href="/tags/">
           
         <span class="site-state-item-count">14</span>
         <span class="site-state-item-name">标签</span></a>
@@ -577,30 +577,30 @@
   </div>
 
   
-  <script src="/handle-note/lib/anime.min.js"></script>
-  <script src="/handle-note/lib/velocity/velocity.min.js"></script>
-  <script src="/handle-note/lib/velocity/velocity.ui.min.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
 
-<script src="/handle-note/js/utils.js"></script>
+<script src="/js/utils.js"></script>
 
-<script src="/handle-note/js/motion.js"></script>
-
-
-<script src="/handle-note/js/schemes/pisces.js"></script>
+<script src="/js/motion.js"></script>
 
 
-<script src="/handle-note/js/next-boot.js"></script>
+<script src="/js/schemes/pisces.js"></script>
 
 
-
-
-  
+<script src="/js/next-boot.js"></script>
 
 
 
 
   
-<script src="/handle-note/js/local-search.js"></script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
 
 
 
