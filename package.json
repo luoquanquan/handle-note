@@ -6,8 +6,7 @@
     "build": "hexo g",
     "clean": "hexo clean",
     "deploy": "hexo d",
-    "server": "hexo s",
-    "release": "hexo g -d"
+    "server": "hexo s"
   },
   "hexo": {
     "version": "4.2.0"

@@ -13,8 +13,8 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://luoquanquan.github.io/note
-root: /note/
+url: https://luoquanquan.github.io/handle-note/
+root: /handle-note/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -23,7 +23,7 @@ pretty_urls:
 
 # Directory
 source_dir: source
-public_dir: public
+public_dir: docs
 tag_dir: tags
 archive_dir: archives
 category_dir: categories
@@ -97,10 +97,10 @@ theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  repository: https://github.com/luoquanquan/note.git
-  branch: master
+# deploy:
+#   type: git
+#   repository: https://github.com/luoquanquan/note.git
+#   branch: master
 # 搜索
 search:
   path: search.xml
