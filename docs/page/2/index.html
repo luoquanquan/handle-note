@@ -213,212 +213,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://note.niubishanshan.top/2020/01/30/redis/Redis%20%E5%9F%BA%E7%A1%80/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="圈圈的圈">
-      <meta itemprop="description" content="技术学习, 读书笔记, 生活感悟~">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="圈圈的随手笔记">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/30/redis/Redis%20%E5%9F%BA%E7%A1%80/" class="post-title-link" itemprop="url">Redis 基础</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-01-30 20:50:31" itemprop="dateCreated datePublished" datetime="2020-01-30T20:50:31+08:00">2020-01-30</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-01-31 00:56:49" itemprop="dateModified" datetime="2020-01-31T00:56:49+08:00">2020-01-31</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%90%8E%E7%AB%AF/" itemprop="url" rel="index">
-                    <span itemprop="name">后端</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install redis</span><br></pre></td></tr></table></figure>
-
-<h2 id="配置文件路径"><a href="#配置文件路径" class="headerlink" title="配置文件路径"></a>配置文件路径</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/etc/redis.conf</span><br></pre></td></tr></table></figure>
-
-<h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 前台启动</span></span><br><span class="line">redis-server</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 后台启动</span></span><br><span class="line">redis-server &amp;</span><br></pre></td></tr></table></figure>
-
-<h2 id="客户端-cli"><a href="#客户端-cli" class="headerlink" title="客户端 cli"></a>客户端 cli</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">redis-cli</span><br></pre></td></tr></table></figure>
-
-<h2 id="redis-数据类型"><a href="#redis-数据类型" class="headerlink" title="redis 数据类型"></a>redis 数据类型</h2><ul>
-<li>string 字符串 <code>get set getrange incr decr expire</code></li>
-<li>hash 对象 <code>hset hget hdel hmget hgetall</code></li>
-<li>列表 数组 <code>lpush lpop lrange lrem lindex rpush rpop ...</code></li>
-<li>set 集合<ul>
-<li>无序集合 <code>sadd smembers srem sunion sinter sdiff</code></li>
-<li>有序集合 <code>zadd zrange withscores</code></li>
-</ul>
-</li>
-</ul>
-<h2 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h2><h3 id="通用"><a href="#通用" class="headerlink" title="通用"></a>通用</h3><ul>
-<li><p>查看 redis 中的所有 keys</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">keys *</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>删除一条记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">del a</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看记录值的类型</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">type a</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>给某条记录设置有效时间</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">expire a 5</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看某条记录的有效时间</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ttl a</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h3 id="字符串相关"><a href="#字符串相关" class="headerlink" title="字符串相关"></a>字符串相关</h3><ul>
-<li><p>设置一条记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set a 1</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>获取记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">get a</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>让某条记录自增</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">incr a</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>让某条记录自减</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">decr a</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>获取某条记录指定范围内的值</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">set name quanquan</span><br><span class="line">getrange name 0 1 # qu -&gt; 包前也包后</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h3 id="hash-相关"><a href="#hash-相关" class="headerlink" title="hash 相关"></a>hash 相关</h3><ul>
-<li><p>创建一条记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hset user name quanquan</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>获取记录的属性</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hget user name</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>设置记录的另一条属性</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hset user sex male</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>获取记录的多条属性</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hmget user sex name</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>获取记录的所有内容</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hgetall user</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>删除记录的某个属性字段</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hdel user name</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h3 id="列表相关"><a href="#列表相关" class="headerlink" title="列表相关"></a>列表相关</h3><ul>
-<li><p>创建一条记录(向左 push)</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lpush arr 1 2 3 4 5</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看记录范围内的值</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lrange arr 0 -1</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>创建一条记录(向右 push)</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpush arr2 1 2 3 4 5</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看记录范围内的值</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lrange arr2 0 -1</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>从数组头部删除一条记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lpop arr</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>从数组尾部删除一条记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpop arr</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>删除指定的记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">lrem arr 3 3</span><br><span class="line"><span class="meta">#</span><span class="bash"> 其中, arr 是指定要操作的数组</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 第一个 3 指的是数组遍历数组中的三个元素范围</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 第二个 3 指的是从数组中找到数字 3 并移除他</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>取出数组中指定的项</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> index 是从 0 开始的</span></span><br><span class="line">lindex arr 1</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h3 id="集合相关"><a href="#集合相关" class="headerlink" title="集合相关"></a>集合相关</h3><h4 id="无序集合"><a href="#无序集合" class="headerlink" title="无序集合"></a>无序集合</h4><ul>
-<li><p>创建一条记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sadd myset 1 2 3 4</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>列出所有的记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">smembers myset</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>删除集合中的某一项</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">srem myset 1</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>取两个 set 的并集</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sunion myset myset1</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>取两个 set 的交集</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sinter myset myset1</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>取两个 set 的差集</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sdiff myset myset1</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h3 id="有序集合"><a href="#有序集合" class="headerlink" title="有序集合"></a>有序集合</h3><ul>
-<li><p>创建记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">zadd my 1 100</span><br><span class="line">zadd my 2 200</span><br><span class="line">zadd my 1 101</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看指定范围的记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">zrange my 0 -1</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 1) <span class="string">"100"</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 2) <span class="string">"101"</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 3) <span class="string">"200"</span></span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://note.niubishanshan.top/2020/01/29/mongo/%E6%B8%B8%E6%A0%87%20&%20%E7%B4%A2%E5%BC%95%20&%20%E6%9D%83%E9%99%90%20&%20%E5%A4%87%E4%BB%BD/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -503,84 +297,6 @@
 <h2 id="备份和还原"><a href="#备份和还原" class="headerlink" title="备份和还原"></a>备份和还原</h2><h3 id="备份"><a href="#备份" class="headerlink" title="备份"></a>备份</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> db        数据库名</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> mongodump 集合</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> out       导出的文件</span></span><br><span class="line">mongodump --db users --collection user --out ./bak</span><br></pre></td></tr></table></figure>
 
 <h3 id="还原"><a href="#还原" class="headerlink" title="还原"></a>还原</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mongorestore ./bak</span><br><span class="line"><span class="meta">#</span><span class="bash"> 或者</span></span><br><span class="line">mongorestore --dir ./bak</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://note.niubishanshan.top/2020/01/28/tips/%E6%9F%A5%E8%AF%A2%E6%8C%87%E5%AE%9A%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%AF%B9%E5%BA%94%E7%9A%84%E4%BB%BB%E5%8A%A1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="圈圈的圈">
-      <meta itemprop="description" content="技术学习, 读书笔记, 生活感悟~">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="圈圈的随手笔记">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/28/tips/%E6%9F%A5%E8%AF%A2%E6%8C%87%E5%AE%9A%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%AF%B9%E5%BA%94%E7%9A%84%E4%BB%BB%E5%8A%A1/" class="post-title-link" itemprop="url">查询指定端口号对应的任务</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-01-28 20:50:31" itemprop="dateCreated datePublished" datetime="2020-01-28T20:50:31+08:00">2020-01-28</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-01-31 00:03:09" itemprop="dateModified" datetime="2020-01-31T00:03:09+08:00">2020-01-31</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Tips/" itemprop="url" rel="index">
-                    <span itemprop="name">Tips</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="执行命令"><a href="#执行命令" class="headerlink" title="执行命令"></a>执行命令</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 只能获取当前用户启动的命令</span></span><br><span class="line">lsof -i:27017</span><br></pre></td></tr></table></figure>
-
-<h2 id="管理员权限启动任务需要使用命令"><a href="#管理员权限启动任务需要使用命令" class="headerlink" title="管理员权限启动任务需要使用命令"></a>管理员权限启动任务需要使用命令</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo lsof -i:27017</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -835,6 +551,84 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://note.niubishanshan.top/2020/01/28/tips/%E6%9F%A5%E8%AF%A2%E6%8C%87%E5%AE%9A%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%AF%B9%E5%BA%94%E7%9A%84%E4%BB%BB%E5%8A%A1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="圈圈的圈">
+      <meta itemprop="description" content="技术学习, 读书笔记, 生活感悟~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="圈圈的随手笔记">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/28/tips/%E6%9F%A5%E8%AF%A2%E6%8C%87%E5%AE%9A%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%AF%B9%E5%BA%94%E7%9A%84%E4%BB%BB%E5%8A%A1/" class="post-title-link" itemprop="url">查询指定端口号对应的任务</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-01-28 20:50:31" itemprop="dateCreated datePublished" datetime="2020-01-28T20:50:31+08:00">2020-01-28</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-01-31 00:03:09" itemprop="dateModified" datetime="2020-01-31T00:03:09+08:00">2020-01-31</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Tips/" itemprop="url" rel="index">
+                    <span itemprop="name">Tips</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="执行命令"><a href="#执行命令" class="headerlink" title="执行命令"></a>执行命令</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 只能获取当前用户启动的命令</span></span><br><span class="line">lsof -i:27017</span><br></pre></td></tr></table></figure>
+
+<h2 id="管理员权限启动任务需要使用命令"><a href="#管理员权限启动任务需要使用命令" class="headerlink" title="管理员权限启动任务需要使用命令"></a>管理员权限启动任务需要使用命令</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo lsof -i:27017</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://note.niubishanshan.top/2020/01/28/mongo/%E5%AE%89%E8%A3%85%E5%90%AF%E5%8A%A8%E5%92%8C%E9%93%BE%E6%8E%A5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1023,7 +817,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-count">14</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

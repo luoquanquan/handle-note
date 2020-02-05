@@ -16,7 +16,7 @@
 <li>hexo server</li>
 <li>hexo s</li>
 </ul>
-<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><p>在<a href="">前一篇文章</a>中我们已经提到过, 我们写的 <code>.md</code> 文件最终是要被 <code>hexo</code> 编码成静态站点的. 编码的命令为:</p>
+<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><p>在<a href="https://note.niubishanshan.top/2020/02/06/hexo-usage/hexo-github-pages-%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2/">前一篇文章</a>中我们已经提到过, 我们写的 <code>.md</code> 文件最终是要被 <code>hexo</code> 编码成静态站点的. 编码的命令为:</p>
 <ul>
 <li>npm run build</li>
 <li>hexo generate</li>
@@ -27,20 +27,6 @@
 
 <h2 id="安装-next-主题"><a href="#安装-next-主题" class="headerlink" title="安装 next 主题"></a>安装 next 主题</h2><p>项目目录下的 themes 目录下存放的就是博客的主题文件, 默认是 <code>landscape</code> 主题看上去也挺简洁但是我不喜欢</p>
 <h2 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h2>]]></content>
-      <categories>
-        <category>Blog</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>站点配置 &amp; 写作</title>
-    <url>/2020/02/06/hexo-usage/%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE-%E5%86%99%E4%BD%9C/</url>
-    <content><![CDATA[<h2 id="页面信息设置"><a href="#页面信息设置" class="headerlink" title="页面信息设置"></a>页面信息设置</h2><p>打开项目根目录下的 <code>_config.yml</code> 文件, 找到 <code># Site</code> 并修改为一下内容</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">圈圈的随手笔记</span>                          <span class="comment"># 博客名字</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">路漫漫其修远兮,</span> <span class="string">吾将上下而求索</span>         <span class="comment"># 你的格言</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">技术学习,</span> <span class="string">读书笔记,</span> <span class="string">生活感悟~</span>      <span class="comment"># 博客描述</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">前端,</span> <span class="string">JavaScript,</span> <span class="string">Node,</span> <span class="string">全栈,</span> <span class="string">读书</span>  <span class="comment"># 博客关键字</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">圈圈的圈</span>                             <span class="comment"># 你的名字</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span>                             <span class="comment"># 博客语言 - 这个是中文</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">''</span>                                <span class="comment"># 时区</span></span><br></pre></td></tr></table></figure>
-
-]]></content>
       <categories>
         <category>Blog</category>
       </categories>
@@ -344,7 +330,7 @@
 <h2 id="生成一个-min-max-的随机整数"><a href="#生成一个-min-max-的随机整数" class="headerlink" title="生成一个 [min, max] 的随机整数"></a>生成一个 [min, max] 的随机整数</h2><ul>
 <li>生成随机数坑定要用到 <code>Math.random() -&gt; [0, 1)</code></li>
 <li>可以把一个数变成整数的方法有: <code>parseInt() Math.floor() Math.round() Math.ceil()</code></li>
-<li>这里选择功能强劲(<a href="https://luoquanquan.github.io/note/2020/02/04/basic-js/parseInt-vs-Math-floor">为什么这么说呢</a>)的 parseInt 直接截取数字的整数部分向下取整</li>
+<li>这里选择功能强劲(<a href="https://luoquanquan.github.io/note/2020/02/04/basic-js/parseInt-vs-Math-floor" target="_blank" rel="noopener">为什么这么说呢</a>)的 parseInt 直接截取数字的整数部分向下取整</li>
 <li>那么不难得到 <code>parseInt(Math.random() * 10) -&gt; [0, 9]</code></li>
 <li>所以, 如果我们想要得到一个 [0, max] 的随机数只需要 <code>parseInt(Math.random() * (max + 1))</code></li>
 <li>想要得到一个 [1, max] 的随机数只需要 <code>parseInt(Math.random() * (max - 1 + 1)) + 1</code></li>
@@ -375,8 +361,8 @@
         <category>JavaScript</category>
       </categories>
       <tags>
-        <tag>JavaScript</tag>
         <tag>Math</tag>
+        <tag>JavaScript</tag>
         <tag>Random</tag>
       </tags>
   </entry>
@@ -622,22 +608,8 @@
         <category>后端</category>
       </categories>
       <tags>
-        <tag>MongoDB</tag>
         <tag>数据库</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>查询指定端口号对应的任务</title>
-    <url>/2020/01/28/tips/%E6%9F%A5%E8%AF%A2%E6%8C%87%E5%AE%9A%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%AF%B9%E5%BA%94%E7%9A%84%E4%BB%BB%E5%8A%A1/</url>
-    <content><![CDATA[<h2 id="执行命令"><a href="#执行命令" class="headerlink" title="执行命令"></a>执行命令</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 只能获取当前用户启动的命令</span></span><br><span class="line">lsof -i:27017</span><br></pre></td></tr></table></figure>
-
-<h2 id="管理员权限启动任务需要使用命令"><a href="#管理员权限启动任务需要使用命令" class="headerlink" title="管理员权限启动任务需要使用命令"></a>管理员权限启动任务需要使用命令</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo lsof -i:27017</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Tips</category>
-      </categories>
-      <tags>
-        <tag>Mac</tag>
+        <tag>MongoDB</tag>
       </tags>
   </entry>
   <entry>
@@ -808,8 +780,22 @@
         <category>后端</category>
       </categories>
       <tags>
-        <tag>MongoDB</tag>
         <tag>数据库</tag>
+        <tag>MongoDB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>查询指定端口号对应的任务</title>
+    <url>/2020/01/28/tips/%E6%9F%A5%E8%AF%A2%E6%8C%87%E5%AE%9A%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%AF%B9%E5%BA%94%E7%9A%84%E4%BB%BB%E5%8A%A1/</url>
+    <content><![CDATA[<h2 id="执行命令"><a href="#执行命令" class="headerlink" title="执行命令"></a>执行命令</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 只能获取当前用户启动的命令</span></span><br><span class="line">lsof -i:27017</span><br></pre></td></tr></table></figure>
+
+<h2 id="管理员权限启动任务需要使用命令"><a href="#管理员权限启动任务需要使用命令" class="headerlink" title="管理员权限启动任务需要使用命令"></a>管理员权限启动任务需要使用命令</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo lsof -i:27017</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Tips</category>
+      </categories>
+      <tags>
+        <tag>Mac</tag>
       </tags>
   </entry>
   <entry>
@@ -865,8 +851,8 @@
         <category>后端</category>
       </categories>
       <tags>
-        <tag>MongoDB</tag>
         <tag>数据库</tag>
+        <tag>MongoDB</tag>
       </tags>
   </entry>
 </search>
