@@ -46,21 +46,27 @@
   };
 </script>
 
-  <meta name="description" content="游标通过 var cursor &#x3D; db.user.find() 返回的 cursor 其实是一个游标(迭代器), 可以通过不停的使用 cursor.next() 来获取得到的值 1234var cursor &#x3D; db.user.find()while(cursor.hasNext()) &amp;#123;    print(cursor.next())&amp;#125; 通过使用以上命令可以打印出 user">
+  <meta name="description" content="Blog 系列文章不会对外发布, 多数情况是分享给以后的自己, 所以默认读者为高级前端工程师啦~  项目背景本文即将创建的博客系统基于 hexo, 博客托管平台为 github, 基于 github pages 实现 hexo 生成的静态文件的托管能力, 默认读者已经对以上三者有一定的了解… 准备工作 首先, 到 github 创建一个空的仓库命名为 handle-note    其次, 安装">
 <meta property="og:type" content="article">
-<meta property="og:title" content="游标 &amp; 索引 &amp; 权限 &amp; 备份">
-<meta property="og:url" content="http://note.niubishanshan.top/2020/01/29/mongo/%E6%B8%B8%E6%A0%87%20&%20%E7%B4%A2%E5%BC%95%20&%20%E6%9D%83%E9%99%90%20&%20%E5%A4%87%E4%BB%BD/index.html">
+<meta property="og:title" content="hexo &amp; github pages 搭建免费博客">
+<meta property="og:url" content="http://note.niubishanshan.top/2020/01/28/hexo-usage/hexo-github-pages-%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="圈圈的随手笔记">
-<meta property="og:description" content="游标通过 var cursor &#x3D; db.user.find() 返回的 cursor 其实是一个游标(迭代器), 可以通过不停的使用 cursor.next() 来获取得到的值 1234var cursor &#x3D; db.user.find()while(cursor.hasNext()) &amp;#123;    print(cursor.next())&amp;#125; 通过使用以上命令可以打印出 user">
+<meta property="og:description" content="Blog 系列文章不会对外发布, 多数情况是分享给以后的自己, 所以默认读者为高级前端工程师啦~  项目背景本文即将创建的博客系统基于 hexo, 博客托管平台为 github, 基于 github pages 实现 hexo 生成的静态文件的托管能力, 默认读者已经对以上三者有一定的了解… 准备工作 首先, 到 github 创建一个空的仓库命名为 handle-note    其次, 安装">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-01-29T03:50:31.000Z">
-<meta property="article:modified_time" content="2020-01-30T15:55:24.772Z">
+<meta property="og:image" content="http://handle-note-img.niubishanshan.top/2020-02-06-00-10-23.png">
+<meta property="og:image" content="http://handle-note-img.niubishanshan.top/2020-02-06-01-24-33.png">
+<meta property="og:image" content="http://handle-note-img.niubishanshan.top/2020-02-06-01-25-54.png">
+<meta property="og:image" content="http://handle-note-img.niubishanshan.top/2020-02-06-01-29-02.png">
+<meta property="og:image" content="http://handle-note-img.niubishanshan.top/2020-02-06-01-41-31.png">
+<meta property="article:published_time" content="2020-01-28T11:50:31.000Z">
+<meta property="article:modified_time" content="2020-02-05T17:43:39.836Z">
 <meta property="article:author" content="圈圈的圈">
-<meta property="article:tag" content="MongoDB">
-<meta property="article:tag" content="数据库">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="github pages">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://handle-note-img.niubishanshan.top/2020-02-06-00-10-23.png">
 
-<link rel="canonical" href="http://note.niubishanshan.top/2020/01/29/mongo/%E6%B8%B8%E6%A0%87%20&%20%E7%B4%A2%E5%BC%95%20&%20%E6%9D%83%E9%99%90%20&%20%E5%A4%87%E4%BB%BD/">
+<link rel="canonical" href="http://note.niubishanshan.top/2020/01/28/hexo-usage/hexo-github-pages-%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2/">
 
 
 <script id="page-configurations">
@@ -72,7 +78,7 @@
   };
 </script>
 
-  <title>游标 & 索引 & 权限 & 备份 | 圈圈的随手笔记</title>
+  <title>hexo & github pages 搭建免费博客 | 圈圈的随手笔记</title>
   
 
 
@@ -212,7 +218,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://note.niubishanshan.top/2020/01/29/mongo/%E6%B8%B8%E6%A0%87%20&%20%E7%B4%A2%E5%BC%95%20&%20%E6%9D%83%E9%99%90%20&%20%E5%A4%87%E4%BB%BD/">
+    <link itemprop="mainEntityOfPage" href="http://note.niubishanshan.top/2020/01/28/hexo-usage/hexo-github-pages-%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpeg">
@@ -225,7 +231,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          游标 & 索引 & 权限 & 备份
+          hexo & github pages 搭建免费博客
         </h1>
 
         <div class="post-meta">
@@ -235,14 +241,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2020-01-29 11:50:31" itemprop="dateCreated datePublished" datetime="2020-01-29T11:50:31+08:00">2020-01-29</time>
+              <time title="创建时间：2020-01-28 19:50:31" itemprop="dateCreated datePublished" datetime="2020-01-28T19:50:31+08:00">2020-01-28</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-01-30 23:55:24" itemprop="dateModified" datetime="2020-01-30T23:55:24+08:00">2020-01-30</time>
+                <time title="修改时间：2020-02-06 01:43:39" itemprop="dateModified" datetime="2020-02-06T01:43:39+08:00">2020-02-06</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -250,8 +256,8 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%90%8E%E7%AB%AF/" itemprop="url" rel="index">
-                    <span itemprop="name">后端</span>
+                  <a href="/categories/Blog/" itemprop="url" rel="index">
+                    <span itemprop="name">Blog</span>
                   </a>
                 </span>
             </span>
@@ -267,34 +273,35 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="游标"><a href="#游标" class="headerlink" title="游标"></a>游标</h2><p>通过 var cursor = db.user.find() 返回的 cursor 其实是一个游标(迭代器), 可以通过不停的使用 cursor.next() 来获取得到的值</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> cursor = db.user.find()</span><br><span class="line"><span class="keyword">while</span>(cursor.hasNext()) &#123;</span><br><span class="line">    print(cursor.next())</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>通过使用以上命令可以打印出 user 中的所有文档</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> cursor = db.user.find()</span><br><span class="line">cursor.forEach(<span class="function"><span class="params">item</span> =&gt;</span> &#123;</span><br><span class="line">    printjson(item)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<p>cursor 有 forEach 方法, 但是并不是一个数组</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Array</span>.isArray(cursor)  <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h2><p>创建索引</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.user.ensureIndex(&#123;name: 1&#125;)</span><br></pre></td></tr></table></figure>
-<p>其中, name 为添加索引的字段名, 1 代表正序, -1 代表倒序</p>
-<h2 id="权限"><a href="#权限" class="headerlink" title="权限"></a>权限</h2><h3 id="创建用户"><a href="#创建用户" class="headerlink" title="创建用户"></a>创建用户</h3><ul>
-<li>使用 admin 数据库 <code>use admin</code></li>
-<li>创建用户<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">db.createUser(&#123;</span><br><span class="line">    user: 'quanquan',</span><br><span class="line">    pwd: '123456',</span><br><span class="line">    roles:[&#123;</span><br><span class="line">        role: 'readWrite',</span><br><span class="line">        db: 'users'</span><br><span class="line">    &#125;]</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li>
-<li>关闭 mongodb 以后以需要登录的方式启动<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mongod --dbpath=/Users/quanquanluo/data/db --auth</span><br></pre></td></tr></table></figure></li>
-<li>登录<ul>
-<li>方案 1, 连接后登录<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 先连接 mongo</span></span><br><span class="line">mongo</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 切换到 admin 数据库</span></span><br><span class="line">use admin</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 登录 mongo</span></span><br><span class="line">db.auth('quanquan', '123456')</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> ...登录完成</span></span><br></pre></td></tr></table></figure>
+        <blockquote>
+<p>Blog 系列文章不会对外发布, 多数情况是分享给以后的自己, 所以默认读者为高级前端工程师啦~</p>
+</blockquote>
+<h2 id="项目背景"><a href="#项目背景" class="headerlink" title="项目背景"></a>项目背景</h2><p>本文即将创建的博客系统基于 <a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a>, 博客托管平台为 <a href="https://github.com/" target="_blank" rel="noopener">github</a>, 基于 <a href="https://pages.github.com/" target="_blank" rel="noopener">github pages</a> 实现 hexo 生成的静态文件的托管能力, 默认读者已经对以上三者有一定的了解…</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
+<li>首先, 到 github 创建一个空的仓库命名为 <code>handle-note</code></li>
+</ul>
+<p><img src="http://handle-note-img.niubishanshan.top/2020-02-06-00-10-23.png" alt="2020-02-06-00-10-23"></p>
 <ul>
-<li>方案 2, 连接时登录<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mongo -u quanquan -p 123456 [localhost/admin]</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 其中 localhost/admin 的意思是指定数据库, 是可以忽略的</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> ...登录完成</span></span><br></pre></td></tr></table></figure>
+<li>其次, 安装 hexo-cli <code>npm install hexo-cli -g</code></li>
+<li>最后, 在你喜欢的目录下执行 <code>hexo init handle-note</code> 名字只是为了和 github 项目名字一样, 完成博客项目的初始化</li>
+</ul>
+<h2 id="关联本地项目和远程项目"><a href="#关联本地项目和远程项目" class="headerlink" title="关联本地项目和远程项目"></a>关联本地项目和远程项目</h2><p>hexo 项目初始化完成后, 进入项目目录并执行以下命令, 完成初始化项目的 git 处理</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git commit -m <span class="string">"hexo init"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 注意, 实际使用的时候这里的 luoquanquan 要变成你自己的用户名</span></span><br><span class="line">git remote add origin git@github.com:luoquanquan/handle-note.git</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
 
-</li>
+<p>到了这一步, 就完成了初始化项目的构建</p>
+<h2 id="修改配置文件生成目录为-docs"><a href="#修改配置文件生成目录为-docs" class="headerlink" title="修改配置文件生成目录为 docs"></a>修改配置文件生成目录为 docs</h2><p>打开项目目录下的 <code>_config.yml</code> 文件, 找到 <code># Directory</code> 下的 <code>public_dir: public</code> 字段, 把 <code>public</code> 改为 <code>docs</code></p>
+<h2 id="生成-blog-项目-并-push-代码"><a href="#生成-blog-项目-并-push-代码" class="headerlink" title="生成 blog 项目, 并 push 代码"></a>生成 blog 项目, 并 push 代码</h2><ul>
+<li>执行 <code>hexo g</code> 生成静态博客网站</li>
+<li>将生成的 <code>docs</code> 目录的所有内容推送到远程</li>
 </ul>
-</li>
+<h2 id="启动-github-pages"><a href="#启动-github-pages" class="headerlink" title="启动 github pages"></a>启动 github pages</h2><ul>
+<li>点击项目设置<br><img src="http://handle-note-img.niubishanshan.top/2020-02-06-01-24-33.png" alt="2020-02-06-01-24-33"></li>
+<li>在项目设置中的 github pages 栏目 Source 选项卡选择 master branch /docs folder<br><img src="http://handle-note-img.niubishanshan.top/2020-02-06-01-25-54.png" alt="2020-02-06-01-25-54"></li>
+<li>访问  <code>luoquanquan.github.io/handle-note/</code> 查看效果发现样式乱掉了<br><img src="http://handle-note-img.niubishanshan.top/2020-02-06-01-29-02.png" alt="2020-02-06-01-29-02"></li>
 </ul>
-</li>
-</ul>
-<h2 id="备份和还原"><a href="#备份和还原" class="headerlink" title="备份和还原"></a>备份和还原</h2><h3 id="备份"><a href="#备份" class="headerlink" title="备份"></a>备份</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> db        数据库名</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> mongodump 集合</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> out       导出的文件</span></span><br><span class="line">mongodump --db users --collection user --out ./bak</span><br></pre></td></tr></table></figure>
-
-<h3 id="还原"><a href="#还原" class="headerlink" title="还原"></a>还原</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mongorestore ./bak</span><br><span class="line"><span class="meta">#</span><span class="bash"> 或者</span></span><br><span class="line">mongorestore --dir ./bak</span><br></pre></td></tr></table></figure>
+<h2 id="修改-blog-站点路径"><a href="#修改-blog-站点路径" class="headerlink" title="修改 blog 站点路径"></a>修改 blog 站点路径</h2><p>打开 <code>_config.yml</code> 文件, 找到 <code># URL</code> 下的 <code>root: /</code> -&gt; <code>root: /handle-note/</code><br>再次, 打包 -&gt; push</p>
+<p>然后访问 <code>luoquanquan.github.io/handle-note/</code><br><img src="http://handle-note-img.niubishanshan.top/2020-02-06-01-41-31.png" alt="2020-02-06-01-41-31"></p>
+<p>配置完成, 由于 docs 项目在主体项目中, 方便的实现了博客项目的版本管理能力</p>
 
     </div>
 
@@ -304,8 +311,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/MongoDB/" rel="tag"># MongoDB</a>
-              <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag"># 数据库</a>
+              <a href="/tags/hexo/" rel="tag"># hexo</a>
+              <a href="/tags/github-pages/" rel="tag"># github pages</a>
           </div>
 
         
@@ -313,13 +320,10 @@
 
         
     <div class="post-nav">
+      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2020/01/28/mongo/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/" rel="prev" title="数据库操作">
-      <i class="fa fa-chevron-left"></i> 数据库操作
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/01/30/redis/Redis%20%E5%9F%BA%E7%A1%80/" rel="next" title="Redis 基础">
-      Redis 基础 <i class="fa fa-chevron-right"></i>
+    <a href="/2020/01/28/mongo/%E5%AE%89%E8%A3%85%E5%90%AF%E5%8A%A8%E5%92%8C%E9%93%BE%E6%8E%A5/" rel="next" title="mongo 的安装和启动和连接">
+      mongo 的安装和启动和连接 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -380,7 +384,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#游标"><span class="nav-text">游标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#索引"><span class="nav-text">索引</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#权限"><span class="nav-text">权限</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建用户"><span class="nav-text">创建用户</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#备份和还原"><span class="nav-text">备份和还原</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#备份"><span class="nav-text">备份</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#还原"><span class="nav-text">还原</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#项目背景"><span class="nav-text">项目背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关联本地项目和远程项目"><span class="nav-text">关联本地项目和远程项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改配置文件生成目录为-docs"><span class="nav-text">修改配置文件生成目录为 docs</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生成-blog-项目-并-push-代码"><span class="nav-text">生成 blog 项目, 并 push 代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#启动-github-pages"><span class="nav-text">启动 github pages</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改-blog-站点路径"><span class="nav-text">修改 blog 站点路径</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

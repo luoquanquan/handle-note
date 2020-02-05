@@ -538,20 +538,6 @@
       </tags>
   </entry>
   <entry>
-    <title>查询指定端口号对应的任务</title>
-    <url>/2020/01/28/tips/%E6%9F%A5%E8%AF%A2%E6%8C%87%E5%AE%9A%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%AF%B9%E5%BA%94%E7%9A%84%E4%BB%BB%E5%8A%A1/</url>
-    <content><![CDATA[<h2 id="执行命令"><a href="#执行命令" class="headerlink" title="执行命令"></a>执行命令</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 只能获取当前用户启动的命令</span></span><br><span class="line">lsof -i:27017</span><br></pre></td></tr></table></figure>
-
-<h2 id="管理员权限启动任务需要使用命令"><a href="#管理员权限启动任务需要使用命令" class="headerlink" title="管理员权限启动任务需要使用命令"></a>管理员权限启动任务需要使用命令</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo lsof -i:27017</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Tips</category>
-      </categories>
-      <tags>
-        <tag>Mac</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>数据库操作</title>
     <url>/2020/01/28/mongo/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/</url>
     <content><![CDATA[<h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><ul>
@@ -724,6 +710,20 @@
       </tags>
   </entry>
   <entry>
+    <title>查询指定端口号对应的任务</title>
+    <url>/2020/01/28/tips/%E6%9F%A5%E8%AF%A2%E6%8C%87%E5%AE%9A%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%AF%B9%E5%BA%94%E7%9A%84%E4%BB%BB%E5%8A%A1/</url>
+    <content><![CDATA[<h2 id="执行命令"><a href="#执行命令" class="headerlink" title="执行命令"></a>执行命令</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 只能获取当前用户启动的命令</span></span><br><span class="line">lsof -i:27017</span><br></pre></td></tr></table></figure>
+
+<h2 id="管理员权限启动任务需要使用命令"><a href="#管理员权限启动任务需要使用命令" class="headerlink" title="管理员权限启动任务需要使用命令"></a>管理员权限启动任务需要使用命令</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo lsof -i:27017</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Tips</category>
+      </categories>
+      <tags>
+        <tag>Mac</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>mongo 的安装和启动和连接</title>
     <url>/2020/01/28/mongo/%E5%AE%89%E8%A3%85%E5%90%AF%E5%8A%A8%E5%92%8C%E9%93%BE%E6%8E%A5/</url>
     <content><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">brew install mongodb</span><br></pre></td></tr></table></figure>
@@ -778,6 +778,47 @@
       <tags>
         <tag>MongoDB</tag>
         <tag>数据库</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo &amp; github pages 搭建免费博客</title>
+    <url>/2020/01/28/hexo-usage/hexo-github-pages-%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<blockquote>
+<p>Blog 系列文章不会对外发布, 多数情况是分享给以后的自己, 所以默认读者为高级前端工程师啦~</p>
+</blockquote>
+<h2 id="项目背景"><a href="#项目背景" class="headerlink" title="项目背景"></a>项目背景</h2><p>本文即将创建的博客系统基于 <a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a>, 博客托管平台为 <a href="https://github.com/" target="_blank" rel="noopener">github</a>, 基于 <a href="https://pages.github.com/" target="_blank" rel="noopener">github pages</a> 实现 hexo 生成的静态文件的托管能力, 默认读者已经对以上三者有一定的了解…</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
+<li>首先, 到 github 创建一个空的仓库命名为 <code>handle-note</code></li>
+</ul>
+<p><img src="http://handle-note-img.niubishanshan.top/2020-02-06-00-10-23.png" alt="2020-02-06-00-10-23"></p>
+<ul>
+<li>其次, 安装 hexo-cli <code>npm install hexo-cli -g</code></li>
+<li>最后, 在你喜欢的目录下执行 <code>hexo init handle-note</code> 名字只是为了和 github 项目名字一样, 完成博客项目的初始化</li>
+</ul>
+<h2 id="关联本地项目和远程项目"><a href="#关联本地项目和远程项目" class="headerlink" title="关联本地项目和远程项目"></a>关联本地项目和远程项目</h2><p>hexo 项目初始化完成后, 进入项目目录并执行以下命令, 完成初始化项目的 git 处理</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git init</span><br><span class="line">git commit -m <span class="string">"hexo init"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 注意, 实际使用的时候这里的 luoquanquan 要变成你自己的用户名</span></span><br><span class="line">git remote add origin git@github.com:luoquanquan/handle-note.git</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+
+<p>到了这一步, 就完成了初始化项目的构建</p>
+<h2 id="修改配置文件生成目录为-docs"><a href="#修改配置文件生成目录为-docs" class="headerlink" title="修改配置文件生成目录为 docs"></a>修改配置文件生成目录为 docs</h2><p>打开项目目录下的 <code>_config.yml</code> 文件, 找到 <code># Directory</code> 下的 <code>public_dir: public</code> 字段, 把 <code>public</code> 改为 <code>docs</code></p>
+<h2 id="生成-blog-项目-并-push-代码"><a href="#生成-blog-项目-并-push-代码" class="headerlink" title="生成 blog 项目, 并 push 代码"></a>生成 blog 项目, 并 push 代码</h2><ul>
+<li>执行 <code>hexo g</code> 生成静态博客网站</li>
+<li>将生成的 <code>docs</code> 目录的所有内容推送到远程</li>
+</ul>
+<h2 id="启动-github-pages"><a href="#启动-github-pages" class="headerlink" title="启动 github pages"></a>启动 github pages</h2><ul>
+<li>点击项目设置<br><img src="http://handle-note-img.niubishanshan.top/2020-02-06-01-24-33.png" alt="2020-02-06-01-24-33"></li>
+<li>在项目设置中的 github pages 栏目 Source 选项卡选择 master branch /docs folder<br><img src="http://handle-note-img.niubishanshan.top/2020-02-06-01-25-54.png" alt="2020-02-06-01-25-54"></li>
+<li>访问  <code>luoquanquan.github.io/handle-note/</code> 查看效果发现样式乱掉了<br><img src="http://handle-note-img.niubishanshan.top/2020-02-06-01-29-02.png" alt="2020-02-06-01-29-02"></li>
+</ul>
+<h2 id="修改-blog-站点路径"><a href="#修改-blog-站点路径" class="headerlink" title="修改 blog 站点路径"></a>修改 blog 站点路径</h2><p>打开 <code>_config.yml</code> 文件, 找到 <code># URL</code> 下的 <code>root: /</code> -&gt; <code>root: /handle-note/</code><br>再次, 打包 -&gt; push</p>
+<p>然后访问 <code>luoquanquan.github.io/handle-note/</code><br><img src="http://handle-note-img.niubishanshan.top/2020-02-06-01-41-31.png" alt="2020-02-06-01-41-31"></p>
+<p>配置完成, 由于 docs 项目在主体项目中, 方便的实现了博客项目的版本管理能力</p>
+]]></content>
+      <categories>
+        <category>Blog</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>github pages</tag>
       </tags>
   </entry>
 </search>
