@@ -213,6 +213,268 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://note.niubishanshan.top/2020/02/06/hexo-usage/%E7%AE%80%E5%8D%95%E5%86%99%E4%BD%9C-%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="圈圈的圈">
+      <meta itemprop="description" content="技术学习, 读书笔记, 生活感悟~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="圈圈的随手笔记">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/02/06/hexo-usage/%E7%AE%80%E5%8D%95%E5%86%99%E4%BD%9C-%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE/" class="post-title-link" itemprop="url">简单写作 & 站点配置</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-02-06 01:50:31 / 修改时间：02:26:23" itemprop="dateCreated datePublished" datetime="2020-02-06T01:50:31+08:00">2020-02-06</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Blog/" itemprop="url" rel="index">
+                    <span itemprop="name">Blog</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="简单写作"><a href="#简单写作" class="headerlink" title="简单写作"></a>简单写作</h2><h3 id="创建一篇文章"><a href="#创建一篇文章" class="headerlink" title="创建一篇文章"></a>创建一篇文章</h3><p>项目 <code>scaffolds</code> 目录下存放了 <code>draft page post</code> 三种格式文章的模板, 可以通过调用 <code>hexo new {模板名} {文章 title}</code> 的形式创建一篇文章 or 草稿, 例如:</p>
+<ul>
+<li><code>hexo new draft hello-world</code> 会在 <code>source/_drafts</code> 目录下创建 <code>hello-world.md</code> 文件</li>
+<li><code>hexo new page hello-world</code> 会在 <code>source/</code> 目录下创建 <code>hello-world</code> 目录, 并包含 <code>index.md</code> 文件</li>
+<li><code>hexo new hello-world</code> 会在 <code>source/_posts</code> 目录下创建 <code>hello-world.md</code> 文件</li>
+</ul>
+<p>PS: 创建草稿文件在执行编译时不会打包到静态站点目录下</p>
+<h3 id="启动本地服务"><a href="#启动本地服务" class="headerlink" title="启动本地服务"></a>启动本地服务</h3><p>写作的过程中, 为了提升成就感. 总是不停的想要查看当前写作的进展, 此时可以通过以下命令启动一个本地服务实时刷新, 正在编写的文档. 爽的一批~</p>
+<ul>
+<li>npm run server</li>
+<li>hexo server</li>
+<li>hexo s</li>
+</ul>
+<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><p>在<a href="">前一篇文章</a>中我们已经提到过, 我们写的 <code>.md</code> 文件最终是要被 <code>hexo</code> 编码成静态站点的. 编码的命令为:</p>
+<ul>
+<li>npm run build</li>
+<li>hexo generate</li>
+<li>hexo g</li>
+</ul>
+<h2 id="站点配置"><a href="#站点配置" class="headerlink" title="站点配置"></a>站点配置</h2><h3 id="站点基础信息"><a href="#站点基础信息" class="headerlink" title="站点基础信息"></a>站点基础信息</h3><p>打开项目根目录下的 <code>_config.yml</code> 文件, 找到 <code># Site</code> 并修改为以下内容</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">圈圈的随手笔记</span>                          <span class="comment"># 博客名字</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">路漫漫其修远兮,</span> <span class="string">吾将上下而求索</span>         <span class="comment"># 你的格言</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">技术学习,</span> <span class="string">读书笔记,</span> <span class="string">生活感悟~</span>      <span class="comment"># 博客描述</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">前端,</span> <span class="string">JavaScript,</span> <span class="string">Node,</span> <span class="string">全栈,</span> <span class="string">读书</span>  <span class="comment"># 博客关键字</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">圈圈的圈</span>                             <span class="comment"># 你的名字</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span>                             <span class="comment"># 博客语言 - 这个是中文</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">''</span>                                <span class="comment"># 时区, 默认是当地时区</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="安装-next-主题"><a href="#安装-next-主题" class="headerlink" title="安装 next 主题"></a>安装 next 主题</h2><p>项目目录下的 themes 目录下存放的就是博客的主题文件, 默认是 <code>landscape</code> 主题看上去也挺简洁但是我不喜欢</p>
+<h2 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h2>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://note.niubishanshan.top/2020/02/06/hexo-usage/%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE-%E5%86%99%E4%BD%9C/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="圈圈的圈">
+      <meta itemprop="description" content="技术学习, 读书笔记, 生活感悟~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="圈圈的随手笔记">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/02/06/hexo-usage/%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE-%E5%86%99%E4%BD%9C/" class="post-title-link" itemprop="url">站点配置 & 写作</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-02-06 01:50:31 / 修改时间：01:57:43" itemprop="dateCreated datePublished" datetime="2020-02-06T01:50:31+08:00">2020-02-06</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Blog/" itemprop="url" rel="index">
+                    <span itemprop="name">Blog</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="页面信息设置"><a href="#页面信息设置" class="headerlink" title="页面信息设置"></a>页面信息设置</h2><p>打开项目根目录下的 <code>_config.yml</code> 文件, 找到 <code># Site</code> 并修改为一下内容</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">圈圈的随手笔记</span>                          <span class="comment"># 博客名字</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">路漫漫其修远兮,</span> <span class="string">吾将上下而求索</span>         <span class="comment"># 你的格言</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">技术学习,</span> <span class="string">读书笔记,</span> <span class="string">生活感悟~</span>      <span class="comment"># 博客描述</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">前端,</span> <span class="string">JavaScript,</span> <span class="string">Node,</span> <span class="string">全栈,</span> <span class="string">读书</span>  <span class="comment"># 博客关键字</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">圈圈的圈</span>                             <span class="comment"># 你的名字</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span>                             <span class="comment"># 博客语言 - 这个是中文</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">''</span>                                <span class="comment"># 时区</span></span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://note.niubishanshan.top/2020/02/06/hexo-usage/hexo-github-pages-%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="圈圈的圈">
+      <meta itemprop="description" content="技术学习, 读书笔记, 生活感悟~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="圈圈的随手笔记">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/02/06/hexo-usage/hexo-github-pages-%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">hexo & github pages 搭建免费博客</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-02-06 00:50:31 / 修改时间：01:50:22" itemprop="dateCreated datePublished" datetime="2020-02-06T00:50:31+08:00">2020-02-06</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Blog/" itemprop="url" rel="index">
+                    <span itemprop="name">Blog</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>Blog 系列文章不会对外发布, 多数情况是分享给以后的自己, 所以默认读者为高级前端工程师啦~</p>
+</blockquote>
+<h2 id="项目背景"><a href="#项目背景" class="headerlink" title="项目背景"></a>项目背景</h2><p>本文即将创建的博客系统基于 <a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a>, 博客托管平台为 <a href="https://github.com/" target="_blank" rel="noopener">github</a>, 基于 <a href="https://pages.github.com/" target="_blank" rel="noopener">github pages</a> 实现 hexo 生成的静态文件的托管能力, 默认读者已经对以上三者有一定的了解…</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
+<li>首先, 到 github 创建一个空的仓库命名为 <code>handle-note</code></li>
+</ul>
+<p><img src="http://handle-note-img.niubishanshan.top/2020-02-06-00-10-23.png" alt="2020-02-06-00-10-23"></p>
+<ul>
+<li>其次, 安装 hexo-cli <code>npm install hexo-cli -g</code></li>
+<li>最后, 在你喜欢的目录下执行 <code>hexo init handle-note</code> 名字只是为了和 github 项目名字一样, 完成博客项目的初始化</li>
+</ul>
+<h2 id="关联本地项目和远程项目"><a href="#关联本地项目和远程项目" class="headerlink" title="关联本地项目和远程项目"></a>关联本地项目和远程项目</h2><p>hexo 项目初始化完成后, 进入项目目录并执行以下命令, 完成初始化项目的 git 处理</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git commit -m <span class="string">"hexo init"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 注意, 实际使用的时候这里的 luoquanquan 要变成你自己的用户名</span></span><br><span class="line">git remote add origin git@github.com:luoquanquan/handle-note.git</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+
+<p>到了这一步, 就完成了初始化项目的构建</p>
+<h2 id="修改配置文件生成目录为-docs"><a href="#修改配置文件生成目录为-docs" class="headerlink" title="修改配置文件生成目录为 docs"></a>修改配置文件生成目录为 docs</h2><p>打开项目目录下的 <code>_config.yml</code> 文件, 找到 <code># Directory</code> 下的 <code>public_dir: public</code> 字段, 把 <code>public</code> 改为 <code>docs</code></p>
+<h2 id="生成-blog-项目-并-push-代码"><a href="#生成-blog-项目-并-push-代码" class="headerlink" title="生成 blog 项目, 并 push 代码"></a>生成 blog 项目, 并 push 代码</h2><ul>
+<li>执行 <code>hexo g</code> 生成静态博客网站</li>
+<li>将生成的 <code>docs</code> 目录的所有内容推送到远程</li>
+</ul>
+<h2 id="启动-github-pages"><a href="#启动-github-pages" class="headerlink" title="启动 github pages"></a>启动 github pages</h2><ul>
+<li>点击项目设置<br><img src="http://handle-note-img.niubishanshan.top/2020-02-06-01-24-33.png" alt="2020-02-06-01-24-33"></li>
+<li>在项目设置中的 github pages 栏目 Source 选项卡选择 master branch /docs folder<br><img src="http://handle-note-img.niubishanshan.top/2020-02-06-01-25-54.png" alt="2020-02-06-01-25-54"></li>
+<li>访问  <code>luoquanquan.github.io/handle-note/</code> 查看效果发现样式乱掉了<br><img src="http://handle-note-img.niubishanshan.top/2020-02-06-01-29-02.png" alt="2020-02-06-01-29-02"></li>
+</ul>
+<h2 id="修改-blog-站点路径"><a href="#修改-blog-站点路径" class="headerlink" title="修改 blog 站点路径"></a>修改 blog 站点路径</h2><p>打开 <code>_config.yml</code> 文件, 找到 <code># URL</code> 下的 <code>root: /</code> -&gt; <code>root: /handle-note/</code><br>再次, 打包 -&gt; push</p>
+<p>然后访问 <code>luoquanquan.github.io/handle-note/</code><br><img src="http://handle-note-img.niubishanshan.top/2020-02-06-01-41-31.png" alt="2020-02-06-01-41-31"></p>
+<p>配置完成, 由于 docs 项目在主体项目中, 方便的实现了博客项目的版本管理能力</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://note.niubishanshan.top/2020/02/05/CSS/%E9%9A%90%E8%97%8F%E6%BB%9A%E5%8A%A8%E6%9D%A1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -980,550 +1242,6 @@
   
   
 
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://note.niubishanshan.top/2020/01/30/redis/Redis%20%E5%9F%BA%E7%A1%80/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="圈圈的圈">
-      <meta itemprop="description" content="技术学习, 读书笔记, 生活感悟~">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="圈圈的随手笔记">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/30/redis/Redis%20%E5%9F%BA%E7%A1%80/" class="post-title-link" itemprop="url">Redis 基础</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-01-30 20:50:31" itemprop="dateCreated datePublished" datetime="2020-01-30T20:50:31+08:00">2020-01-30</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-01-31 00:56:49" itemprop="dateModified" datetime="2020-01-31T00:56:49+08:00">2020-01-31</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%90%8E%E7%AB%AF/" itemprop="url" rel="index">
-                    <span itemprop="name">后端</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install redis</span><br></pre></td></tr></table></figure>
-
-<h2 id="配置文件路径"><a href="#配置文件路径" class="headerlink" title="配置文件路径"></a>配置文件路径</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/etc/redis.conf</span><br></pre></td></tr></table></figure>
-
-<h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 前台启动</span></span><br><span class="line">redis-server</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 后台启动</span></span><br><span class="line">redis-server &amp;</span><br></pre></td></tr></table></figure>
-
-<h2 id="客户端-cli"><a href="#客户端-cli" class="headerlink" title="客户端 cli"></a>客户端 cli</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">redis-cli</span><br></pre></td></tr></table></figure>
-
-<h2 id="redis-数据类型"><a href="#redis-数据类型" class="headerlink" title="redis 数据类型"></a>redis 数据类型</h2><ul>
-<li>string 字符串 <code>get set getrange incr decr expire</code></li>
-<li>hash 对象 <code>hset hget hdel hmget hgetall</code></li>
-<li>列表 数组 <code>lpush lpop lrange lrem lindex rpush rpop ...</code></li>
-<li>set 集合<ul>
-<li>无序集合 <code>sadd smembers srem sunion sinter sdiff</code></li>
-<li>有序集合 <code>zadd zrange withscores</code></li>
-</ul>
-</li>
-</ul>
-<h2 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h2><h3 id="通用"><a href="#通用" class="headerlink" title="通用"></a>通用</h3><ul>
-<li><p>查看 redis 中的所有 keys</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">keys *</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>删除一条记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">del a</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看记录值的类型</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">type a</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>给某条记录设置有效时间</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">expire a 5</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看某条记录的有效时间</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ttl a</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h3 id="字符串相关"><a href="#字符串相关" class="headerlink" title="字符串相关"></a>字符串相关</h3><ul>
-<li><p>设置一条记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set a 1</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>获取记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">get a</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>让某条记录自增</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">incr a</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>让某条记录自减</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">decr a</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>获取某条记录指定范围内的值</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">set name quanquan</span><br><span class="line">getrange name 0 1 # qu -&gt; 包前也包后</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h3 id="hash-相关"><a href="#hash-相关" class="headerlink" title="hash 相关"></a>hash 相关</h3><ul>
-<li><p>创建一条记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hset user name quanquan</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>获取记录的属性</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hget user name</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>设置记录的另一条属性</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hset user sex male</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>获取记录的多条属性</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hmget user sex name</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>获取记录的所有内容</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hgetall user</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>删除记录的某个属性字段</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hdel user name</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h3 id="列表相关"><a href="#列表相关" class="headerlink" title="列表相关"></a>列表相关</h3><ul>
-<li><p>创建一条记录(向左 push)</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lpush arr 1 2 3 4 5</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看记录范围内的值</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lrange arr 0 -1</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>创建一条记录(向右 push)</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpush arr2 1 2 3 4 5</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看记录范围内的值</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lrange arr2 0 -1</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>从数组头部删除一条记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lpop arr</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>从数组尾部删除一条记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpop arr</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>删除指定的记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">lrem arr 3 3</span><br><span class="line"><span class="meta">#</span><span class="bash"> 其中, arr 是指定要操作的数组</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 第一个 3 指的是数组遍历数组中的三个元素范围</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 第二个 3 指的是从数组中找到数字 3 并移除他</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>取出数组中指定的项</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> index 是从 0 开始的</span></span><br><span class="line">lindex arr 1</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h3 id="集合相关"><a href="#集合相关" class="headerlink" title="集合相关"></a>集合相关</h3><h4 id="无序集合"><a href="#无序集合" class="headerlink" title="无序集合"></a>无序集合</h4><ul>
-<li><p>创建一条记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sadd myset 1 2 3 4</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>列出所有的记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">smembers myset</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>删除集合中的某一项</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">srem myset 1</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>取两个 set 的并集</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sunion myset myset1</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>取两个 set 的交集</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sinter myset myset1</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>取两个 set 的差集</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sdiff myset myset1</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h3 id="有序集合"><a href="#有序集合" class="headerlink" title="有序集合"></a>有序集合</h3><ul>
-<li><p>创建记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">zadd my 1 100</span><br><span class="line">zadd my 2 200</span><br><span class="line">zadd my 1 101</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看指定范围的记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">zrange my 0 -1</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 1) <span class="string">"100"</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 2) <span class="string">"101"</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 3) <span class="string">"200"</span></span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://note.niubishanshan.top/2020/01/29/mongo/%E6%B8%B8%E6%A0%87%20&%20%E7%B4%A2%E5%BC%95%20&%20%E6%9D%83%E9%99%90%20&%20%E5%A4%87%E4%BB%BD/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="圈圈的圈">
-      <meta itemprop="description" content="技术学习, 读书笔记, 生活感悟~">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="圈圈的随手笔记">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/29/mongo/%E6%B8%B8%E6%A0%87%20&%20%E7%B4%A2%E5%BC%95%20&%20%E6%9D%83%E9%99%90%20&%20%E5%A4%87%E4%BB%BD/" class="post-title-link" itemprop="url">游标 & 索引 & 权限 & 备份</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-01-29 11:50:31" itemprop="dateCreated datePublished" datetime="2020-01-29T11:50:31+08:00">2020-01-29</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-01-30 23:55:24" itemprop="dateModified" datetime="2020-01-30T23:55:24+08:00">2020-01-30</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%90%8E%E7%AB%AF/" itemprop="url" rel="index">
-                    <span itemprop="name">后端</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="游标"><a href="#游标" class="headerlink" title="游标"></a>游标</h2><p>通过 var cursor = db.user.find() 返回的 cursor 其实是一个游标(迭代器), 可以通过不停的使用 cursor.next() 来获取得到的值</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> cursor = db.user.find()</span><br><span class="line"><span class="keyword">while</span>(cursor.hasNext()) &#123;</span><br><span class="line">    print(cursor.next())</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>通过使用以上命令可以打印出 user 中的所有文档</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> cursor = db.user.find()</span><br><span class="line">cursor.forEach(<span class="function"><span class="params">item</span> =&gt;</span> &#123;</span><br><span class="line">    printjson(item)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<p>cursor 有 forEach 方法, 但是并不是一个数组</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Array</span>.isArray(cursor)  <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h2><p>创建索引</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.user.ensureIndex(&#123;name: 1&#125;)</span><br></pre></td></tr></table></figure>
-<p>其中, name 为添加索引的字段名, 1 代表正序, -1 代表倒序</p>
-<h2 id="权限"><a href="#权限" class="headerlink" title="权限"></a>权限</h2><h3 id="创建用户"><a href="#创建用户" class="headerlink" title="创建用户"></a>创建用户</h3><ul>
-<li>使用 admin 数据库 <code>use admin</code></li>
-<li>创建用户<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">db.createUser(&#123;</span><br><span class="line">    user: 'quanquan',</span><br><span class="line">    pwd: '123456',</span><br><span class="line">    roles:[&#123;</span><br><span class="line">        role: 'readWrite',</span><br><span class="line">        db: 'users'</span><br><span class="line">    &#125;]</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li>
-<li>关闭 mongodb 以后以需要登录的方式启动<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mongod --dbpath=/Users/quanquanluo/data/db --auth</span><br></pre></td></tr></table></figure></li>
-<li>登录<ul>
-<li>方案 1, 连接后登录<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 先连接 mongo</span></span><br><span class="line">mongo</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 切换到 admin 数据库</span></span><br><span class="line">use admin</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 登录 mongo</span></span><br><span class="line">db.auth('quanquan', '123456')</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> ...登录完成</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>方案 2, 连接时登录<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mongo -u quanquan -p 123456 [localhost/admin]</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 其中 localhost/admin 的意思是指定数据库, 是可以忽略的</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> ...登录完成</span></span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="备份和还原"><a href="#备份和还原" class="headerlink" title="备份和还原"></a>备份和还原</h2><h3 id="备份"><a href="#备份" class="headerlink" title="备份"></a>备份</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> db        数据库名</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> mongodump 集合</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> out       导出的文件</span></span><br><span class="line">mongodump --db users --collection user --out ./bak</span><br></pre></td></tr></table></figure>
-
-<h3 id="还原"><a href="#还原" class="headerlink" title="还原"></a>还原</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mongorestore ./bak</span><br><span class="line"><span class="meta">#</span><span class="bash"> 或者</span></span><br><span class="line">mongorestore --dir ./bak</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://note.niubishanshan.top/2020/01/28/mongo/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="圈圈的圈">
-      <meta itemprop="description" content="技术学习, 读书笔记, 生活感悟~">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="圈圈的随手笔记">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/28/mongo/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/" class="post-title-link" itemprop="url">数据库操作</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-01-28 20:50:31" itemprop="dateCreated datePublished" datetime="2020-01-28T20:50:31+08:00">2020-01-28</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-01-30 23:55:29" itemprop="dateModified" datetime="2020-01-30T23:55:29+08:00">2020-01-30</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%90%8E%E7%AB%AF/" itemprop="url" rel="index">
-                    <span itemprop="name">后端</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><ul>
-<li><p>展示所有数据库</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show dbs</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>创建数据库</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">use users</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看当前数据库</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>创建集合(刚刚创建的空数据库不会在 show dbs 中展示出来, 需要添加集合)</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.createCollection('user')</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>展示集合</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show collections</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>删除集合</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.user.drop()</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>删除数据库(在需要删除的数据库执行以下命令)</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.dropDatabase()</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>删除集合</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.user.drop()</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h2 id="新增"><a href="#新增" class="headerlink" title="新增"></a>新增</h2><ul>
-<li><p>在集合中新增一个文档</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.user.insert(&#123;name: 'quanquan'&#125;)</span><br></pre></td></tr></table></figure>
-<p>运行以上命令, 如果当前数据库中已经存在 user 集合则会在 user 集合中创建一条文档, 如果当前数据库中没有 user 集合便会创建 user 集合并向该集合中插入一条文档</p>
-</li>
-<li><p>指定 id 插入文档</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.user.insert(&#123;_id: 1, name: 'quanquan'&#125;)</span><br></pre></td></tr></table></figure>
-<p>运行以上命令, 系统会根据你指定的 _id 字段作为文档的 _id 而不会自动生成 ObjectId</p>
-</li>
-<li><p>智能插入方法, 如果当前 _id 的文档存在则更新其记录, 如果不存在则添加一条记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.user.save(&#123;_id: 1, name: 'quanquandequan', age: '9'&#125;)</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h2 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h2><ul>
-<li><p>删除符合条件的文档</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.user.remove(&#123;name: 'quanquan'&#125;)</span><br></pre></td></tr></table></figure>
-<p>运行以上命令默认会删除所有符合条件的文档</p>
-</li>
-<li><p>删除第一条符合条件的文档</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.user.remove(&#123;name: 'quanquan'&#125;, &#123;justOne: true&#125;)</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h2 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h2><ul>
-<li>查询到文档, 并修改他<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.user.update(&#123;_id: 1&#125;, &#123;sex: 'male'&#125;)</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<p>运行以上命令会覆盖式的修改整个文档, 如果只需要修改某个属性, 需要使用 $set</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.user.update(&#123;_id: 1&#125;, &#123;$set: &#123;sex: 'male'&#125;&#125;)</span><br></pre></td></tr></table></figure>
-
-<h2 id="查询"><a href="#查询" class="headerlink" title="查询"></a>查询</h2><ul>
-<li><p>查询整个集合中的所有文档</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.user.find()</span><br></pre></td></tr></table></figure></li>
-<li><p>查询集合中符合条件的文档</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.user.find(&#123;name: 'quanquan'&#125;)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查询数组属性存在某个值的文档</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.user.find(&#123;time: 1&#125;)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查询数组属性存在多个值的文档</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.user.find(&#123;time: &#123;$all: [1, 3]&#125;&#125;)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查询数组属性存在某些值的文档</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.user.find(&#123;time: &#123;$in: [1, 3]&#125;&#125;)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看当前集合中文档的条数</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.user.count()</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>分页</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> pageSize = <span class="number">10</span></span><br><span class="line"><span class="keyword">var</span> currentPage = <span class="number">1</span></span><br><span class="line"></span><br><span class="line">db.find().limit(pageSize).skip(pageSize * (currentPage - <span class="number">1</span>))</span><br></pre></td></tr></table></figure>
-<p>上述命令中 limit 为限制文档数, skip 为跳过文档数. 组合起来实现了分页的功能</p>
-</li>
-</ul>
-<h2 id="操作符"><a href="#操作符" class="headerlink" title="操作符"></a>操作符</h2><p>正如上述命令中的 $set 还有很多操作符如下,</p>
-<h3 id="修改相关"><a href="#修改相关" class="headerlink" title="修改相关"></a>修改相关</h3><table>
-<thead>
-<tr>
-<th>操作符</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>$set</td>
-<td>不覆盖的设置文档中的某条属性</td>
-</tr>
-<tr>
-<td>$unset</td>
-<td>移除掉文档中的某条属性</td>
-</tr>
-<tr>
-<td>$inc</td>
-<td>文档中某个属性的值自增</td>
-</tr>
-<tr>
-<td>$push</td>
-<td>当文档中某个属性是数组的是时候想属性中添加一个值</td>
-</tr>
-<tr>
-<td>$addToSet</td>
-<td>当文档中某个属性是数组的是时候想属性中添加一个值, 且具备了去重的能力, 如果已经存在相关的记录就不添加了</td>
-</tr>
-<tr>
-<td>$pop</td>
-<td>移除数组属性值中的最后一个值</td>
-</tr>
-<tr>
-<td>‘hobby.0’</td>
-<td>修改数组属性 hobby 的第 0 项的值</td>
-</tr>
-</tbody></table>
-<h3 id="查询相关"><a href="#查询相关" class="headerlink" title="查询相关"></a>查询相关</h3><table>
-<thead>
-<tr>
-<th>操作符</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>$in</td>
-<td>属性值在某个属性数组范围内的时候命中 eg: 找出工作 1 年 3 年 5 年的员工: {jobTime: {$in: [1, 3, 5]}}, 当属性是数组的时候, 只要数组总包含一个 in 操作符中的 item 就会被命中</td>
-</tr>
-<tr>
-<td>$nin = $not: {$in: []}</td>
-<td>$in 的取反操作, 属性值不再某个范围内的时候命中</td>
-</tr>
-<tr>
-<td>$ne = not equal</td>
-<td>不相等的时候</td>
-</tr>
-<tr>
-<td>$lt</td>
-<td>属性值小于某个值的时候命中</td>
-</tr>
-<tr>
-<td>$gt</td>
-<td>属性值大于某个值的时候命中</td>
-</tr>
-<tr>
-<td>$lte</td>
-<td>属性值小于等于某个值的时候命中</td>
-</tr>
-<tr>
-<td>$gte</td>
-<td>属性值大于等于某个值的时候命中</td>
-</tr>
-<tr>
-<td>$all</td>
-<td>数组属性中包含所有的选择条件中的值才能命中 eg: {$all: [1, 3]} 能命中 time: [1, 2, 3], 但是不能命中 time: [1, 2, 4]</td>
-</tr>
-</tbody></table>
-<h2 id="文档读百遍-其义自见"><a href="#文档读百遍-其义自见" class="headerlink" title="文档读百遍, 其义自见"></a>文档读百遍, 其义自见</h2><p><a href="https://mongoosejs.com/" target="_blank" rel="noopener">mongoose</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
   </div>
 
   
@@ -1596,7 +1314,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-count">15</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
