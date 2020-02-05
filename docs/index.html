@@ -238,7 +238,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-02-06 01:50:31 / 修改时间：02:30:25" itemprop="dateCreated datePublished" datetime="2020-02-06T01:50:31+08:00">2020-02-06</time>
+              <time title="创建时间：2020-02-06 01:50:31 / 修改时间：03:06:17" itemprop="dateCreated datePublished" datetime="2020-02-06T01:50:31+08:00">2020-02-06</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -282,11 +282,21 @@
 <li>hexo generate</li>
 <li>hexo g</li>
 </ul>
+<h3 id="清除已经生成的文件"><a href="#清除已经生成的文件" class="headerlink" title="清除已经生成的文件"></a>清除已经生成的文件</h3><p><code>hexo clean</code></p>
+<h3 id="列出当前博客的信息"><a href="#列出当前博客的信息" class="headerlink" title="列出当前博客的信息"></a>列出当前博客的信息</h3><p><code>hexo list</code></p>
+<p>ps: 以上内容参考自 <a href="https://hexo.io/docs/commands" target="_blank" rel="noopener">hexo 官网</a>, 这些命令也可以通过 <code>hexo --help</code> 获取到.</p>
 <h2 id="站点配置"><a href="#站点配置" class="headerlink" title="站点配置"></a>站点配置</h2><h3 id="站点基础信息"><a href="#站点基础信息" class="headerlink" title="站点基础信息"></a>站点基础信息</h3><p>打开项目根目录下的 <code>_config.yml</code> 文件, 找到 <code># Site</code> 并修改为以下内容</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">圈圈的随手笔记</span>                          <span class="comment"># 博客名字</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">路漫漫其修远兮,</span> <span class="string">吾将上下而求索</span>         <span class="comment"># 你的格言</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">技术学习,</span> <span class="string">读书笔记,</span> <span class="string">生活感悟~</span>      <span class="comment"># 博客描述</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">前端,</span> <span class="string">JavaScript,</span> <span class="string">Node,</span> <span class="string">全栈,</span> <span class="string">读书</span>  <span class="comment"># 博客关键字</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">圈圈的圈</span>                             <span class="comment"># 你的名字</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span>                             <span class="comment"># 博客语言 - 这个是中文</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">''</span>                                <span class="comment"># 时区, 默认是当地时区</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="安装-next-主题"><a href="#安装-next-主题" class="headerlink" title="安装 next 主题"></a>安装 next 主题</h2><p>项目目录下的 themes 目录下存放的就是博客的主题文件, 默认是 <code>landscape</code> 主题看上去也挺简洁但是我不喜欢</p>
-<h2 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h2>
+<h2 id="安装-next-主题"><a href="#安装-next-主题" class="headerlink" title="安装 next 主题"></a>安装 next 主题</h2><p>项目目录下的 themes 目录下存放的就是博客的主题文件, 默认是 <code>landscape</code> 主题看上去也挺简洁但是我不喜欢, 那就改呗~</p>
+<ul>
+<li>首先, 在项目目录下执行 <code>git clone https://github.com/theme-next/hexo-theme-next.git themes/next</code> 克隆 next 主题到 themes 目录下</li>
+<li>其次, 修改 <code>_config.yml</code> 文件</li>
+<li>最后, 执行 <code>hexo s</code> 启动文章预览服务</li>
+</ul>
+<p>访问 <a href="http://localhost:4000/" target="_blank" rel="noopener">localhost:4000</a><br><img src="http://handle-note-img.niubishanshan.top/2020-02-06-03-05-15.png" alt="2020-02-06-03-05-15"></p>
+<p>虽然是能用了, 但是也没有很好看呀… 😂</p>
+
       
     </div>
 
@@ -547,118 +557,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://note.niubishanshan.top/2020/02/04/basic-js/parseInt-vs-Math-floor/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="圈圈的圈">
-      <meta itemprop="description" content="技术学习, 读书笔记, 生活感悟~">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="圈圈的随手笔记">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/02/04/basic-js/parseInt-vs-Math-floor/" class="post-title-link" itemprop="url">parseInt vs Math.floor</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-02-04 01:20:31 / 修改时间：23:10:27" itemprop="dateCreated datePublished" datetime="2020-02-04T01:20:31+08:00">2020-02-04</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
-                    <span itemprop="name">JavaScript</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <blockquote>
-<p>parseInt 和 Math.floor 都可以实现取整, 但是处理的方式存在差别</p>
-</blockquote>
-<h2 id="parseInt"><a href="#parseInt" class="headerlink" title="parseInt"></a>parseInt</h2><p>parseInt(string, radix) 将一个字符串 string 转换为 radix 进制的整数, radix 为介于 2 - 36 之间的整数</p>
-<p>其中</p>
-<p>string: 是要被解析的字符串, 如果传入的值不是一个字符串则会将其转化成字符串(toString 方法), 字符串开头结尾的空白字符会被忽略</p>
-<p>radix: 一个介于 2 - 36 的整数, 表示的是上述字符串的基数. 默认值是 10, 如果传入的 radix 小于 2 或者大于 36 则返回 NaN</p>
-<ul>
-<li>可以处理数字(调用数字的 toString 方法将其转化成字符串)<ul>
-<li>parseInt(1.1) -&gt; 1</li>
-<li>parseInt(1.9) -&gt; 1</li>
-<li>parseInt(0.9) -&gt; 0</li>
-<li>parseInt(-1.9) -&gt; -1</li>
-</ul>
-</li>
-<li>可以处理 <font color="red">数字开头的字符串</font><ul>
-<li>parseInt(‘-1’) -&gt; -1</li>
-<li>parseInt(‘10px’) -&gt; 10</li>
-<li>…</li>
-</ul>
-</li>
-<li>可以把 2 - 36 进制的数转为 10 进制<ul>
-<li>parseInt(11, 2) -&gt; 3</li>
-<li>parseInt(11, 8) -&gt; 9</li>
-<li>parseInt(11, 10) -&gt; 11</li>
-<li>parseInt(11, 16) -&gt; 17</li>
-<li>parseInt(11, 36) -&gt; 37</li>
-<li>…</li>
-</ul>
-</li>
-</ul>
-<h2 id="Math-floor"><a href="#Math-floor" class="headerlink" title="Math.floor"></a>Math.floor</h2><p>Math.floor(x) ===  向下取整, 返回小于或者等于给定数字的最大整数</p>
-<p>其中 x 是需要解析的数字</p>
-<ul>
-<li>Math.floor(1.2) -&gt; 1</li>
-<li>Math.floor(1.9) -&gt; 1</li>
-<li><font color="red">Math.floor(-1.2) -&gt; -2</font> 真正的向下取整</li>
-<li>Math.floor(‘1.9’) -&gt; 1 也可以处理字符串(不建议用)</li>
-</ul>
-<h2 id="parseFloat"><a href="#parseFloat" class="headerlink" title="parseFloat"></a>parseFloat</h2><p>parseFloat(x) 函数可解析一个字符串, 并返回一个浮点数</p>
-<p>其中 x 是需要解析的字符串</p>
-<p>parseFloat 将它的字符串参数解析成为浮点数并返回. 如果在解析过程中遇到了正负号 (+ 或 -) 数字 (0-9) 小数点, 或者科学记数法中的指数 (e 或 E) 以外的字符, 则它会忽略该字符以及之后的所有字符, 返回当前已经解析到的浮点数. 同时参数字符串首位的空白符会被忽略</p>
-<p>PS: 如果字符串的第一个字符不能被转换为数字, 那么 parseFloat() 会返回 NaN.</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://note.niubishanshan.top/2020/02/04/basic-js/9%20%E7%A7%8D%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -764,6 +662,118 @@
 <h2 id="方法八-使用-reduce-原理同方法一"><a href="#方法八-使用-reduce-原理同方法一" class="headerlink" title="方法八, 使用 reduce 原理同方法一"></a>方法八, 使用 reduce 原理同方法一</h2><p>本方法代码<a href="https://github.com/luoquanquan/learn-fe/commit/4b314b641eeaa0da4ae0ccf6ba1bbfff96bf4852" target="_blank" rel="noopener">地址</a></p>
 <h2 id="方法九-利用-Set-值不能重复的特性实现数组的去重"><a href="#方法九-利用-Set-值不能重复的特性实现数组的去重" class="headerlink" title="方法九, 利用 Set 值不能重复的特性实现数组的去重"></a>方法九, 利用 Set 值不能重复的特性实现数组的去重</h2><p>过于简单, 不再赘述</p>
 <p>本方法代码<a href="https://github.com/luoquanquan/learn-fe/commit/29526d14c6e7a27315b6d4bdb1cc457f9144cf2c" target="_blank" rel="noopener">地址</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://note.niubishanshan.top/2020/02/04/basic-js/parseInt-vs-Math-floor/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="圈圈的圈">
+      <meta itemprop="description" content="技术学习, 读书笔记, 生活感悟~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="圈圈的随手笔记">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/02/04/basic-js/parseInt-vs-Math-floor/" class="post-title-link" itemprop="url">parseInt vs Math.floor</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-02-04 01:20:31 / 修改时间：23:10:27" itemprop="dateCreated datePublished" datetime="2020-02-04T01:20:31+08:00">2020-02-04</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>parseInt 和 Math.floor 都可以实现取整, 但是处理的方式存在差别</p>
+</blockquote>
+<h2 id="parseInt"><a href="#parseInt" class="headerlink" title="parseInt"></a>parseInt</h2><p>parseInt(string, radix) 将一个字符串 string 转换为 radix 进制的整数, radix 为介于 2 - 36 之间的整数</p>
+<p>其中</p>
+<p>string: 是要被解析的字符串, 如果传入的值不是一个字符串则会将其转化成字符串(toString 方法), 字符串开头结尾的空白字符会被忽略</p>
+<p>radix: 一个介于 2 - 36 的整数, 表示的是上述字符串的基数. 默认值是 10, 如果传入的 radix 小于 2 或者大于 36 则返回 NaN</p>
+<ul>
+<li>可以处理数字(调用数字的 toString 方法将其转化成字符串)<ul>
+<li>parseInt(1.1) -&gt; 1</li>
+<li>parseInt(1.9) -&gt; 1</li>
+<li>parseInt(0.9) -&gt; 0</li>
+<li>parseInt(-1.9) -&gt; -1</li>
+</ul>
+</li>
+<li>可以处理 <font color="red">数字开头的字符串</font><ul>
+<li>parseInt(‘-1’) -&gt; -1</li>
+<li>parseInt(‘10px’) -&gt; 10</li>
+<li>…</li>
+</ul>
+</li>
+<li>可以把 2 - 36 进制的数转为 10 进制<ul>
+<li>parseInt(11, 2) -&gt; 3</li>
+<li>parseInt(11, 8) -&gt; 9</li>
+<li>parseInt(11, 10) -&gt; 11</li>
+<li>parseInt(11, 16) -&gt; 17</li>
+<li>parseInt(11, 36) -&gt; 37</li>
+<li>…</li>
+</ul>
+</li>
+</ul>
+<h2 id="Math-floor"><a href="#Math-floor" class="headerlink" title="Math.floor"></a>Math.floor</h2><p>Math.floor(x) ===  向下取整, 返回小于或者等于给定数字的最大整数</p>
+<p>其中 x 是需要解析的数字</p>
+<ul>
+<li>Math.floor(1.2) -&gt; 1</li>
+<li>Math.floor(1.9) -&gt; 1</li>
+<li><font color="red">Math.floor(-1.2) -&gt; -2</font> 真正的向下取整</li>
+<li>Math.floor(‘1.9’) -&gt; 1 也可以处理字符串(不建议用)</li>
+</ul>
+<h2 id="parseFloat"><a href="#parseFloat" class="headerlink" title="parseFloat"></a>parseFloat</h2><p>parseFloat(x) 函数可解析一个字符串, 并返回一个浮点数</p>
+<p>其中 x 是需要解析的字符串</p>
+<p>parseFloat 将它的字符串参数解析成为浮点数并返回. 如果在解析过程中遇到了正负号 (+ 或 -) 数字 (0-9) 小数点, 或者科学记数法中的指数 (e 或 E) 以外的字符, 则它会忽略该字符以及之后的所有字符, 返回当前已经解析到的浮点数. 同时参数字符串首位的空白符会被忽略</p>
+<p>PS: 如果字符串的第一个字符不能被转换为数字, 那么 parseFloat() 会返回 NaN.</p>
 
       
     </div>
