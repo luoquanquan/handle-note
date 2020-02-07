@@ -154,6 +154,59 @@ search:
 ```
 - 在 **主题配置文件** 中找到 `Local search`, 将 `enable` 设置为 `true`
 
+### 设置网站的 favicon
+
+把想要设置为 `favicon` 的图片放到 `themes/next/source/images`, 然后在 **主题配置文件** 中找到 `favicon` 一口气全给他改了
+```yml
+favicon:
+  small: /images/favicon.png
+  medium: /images/favicon.png
+  apple_touch_icon: /images/favicon.png
+  safari_pinned_tab: /images/logo.svg
+  #android_manifest: /images/manifest.json
+  #ms_browserconfig: /images/browserconfig.xml
+```
+其中, `/images/favicon.png` 就是你要设置为 `favicon` 的图片.
+
+### 自定义文字大小 & 颜色
+
+```yml
+<font color="red">红色的文字</font>
+
+<font size=60>大文字比你大</font>
+
+<font size=5 color="#FF0000">小文字比你小, 但是比你有营养</font>
+
+<center>我可以居中</center>
+```
+
+<font color="red">红色的文字</font>
+
+<font size=60>大文字比你大</font>
+
+<font size=5 color="#FF0000">小文字比你小, 但是比你有营养</font>
+
+<center>我可以居中</center>
+
+### 修改超链接文本样式
+
+在 `themes/next/source/css/_common/components/post/post.styl` 样式文件末尾添加:
+
+```css
+.post-body p a {
+  color: #0593d3;
+  border-bottom: none;
+  border-bottom: 1px solid #0593d3;
+  &:hover {
+    color: #fc6423;
+    border-bottom: none;
+    border-bottom: 1px solid #fc6423;
+  }
+}
+```
+
+
+
 ## 参考资料
 
 - [Hexo的Next主题详细配置](https://www.jianshu.com/p/3a05351a37dc)
