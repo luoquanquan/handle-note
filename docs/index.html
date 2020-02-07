@@ -213,6 +213,157 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://note.niubishanshan.top/2020/02/06/hexo-usage/%E7%BE%8E%E5%8C%96-next-%E4%B8%BB%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="圈圈的圈">
+      <meta itemprop="description" content="技术学习, 读书笔记, 生活感悟~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="圈圈的随手笔记">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/02/06/hexo-usage/%E7%BE%8E%E5%8C%96-next-%E4%B8%BB%E9%A2%98/" class="post-title-link" itemprop="url">美化 next 主题</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-06 21:50:31" itemprop="dateCreated datePublished" datetime="2020-02-06T21:50:31+08:00">2020-02-06</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-02-08 00:08:27" itemprop="dateModified" datetime="2020-02-08T00:08:27+08:00">2020-02-08</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Blog/" itemprop="url" rel="index">
+                    <span itemprop="name">Blog</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="自己-fork-一份-next-项目-作为博客项目的-sub-moudle"><a href="#自己-fork-一份-next-项目-作为博客项目的-sub-moudle" class="headerlink" title="自己 fork 一份 next 项目, 作为博客项目的 sub-moudle"></a>自己 fork 一份 next 项目, 作为博客项目的 sub-moudle</h2><h3 id="初始化步骤"><a href="#初始化步骤" class="headerlink" title="初始化步骤"></a>初始化步骤</h3><ul>
+<li>fork 官方的 <code>https://github.com/theme-next/hexo-theme-next</code> 并更名为 <code>quanquan-hexo-theme-next</code></li>
+<li>清空 <code>themes</code> 目录下的所有主题文件</li>
+<li>执行 <code>git submodule add https://github.com/luoquanquan/quanquan-hexo-theme-next.git themes/next</code> 将 <code>fork</code> 来的 next 主题项目作为 <code>submodule</code> 添加到博客项目下</li>
+<li>此时执行 <code>hexo s</code> 就可以看到 next 主题的页面啦</li>
+</ul>
+<h3 id="将主题项目作为子模块的目的"><a href="#将主题项目作为子模块的目的" class="headerlink" title="将主题项目作为子模块的目的"></a>将主题项目作为子模块的目的</h3><p>直接 clone 三方的主题, 可以默认直接用, 但是如果想要基于其进行配置就 gg 了, 之前文章中提到过原生的 next 并不是很好看. 我们要修改主题的配置, 注定要修改主题项目的代码, 但是对于三方的主题项目肯定没有提交的权限, 所以只能 fork 一份自己维护. 可以保存自己的配置实现跨多端的文档编写.</p>
+<h3 id="其他终端导入相同配置的主题文件"><a href="#其他终端导入相同配置的主题文件" class="headerlink" title="其他终端导入相同配置的主题文件"></a>其他终端导入相同配置的主题文件</h3><p>使用 git clone 是不会克隆 submodule 的, 克隆主的博客项目后还需要执行</p>
+<ul>
+<li>git submodule init 初始化本地配置文件</li>
+<li>git submodule update 从该项目中抓取所有数据并检出父项目中列出的合适的提交</li>
+</ul>
+<p>也可在 clone 使用 git clone –recursive 命令, git 就会自动初始化并更新仓库中的每一个子模块</p>
+<h3 id="获取主题项目的更新"><a href="#获取主题项目的更新" class="headerlink" title="获取主题项目的更新"></a>获取主题项目的更新</h3><p>若子分支仓库中有未同步的更新, 可通过 <code>git submodule update --remote --rebase</code> 来同步最新的内容. 之后便可以打开编辑器在子模块上工作修改代码了.</p>
+<p>主题作者发布了新的主题功能或者修复了 bug, 我们想同步到自己的自定义主题当中. 因为我们的自定义主题是从原主题中 fork 出来的, 可以通过 <code>git remote add source https://github.com/theme-next/hexo-theme-next</code> 命令将源主题仓库添加为子模块的 一个新的 source 仓库. 然后运行 <code>git fetch</code> 拉取修改后, 便可以通过 <code>git merge origin/master</code> 来同步源主题的更新了</p>
+<h2 id="自定义-next-主题配置"><a href="#自定义-next-主题配置" class="headerlink" title="自定义 next 主题配置"></a>自定义 next 主题配置</h2><p>一个 hexo 博客项目中存在两个 <code>_config.yml</code> 配置文件, 项目更目录的 <code>_config.yml</code> 文件称为 <strong>站点配置文件</strong>, 主题根目录下的 <code>_config.yml</code> 文件称为 <strong>主题配置文件</strong></p>
+<h3 id="菜单设置"><a href="#菜单设置" class="headerlink" title="菜单设置"></a>菜单设置</h3><blockquote>
+<p>菜单包括: home tags categories archives about schedule sitemap commonweal</p>
+</blockquote>
+<p>默认 next 开启的菜单只有 home 和 archives 两个, 若要打开更多的菜单, 打开 <strong>主题配置文件</strong> 找到 <code># Menu Settings</code></p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">home</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="string">/tags/</span> <span class="string">||</span> <span class="string">tags</span></span><br><span class="line">  <span class="attr">categories:</span> <span class="string">/categories/</span> <span class="string">||</span> <span class="string">th</span></span><br><span class="line">  <span class="attr">archives:</span> <span class="string">/archives/</span> <span class="string">||</span> <span class="string">archive</span></span><br><span class="line">  <span class="attr">about:</span> <span class="string">/about/</span> <span class="string">||</span> <span class="string">user</span></span><br><span class="line">  <span class="comment">#schedule: /schedule/ || calendar</span></span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || sitemap</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || heartbeat</span></span><br></pre></td></tr></table></figure>
+
+<p>按照如上的方式修改即可.</p>
+<p>解释<code>home: / || home</code> 其中 <code>||</code>左边的 <code>/</code> 表示的是当前 menu 对应的路径, 右边的 home 表示的是 icon, 这个的制作和修改参考<a href="https://fontawesome.com/icons" target="_blank" rel="noopener">fontawesome</a></p>
+<h3 id="next-主题的样式设置"><a href="#next-主题的样式设置" class="headerlink" title="next 主题的样式设置"></a>next 主题的样式设置</h3><p>next 主题提供了四种样式, 总体来说大同小异, 修改的方式是在 <strong>主题配置文件</strong> 中找到<code># Scheme Settings</code></p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Schemes</span></span><br><span class="line"><span class="comment"># scheme: Muse</span></span><br><span class="line"><span class="comment">#scheme: Mist</span></span><br><span class="line"><span class="comment"># scheme: Pisces</span></span><br><span class="line"><span class="attr">scheme:</span> <span class="string">Gemini</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="侧边栏调整"><a href="#侧边栏调整" class="headerlink" title="侧边栏调整"></a>侧边栏调整</h3><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">sidebar:</span></span><br><span class="line"><span class="comment"># Sidebar Position - 侧栏位置（只对Pisces | Gemini两种风格有效）</span></span><br><span class="line">  <span class="attr">position:</span> <span class="string">left</span>        <span class="string">//靠左放置</span></span><br><span class="line">  <span class="comment">#position: right      //靠右放置</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Sidebar Display - 侧栏显示时机（只对Muse | Mist两种风格有效）</span></span><br><span class="line">  <span class="comment">#display: post        //默认行为，在文章页面（拥有目录列表）时显示</span></span><br><span class="line">  <span class="attr">display:</span> <span class="string">always</span>       <span class="string">//在所有页面中都显示</span></span><br><span class="line">  <span class="comment">#display: hide        //在所有页面中都隐藏（可以手动展开）</span></span><br><span class="line">  <span class="comment">#display: remove      //完全移除</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">offset:</span> <span class="number">12</span>            <span class="string">//文章间距（只对Pisces</span> <span class="string">|</span> <span class="string">Gemini两种风格有效）</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">b2t:</span> <span class="literal">false</span>            <span class="string">//返回顶部按钮（只对Pisces</span> <span class="string">|</span> <span class="string">Gemini两种风格有效）</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">scrollpercent:</span> <span class="literal">true</span>   <span class="string">//返回顶部按钮的百分比</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="设置博客头像"><a href="#设置博客头像" class="headerlink" title="设置博客头像"></a>设置博客头像</h3><p>在 <strong>主题配置文件</strong> 中找到 <code># Sidebar Avatar</code> 字段</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">avatar:</span></span><br><span class="line">  <span class="comment"># Replace the default image and set the url here.</span></span><br><span class="line">  <span class="attr">url:</span> <span class="string">/images/avatar.jpeg</span></span><br></pre></td></tr></table></figure>
+
+<p>url 对应的就是头像的路径, 只要把图片放到主题项目下的 <code>source/images</code> 目录下, hexo 就能默认就能找到</p>
+<h3 id="添加分类模块"><a href="#添加分类模块" class="headerlink" title="添加分类模块"></a>添加分类模块</h3><ul>
+<li>新建一个页面 <code>hexo new page categories</code>, 会在 <code>source</code> 目录下创建 <code>categorcies/index.md</code> 该文件内标注了文件 <code>title</code> 为 <code>categorcies</code>, 将其修改为 <code>分类</code></li>
+<li>打开 <strong>主题配置文件</strong> 找到 <code>menu</code> 删除 <code>categories: /categories/ || th</code> 前的注释</li>
+<li>在文章顶部的文章头信息区域添加 <code>categories</code> 并设置为要将文章设置的分类名, <code>hexo</code> 就会自动把文章划分到指定的分类中</li>
+</ul>
+<h3 id="添加标签模块"><a href="#添加标签模块" class="headerlink" title="添加标签模块"></a>添加标签模块</h3><ul>
+<li>新建一个页面 <code>hexo new page tags</code>, 会在 <code>source</code> 目录下创建 <code>tags/index.md</code> 该文件内标注了文件 <code>title</code> 为 <code>tags</code>, 将其修改为 <code>标签</code></li>
+<li>打开 <strong>主题配置文件</strong> 找到 <code>menu</code> 删除 <code>tags: /tags/ || tags</code> 前的注释</li>
+<li>在文章顶部的文章头信息区域添加 <code>tags</code> 并设置为要将文章设置的分类名, <code>hexo</code> 就会自动把文章划分到指定的分类中</li>
+</ul>
+<p>eg:</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 美化 next 主题</span><br><span class="line">date: 2020-02-06 21:50:31</span><br><span class="line">categories:</span><br><span class="line"><span class="bullet">  - </span>Blog</span><br><span class="line">tags:</span><br><span class="line"><span class="bullet">  - </span>hexo</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"><span class="section">## 自己 fork 一份 next 项目, 作为博客项目的 sub-moudle</span></span><br></pre></td></tr></table></figure>
+
+<p><code>hexo</code> 会自动创建 <code>Blog</code> 分类和 <code>hexo</code> 标签, 并为当前的文章添加两个属性</p>
+<h3 id="添加关于模块"><a href="#添加关于模块" class="headerlink" title="添加关于模块"></a>添加关于模块</h3><ul>
+<li>新建一个页面 <code>hexo new page about</code>, 会在 <code>source</code> 目录下创建 <code>about/index.md</code> 该文件就是你写简历的地方啦~</li>
+<li>打开 <strong>主题配置文件</strong> 找到 <code>menu</code> 删除 <code>about: /about/ || user</code> 前的注释</li>
+</ul>
+<h3 id="添加搜索功能"><a href="#添加搜索功能" class="headerlink" title="添加搜索功能"></a>添加搜索功能</h3><ul>
+<li>安装 <a href="https://www.npmjs.com/package/hexo-generator-searchdb" target="_blank" rel="noopener">hexo-generator-searchdb</a> 插件 <code>npm i hexo-generator-searchdb</code></li>
+<li>在 <strong>站点配置文件</strong> 的最下方添加<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 搜索</span></span><br><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">format:</span> <span class="string">html</span></span><br><span class="line">  <span class="attr">limit:</span> <span class="number">10000</span></span><br></pre></td></tr></table></figure></li>
+<li>在 <strong>主题配置文件</strong> 中找到 <code>Local search</code>, 将 <code>enable</code> 设置为 <code>true</code></li>
+</ul>
+<h3 id="设置网站的-favicon"><a href="#设置网站的-favicon" class="headerlink" title="设置网站的 favicon"></a>设置网站的 favicon</h3><p>把想要设置为 <code>favicon</code> 的图片放到 <code>themes/next/source/images</code>, 然后在 <strong>主题配置文件</strong> 中找到 <code>favicon</code> 一口气全给他改了</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">favicon:</span></span><br><span class="line">  <span class="attr">small:</span> <span class="string">/images/favicon.png</span></span><br><span class="line">  <span class="attr">medium:</span> <span class="string">/images/favicon.png</span></span><br><span class="line">  <span class="attr">apple_touch_icon:</span> <span class="string">/images/favicon.png</span></span><br><span class="line">  <span class="attr">safari_pinned_tab:</span> <span class="string">/images/logo.svg</span></span><br><span class="line">  <span class="comment">#android_manifest: /images/manifest.json</span></span><br><span class="line">  <span class="comment">#ms_browserconfig: /images/browserconfig.xml</span></span><br></pre></td></tr></table></figure>
+<p>其中, <code>/images/favicon.png</code> 就是你要设置为 <code>favicon</code> 的图片.</p>
+<h3 id="自定义文字大小-amp-颜色"><a href="#自定义文字大小-amp-颜色" class="headerlink" title="自定义文字大小 &amp; 颜色"></a>自定义文字大小 &amp; 颜色</h3><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&lt;font</span> <span class="string">color="red"&gt;红色的文字&lt;/font&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="string">&lt;font</span> <span class="string">size=60&gt;大文字比你大&lt;/font&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="string">&lt;font</span> <span class="string">size=5</span> <span class="string">color="#FF0000"&gt;小文字比你小,</span> <span class="string">但是比你有营养&lt;/font&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="string">&lt;center&gt;我可以居中&lt;/center&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><font color="red">红色的文字</font></p>
+<p><font size=60>大文字比你大</font></p>
+<p><font size=5 color="#FF0000">小文字比你小, 但是比你有营养</font></p>
+<center>我可以居中</center>
+
+<h3 id="修改超链接文本样式"><a href="#修改超链接文本样式" class="headerlink" title="修改超链接文本样式"></a>修改超链接文本样式</h3><p>在 <code>themes/next/source/css/_common/components/post/post.styl</code> 样式文件末尾添加:</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.post-body</span> <span class="selector-tag">p</span> <span class="selector-tag">a</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#0593d3</span>;</span><br><span class="line">  <span class="attribute">border-bottom</span>: none;</span><br><span class="line">  <span class="attribute">border-bottom</span>: <span class="number">1px</span> solid <span class="number">#0593d3</span>;</span><br><span class="line">  &amp;:hover &#123;</span><br><span class="line">    <span class="selector-tag">color</span>: <span class="selector-id">#fc6423</span>;</span><br><span class="line">    <span class="selector-tag">border-bottom</span>: <span class="selector-tag">none</span>;</span><br><span class="line">    <span class="selector-tag">border-bottom</span>: 1<span class="selector-tag">px</span> <span class="selector-tag">solid</span> <span class="selector-id">#fc6423</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
+<li><a href="https://www.jianshu.com/p/3a05351a37dc" target="_blank" rel="noopener">Hexo的Next主题详细配置</a></li>
+<li><a href="https://juejin.im/post/5c2e22fcf265da615d72c596" target="_blank" rel="noopener">在 hexo 中使用 git submodules 管理主题</a></li>
+<li><a href="https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97" target="_blank" rel="noopener">Git 工具 - 子模块</a></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://note.niubishanshan.top/2020/02/06/hexo-usage/%E7%AE%80%E5%8D%95%E5%86%99%E4%BD%9C-%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1186,212 +1337,6 @@
   
   
 
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://note.niubishanshan.top/2020/01/30/redis/Redis%20%E5%9F%BA%E7%A1%80/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="圈圈的圈">
-      <meta itemprop="description" content="技术学习, 读书笔记, 生活感悟~">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="圈圈的随手笔记">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/30/redis/Redis%20%E5%9F%BA%E7%A1%80/" class="post-title-link" itemprop="url">Redis 基础</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-01-30 20:50:31" itemprop="dateCreated datePublished" datetime="2020-01-30T20:50:31+08:00">2020-01-30</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-01-31 00:56:49" itemprop="dateModified" datetime="2020-01-31T00:56:49+08:00">2020-01-31</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%90%8E%E7%AB%AF/" itemprop="url" rel="index">
-                    <span itemprop="name">后端</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install redis</span><br></pre></td></tr></table></figure>
-
-<h2 id="配置文件路径"><a href="#配置文件路径" class="headerlink" title="配置文件路径"></a>配置文件路径</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/etc/redis.conf</span><br></pre></td></tr></table></figure>
-
-<h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 前台启动</span></span><br><span class="line">redis-server</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 后台启动</span></span><br><span class="line">redis-server &amp;</span><br></pre></td></tr></table></figure>
-
-<h2 id="客户端-cli"><a href="#客户端-cli" class="headerlink" title="客户端 cli"></a>客户端 cli</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">redis-cli</span><br></pre></td></tr></table></figure>
-
-<h2 id="redis-数据类型"><a href="#redis-数据类型" class="headerlink" title="redis 数据类型"></a>redis 数据类型</h2><ul>
-<li>string 字符串 <code>get set getrange incr decr expire</code></li>
-<li>hash 对象 <code>hset hget hdel hmget hgetall</code></li>
-<li>列表 数组 <code>lpush lpop lrange lrem lindex rpush rpop ...</code></li>
-<li>set 集合<ul>
-<li>无序集合 <code>sadd smembers srem sunion sinter sdiff</code></li>
-<li>有序集合 <code>zadd zrange withscores</code></li>
-</ul>
-</li>
-</ul>
-<h2 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h2><h3 id="通用"><a href="#通用" class="headerlink" title="通用"></a>通用</h3><ul>
-<li><p>查看 redis 中的所有 keys</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">keys *</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>删除一条记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">del a</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看记录值的类型</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">type a</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>给某条记录设置有效时间</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">expire a 5</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看某条记录的有效时间</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ttl a</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h3 id="字符串相关"><a href="#字符串相关" class="headerlink" title="字符串相关"></a>字符串相关</h3><ul>
-<li><p>设置一条记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set a 1</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>获取记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">get a</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>让某条记录自增</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">incr a</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>让某条记录自减</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">decr a</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>获取某条记录指定范围内的值</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">set name quanquan</span><br><span class="line">getrange name 0 1 # qu -&gt; 包前也包后</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h3 id="hash-相关"><a href="#hash-相关" class="headerlink" title="hash 相关"></a>hash 相关</h3><ul>
-<li><p>创建一条记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hset user name quanquan</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>获取记录的属性</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hget user name</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>设置记录的另一条属性</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hset user sex male</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>获取记录的多条属性</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hmget user sex name</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>获取记录的所有内容</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hgetall user</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>删除记录的某个属性字段</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hdel user name</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h3 id="列表相关"><a href="#列表相关" class="headerlink" title="列表相关"></a>列表相关</h3><ul>
-<li><p>创建一条记录(向左 push)</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lpush arr 1 2 3 4 5</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看记录范围内的值</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lrange arr 0 -1</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>创建一条记录(向右 push)</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpush arr2 1 2 3 4 5</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看记录范围内的值</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lrange arr2 0 -1</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>从数组头部删除一条记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lpop arr</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>从数组尾部删除一条记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpop arr</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>删除指定的记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">lrem arr 3 3</span><br><span class="line"><span class="meta">#</span><span class="bash"> 其中, arr 是指定要操作的数组</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 第一个 3 指的是数组遍历数组中的三个元素范围</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 第二个 3 指的是从数组中找到数字 3 并移除他</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>取出数组中指定的项</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> index 是从 0 开始的</span></span><br><span class="line">lindex arr 1</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h3 id="集合相关"><a href="#集合相关" class="headerlink" title="集合相关"></a>集合相关</h3><h4 id="无序集合"><a href="#无序集合" class="headerlink" title="无序集合"></a>无序集合</h4><ul>
-<li><p>创建一条记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sadd myset 1 2 3 4</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>列出所有的记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">smembers myset</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>删除集合中的某一项</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">srem myset 1</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>取两个 set 的并集</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sunion myset myset1</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>取两个 set 的交集</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sinter myset myset1</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>取两个 set 的差集</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sdiff myset myset1</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h3 id="有序集合"><a href="#有序集合" class="headerlink" title="有序集合"></a>有序集合</h3><ul>
-<li><p>创建记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">zadd my 1 100</span><br><span class="line">zadd my 2 200</span><br><span class="line">zadd my 1 101</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看指定范围的记录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">zrange my 0 -1</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 1) <span class="string">"100"</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 2) <span class="string">"101"</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 3) <span class="string">"200"</span></span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
   </div>
 
   
@@ -1464,7 +1409,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-count">15</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
