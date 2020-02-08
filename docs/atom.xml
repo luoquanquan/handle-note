@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://note.niubishanshan.top/"/>
-  <updated>2020-02-08T06:54:05.424Z</updated>
+  <updated>2020-02-08T09:25:24.725Z</updated>
   <id>http://note.niubishanshan.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://note.niubishanshan.top/2020/02/06/hexo-usage/%E7%BE%8E%E5%8C%96-next-%E4%B8%BB%E9%A2%98/"/>
     <id>http://note.niubishanshan.top/2020/02/06/hexo-usage/%E7%BE%8E%E5%8C%96-next-%E4%B8%BB%E9%A2%98/</id>
     <published>2020-02-06T13:50:31.000Z</published>
-    <updated>2020-02-08T06:54:05.424Z</updated>
+    <updated>2020-02-08T09:25:24.725Z</updated>
     
     <summary type="html">
     
@@ -159,6 +159,36 @@
   </entry>
   
   <entry>
+    <title>9 种方式实现数组去重</title>
+    <link href="http://note.niubishanshan.top/2020/02/04/basic-js/9%20%E7%A7%8D%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/"/>
+    <id>http://note.niubishanshan.top/2020/02/04/basic-js/9%20%E7%A7%8D%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/</id>
+    <published>2020-02-03T17:20:31.000Z</published>
+    <updated>2020-02-04T13:18:27.824Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;业务需求跟的太久了, 回首技术真的落后好多. 即将而立之年, 重拾基础. 不知该感到荣幸还是有点酸楚&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;方法一-两层循环-通过标记判断是否更新结果数组&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://note.niubishanshan.top/categories/JavaScript/"/>
+    
+    
+      <category term="Array" scheme="http://note.niubishanshan.top/tags/Array/"/>
+    
+  </entry>
+  
+  <entry>
     <title>parseInt vs Math.floor</title>
     <link href="http://note.niubishanshan.top/2020/02/04/basic-js/parseInt-vs-Math-floor/"/>
     <id>http://note.niubishanshan.top/2020/02/04/basic-js/parseInt-vs-Math-floor/</id>
@@ -187,36 +217,6 @@
       <category term="Math" scheme="http://note.niubishanshan.top/tags/Math/"/>
     
       <category term="Number" scheme="http://note.niubishanshan.top/tags/Number/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>9 种方式实现数组去重</title>
-    <link href="http://note.niubishanshan.top/2020/02/04/basic-js/9%20%E7%A7%8D%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/"/>
-    <id>http://note.niubishanshan.top/2020/02/04/basic-js/9%20%E7%A7%8D%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/</id>
-    <published>2020-02-03T17:20:31.000Z</published>
-    <updated>2020-02-04T13:18:27.824Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;业务需求跟的太久了, 回首技术真的落后好多. 即将而立之年, 重拾基础. 不知该感到荣幸还是有点酸楚&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;方法一-两层循环-通过标记判断是否更新结果数组&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://note.niubishanshan.top/categories/JavaScript/"/>
-    
-    
-      <category term="Array" scheme="http://note.niubishanshan.top/tags/Array/"/>
     
   </entry>
   
