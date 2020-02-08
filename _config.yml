@@ -110,9 +110,5 @@ feed:
 #   type: git
 #   repository: https://github.com/luoquanquan/note.git
 #   branch: master
-# 搜索
 search:
-  path: search.xml
-  field: post
-  content: true
-  format: html
+  path: search.json
