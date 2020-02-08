@@ -205,10 +205,101 @@ favicon:
 }
 ```
 
+### 在右上角或者左上角实现fork me on github
 
+- 首先到[这里](http://tholman.com/github-corners/)或者[这里](https://github.blog/2008-12-19-github-ribbons/) 挑选自己喜欢的 fork me 样式, 并复制相关的代码
+- 然后粘贴刚才复制的代码到 `themes/next/layout/_layout.swig`文件中 (放在`<div class="headband"></div>`的下面), 并把 href 改为你的 github 地址
+
+eg:
+```html
+    <div class="headband"></div>
+    <a href="https://github.com/luoquanquan" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner">{% include '_partials/header/index.swig' %}</div>
+    </header>
+```
+
+### 添加 RSS
+
+#### 配置
+
+- 执行 `npm i hexo-generator-feed`
+- 打开 **站点配置文件** 并在文件 `Extensions` 下方添加如下代码
+```yml
+# RSS
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+```
+- 打开 **主题配置文件** 找到 `# Sidebar Settings` 下的 `# Social Links` 打开 `RSS: /atom.xml || rss` 前边的注释即可
+- 最后重新生成一次文章静态网站, 能发现新的网站中添加了 `atom.xml` 部署到网站到服务器
+- 通过浏览器访问博客网站, 社交链接的位置出现 `RSS` 说明配置成功
+![2020-02-08-15-16-51](http://handle-note-img.niubishanshan.top/2020-02-08-15-16-51.png)
+
+#### 使用
+
+- 打开一个 `rss reader` 的网站, 比如 [这个](https://feedreader.com/)
+- 注册一个账户, 进入网站
+- 点击 `Add a new feed` 按钮
+![2020-02-08-15-13-13](http://handle-note-img.niubishanshan.top/2020-02-08-15-13-13.png)
+- 点击配置步骤中加入的 `RSS` 按钮, 浏览器会跳转到一个 xml 文档的地址, 此时复制浏览器 url, 并粘贴到 `Address` 的输入框中
+![2020-02-08-15-18-43](http://handle-note-img.niubishanshan.top/2020-02-08-15-18-43.png)
+- 待阅读器识别到你的博客 title 的时候点击 `Add the feed` 即可
+- enjoy
+
+### 添加动态背景
+
+- 打开 **主题配置文件** 找到 `# Canvas-nest` 并修改, `canvas_nest` 的 `enable` 属性为 `true`
+- 找到 `canvas_nest` 和 `canvas_nest_nomobile` 两个字段, 打开两个字段前的注释, 也可以像我一样, 把两个 js 文件 copy 到项目目录下以提升稳定性
+- 重新打包 & 部署
+- enjoy
+
+### 博文压缩
+
+- 安装 gulp
+```bash
+npm install gulp -g
+npm install gulp-minify-css gulp-uglify-es gulp-htmlmin gulp-htmlclean gulp -D
+```
+- 创建 `gulpfile.js` 内容参考[这里](https://github.com/luoquanquan/handle-note/blob/master/gulpfile.js)
+- 修改 `npm script` 为 `"build": "hexo g && gulp"` 每次编译完成后都执行下 gulp 用于压缩文件
+- enjoy
+
+### 在网站底部加上访问量
+
+在 **项目配置文件** 中找到 `busuanzi_count` 将 enable 属性设置为 true 即可
+
+### 添加博文字数统计
+
+- 执行 `npm i hexo-symbols-count-time` 安装插件
+- 字数统计能力自动就激活了
+- enjoy
+
+### 修改文章访问路径
+
+默认的文章访问路径中包含了写作日期, 很不好. 打开 **站点配置文件** 修改 `permalink` 字段
+```yml
+permalink: :category/:title/
+```
+
+### 隐藏网页底部powered By Hexo / 强力驱动
+
+```yml
+powered:
+  # Hexo link (Powered by Hexo).
+  enable: false
+  # Version info of Hexo after Hexo link (vX.X.X).
+  version: false
+```
 
 ## 参考资料
 
+- [hexo的next主题个性化教程:打造炫酷网站](https://www.jianshu.com/p/f054333ac9e6)
 - [Hexo的Next主题详细配置](https://www.jianshu.com/p/3a05351a37dc)
 - [在 hexo 中使用 git submodules 管理主题](https://juejin.im/post/5c2e22fcf265da615d72c596)
 - [Git 工具 - 子模块](https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97)
