@@ -432,6 +432,33 @@
   </entry>
   
   <entry>
+    <title>查询指定端口号对应的任务</title>
+    <link href="http://note.niubishanshan.top/Tips/tips/%E6%9F%A5%E8%AF%A2%E6%8C%87%E5%AE%9A%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%AF%B9%E5%BA%94%E7%9A%84%E4%BB%BB%E5%8A%A1/"/>
+    <id>http://note.niubishanshan.top/Tips/tips/%E6%9F%A5%E8%AF%A2%E6%8C%87%E5%AE%9A%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%AF%B9%E5%BA%94%E7%9A%84%E4%BB%BB%E5%8A%A1/</id>
+    <published>2020-01-28T12:50:31.000Z</published>
+    <updated>2020-01-30T16:03:09.663Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;执行命令&quot;&gt;&lt;a href=&quot;#执行命令&quot; class=&quot;headerlink&quot; title=&quot;执行命令&quot;&gt;&lt;/a&gt;执行命令&lt;/h2&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Tips" scheme="http://note.niubishanshan.top/categories/Tips/"/>
+    
+    
+      <category term="Mac" scheme="http://note.niubishanshan.top/tags/Mac/"/>
+    
+  </entry>
+  
+  <entry>
     <title>数据库操作</title>
     <link href="http://note.niubishanshan.top/%E5%90%8E%E7%AB%AF/mongo/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/"/>
     <id>http://note.niubishanshan.top/%E5%90%8E%E7%AB%AF/mongo/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/</id>
@@ -459,33 +486,6 @@
       <category term="数据库" scheme="http://note.niubishanshan.top/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
       <category term="MongoDB" scheme="http://note.niubishanshan.top/tags/MongoDB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>查询指定端口号对应的任务</title>
-    <link href="http://note.niubishanshan.top/Tips/tips/%E6%9F%A5%E8%AF%A2%E6%8C%87%E5%AE%9A%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%AF%B9%E5%BA%94%E7%9A%84%E4%BB%BB%E5%8A%A1/"/>
-    <id>http://note.niubishanshan.top/Tips/tips/%E6%9F%A5%E8%AF%A2%E6%8C%87%E5%AE%9A%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%AF%B9%E5%BA%94%E7%9A%84%E4%BB%BB%E5%8A%A1/</id>
-    <published>2020-01-28T12:50:31.000Z</published>
-    <updated>2020-01-30T16:03:09.663Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;执行命令&quot;&gt;&lt;a href=&quot;#执行命令&quot; class=&quot;headerlink&quot; title=&quot;执行命令&quot;&gt;&lt;/a&gt;执行命令&lt;/h2&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Tips" scheme="http://note.niubishanshan.top/categories/Tips/"/>
-    
-    
-      <category term="Mac" scheme="http://note.niubishanshan.top/tags/Mac/"/>
     
   </entry>
   
