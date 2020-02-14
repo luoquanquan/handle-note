@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://note.niubishanshan.top/"/>
-  <updated>2020-02-13T16:21:13.911Z</updated>
+  <updated>2020-02-14T13:58:08.099Z</updated>
   <id>http://note.niubishanshan.top/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>归并排序</title>
+    <link href="http://note.niubishanshan.top/Blog/dataStructures-algorithms/NOTE/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/"/>
+    <id>http://note.niubishanshan.top/Blog/dataStructures-algorithms/NOTE/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/</id>
+    <published>2020-02-14T12:20:31.000Z</published>
+    <updated>2020-02-14T13:58:08.099Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h2&gt;&lt;p&gt;归并排序是一种分治算法, 其思想就是将原始数组切分成较小的数组, 直到每个数组只有一个元素. 接着将小数组归并成较大的数组,
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Blog" scheme="http://note.niubishanshan.top/categories/Blog/"/>
+    
+    
+      <category term="数据结构与算法" scheme="http://note.niubishanshan.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>快速排序</title>
     <link href="http://note.niubishanshan.top/Blog/dataStructures-algorithms/NOTE/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/"/>
     <id>http://note.niubishanshan.top/Blog/dataStructures-algorithms/NOTE/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/</id>
     <published>2020-02-13T15:20:31.000Z</published>
-    <updated>2020-02-13T16:21:13.911Z</updated>
+    <updated>2020-02-14T13:43:01.036Z</updated>
     
     <summary type="html">
     
@@ -102,7 +129,7 @@
     <link href="http://note.niubishanshan.top/Blog/dataStructures-algorithms/NOTE/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/"/>
     <id>http://note.niubishanshan.top/Blog/dataStructures-algorithms/NOTE/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</id>
     <published>2020-02-13T04:50:31.000Z</published>
-    <updated>2020-02-13T16:21:13.911Z</updated>
+    <updated>2020-02-14T13:42:35.422Z</updated>
     
     <summary type="html">
     
@@ -299,10 +326,10 @@
   
   <entry>
     <title>9 种方式实现数组去重</title>
-    <link href="http://note.niubishanshan.top/JavaScript/basic-js/9%20%E7%A7%8D%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/"/>
-    <id>http://note.niubishanshan.top/JavaScript/basic-js/9%20%E7%A7%8D%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/</id>
+    <link href="http://note.niubishanshan.top/JavaScript/dataStructures-algorithms/NOTE/9%20%E7%A7%8D%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/"/>
+    <id>http://note.niubishanshan.top/JavaScript/dataStructures-algorithms/NOTE/9%20%E7%A7%8D%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/</id>
     <published>2020-02-03T17:20:31.000Z</published>
-    <updated>2020-02-04T13:18:27.824Z</updated>
+    <updated>2020-02-14T03:00:57.689Z</updated>
     
     <summary type="html">
     
@@ -323,7 +350,7 @@
       <category term="JavaScript" scheme="http://note.niubishanshan.top/categories/JavaScript/"/>
     
     
-      <category term="Array" scheme="http://note.niubishanshan.top/tags/Array/"/>
+      <category term="数据结构与算法" scheme="http://note.niubishanshan.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
@@ -361,10 +388,10 @@
   
   <entry>
     <title>生成随机数</title>
-    <link href="http://note.niubishanshan.top/JavaScript/basic-js/%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E6%95%B0/"/>
-    <id>http://note.niubishanshan.top/JavaScript/basic-js/%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E6%95%B0/</id>
+    <link href="http://note.niubishanshan.top/JavaScript/dataStructures-algorithms/NOTE/%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E6%95%B0/"/>
+    <id>http://note.niubishanshan.top/JavaScript/dataStructures-algorithms/NOTE/%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E6%95%B0/</id>
     <published>2020-02-03T14:50:31.000Z</published>
-    <updated>2020-02-05T03:25:35.197Z</updated>
+    <updated>2020-02-14T03:01:18.799Z</updated>
     
     <summary type="html">
     
@@ -384,6 +411,8 @@
     
     
       <category term="Math" scheme="http://note.niubishanshan.top/tags/Math/"/>
+    
+      <category term="数据结构与算法" scheme="http://note.niubishanshan.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
       <category term="JavaScript" scheme="http://note.niubishanshan.top/tags/JavaScript/"/>
     
@@ -513,33 +542,6 @@
   </entry>
   
   <entry>
-    <title>查询指定端口号对应的任务</title>
-    <link href="http://note.niubishanshan.top/Tips/tips/%E6%9F%A5%E8%AF%A2%E6%8C%87%E5%AE%9A%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%AF%B9%E5%BA%94%E7%9A%84%E4%BB%BB%E5%8A%A1/"/>
-    <id>http://note.niubishanshan.top/Tips/tips/%E6%9F%A5%E8%AF%A2%E6%8C%87%E5%AE%9A%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%AF%B9%E5%BA%94%E7%9A%84%E4%BB%BB%E5%8A%A1/</id>
-    <published>2020-01-28T12:50:31.000Z</published>
-    <updated>2020-01-30T16:03:09.663Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;执行命令&quot;&gt;&lt;a href=&quot;#执行命令&quot; class=&quot;headerlink&quot; title=&quot;执行命令&quot;&gt;&lt;/a&gt;执行命令&lt;/h2&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Tips" scheme="http://note.niubishanshan.top/categories/Tips/"/>
-    
-    
-      <category term="Mac" scheme="http://note.niubishanshan.top/tags/Mac/"/>
-    
-  </entry>
-  
-  <entry>
     <title>数据库操作</title>
     <link href="http://note.niubishanshan.top/%E5%90%8E%E7%AB%AF/mongo/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/"/>
     <id>http://note.niubishanshan.top/%E5%90%8E%E7%AB%AF/mongo/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/</id>
@@ -571,11 +573,11 @@
   </entry>
   
   <entry>
-    <title>mongo 的安装和启动和连接</title>
-    <link href="http://note.niubishanshan.top/%E5%90%8E%E7%AB%AF/mongo/%E5%AE%89%E8%A3%85%E5%90%AF%E5%8A%A8%E5%92%8C%E9%93%BE%E6%8E%A5/"/>
-    <id>http://note.niubishanshan.top/%E5%90%8E%E7%AB%AF/mongo/%E5%AE%89%E8%A3%85%E5%90%AF%E5%8A%A8%E5%92%8C%E9%93%BE%E6%8E%A5/</id>
-    <published>2020-01-28T11:50:31.000Z</published>
-    <updated>2020-01-30T15:55:33.478Z</updated>
+    <title>查询指定端口号对应的任务</title>
+    <link href="http://note.niubishanshan.top/Tips/tips/%E6%9F%A5%E8%AF%A2%E6%8C%87%E5%AE%9A%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%AF%B9%E5%BA%94%E7%9A%84%E4%BB%BB%E5%8A%A1/"/>
+    <id>http://note.niubishanshan.top/Tips/tips/%E6%9F%A5%E8%AF%A2%E6%8C%87%E5%AE%9A%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%AF%B9%E5%BA%94%E7%9A%84%E4%BB%BB%E5%8A%A1/</id>
+    <published>2020-01-28T12:50:31.000Z</published>
+    <updated>2020-01-30T16:03:09.663Z</updated>
     
     <summary type="html">
     
@@ -583,19 +585,17 @@
       
         
         
-          &lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
+          &lt;h2 id=&quot;执行命令&quot;&gt;&lt;a href=&quot;#执行命令&quot; class=&quot;headerlink&quot; title=&quot;执行命令&quot;&gt;&lt;/a&gt;执行命令&lt;/h2&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
         
       
     
     </summary>
     
     
-      <category term="后端" scheme="http://note.niubishanshan.top/categories/%E5%90%8E%E7%AB%AF/"/>
+      <category term="Tips" scheme="http://note.niubishanshan.top/categories/Tips/"/>
     
     
-      <category term="数据库" scheme="http://note.niubishanshan.top/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-      <category term="MongoDB" scheme="http://note.niubishanshan.top/tags/MongoDB/"/>
+      <category term="Mac" scheme="http://note.niubishanshan.top/tags/Mac/"/>
     
   </entry>
   
