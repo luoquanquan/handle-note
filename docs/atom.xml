@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://note.niubishanshan.top/"/>
-  <updated>2020-02-14T16:41:33.526Z</updated>
+  <updated>2020-02-15T11:39:56.831Z</updated>
   <id>http://note.niubishanshan.top/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>点击劫持</title>
+    <link href="http://note.niubishanshan.top/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%AD%E7%BB%83%E8%AF%BE-%E7%AC%94%E8%AE%B0/%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/%E7%82%B9%E5%87%BB%E5%8A%AB%E6%8C%81/"/>
+    <id>http://note.niubishanshan.top/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%AD%E7%BB%83%E8%AF%BE-%E7%AC%94%E8%AE%B0/%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/%E7%82%B9%E5%87%BB%E5%8A%AB%E6%8C%81/</id>
+    <published>2020-02-15T11:16:30.000Z</published>
+    <updated>2020-02-15T11:39:56.831Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;就这一张图-内容就不编了&quot;&gt;&lt;a href=&quot;#就这一张图-内容就不编了&quot; class=&quot;headerlink&quot; title=&quot;就这一张图, 内容就不编了&quot;&gt;&lt;/a&gt;就这一张图, 内容就不编了&lt;/h2&gt;&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+      <category term="网络安全" scheme="http://note.niubishanshan.top/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    
+    
+      <category term="网络安全" scheme="http://note.niubishanshan.top/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSRF</title>
+    <link href="http://note.niubishanshan.top/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%AD%E7%BB%83%E8%AF%BE-%E7%AC%94%E8%AE%B0/%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/CSRF/"/>
+    <id>http://note.niubishanshan.top/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%AD%E7%BB%83%E8%AF%BE-%E7%AC%94%E8%AE%B0/%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/CSRF/</id>
+    <published>2020-02-15T05:16:30.000Z</published>
+    <updated>2020-02-15T05:59:18.756Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;全称&quot;&gt;&lt;a href=&quot;#全称&quot; class=&quot;headerlink&quot; title=&quot;全称&quot;&gt;&lt;/a&gt;全称&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+    
+      <category term="网络安全" scheme="http://note.niubishanshan.top/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    
+    
+      <category term="网络安全" scheme="http://note.niubishanshan.top/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>XSS</title>
@@ -380,36 +434,6 @@
   </entry>
   
   <entry>
-    <title>9 种方式实现数组去重</title>
-    <link href="http://note.niubishanshan.top/JavaScript/dataStructures-algorithms/NOTE/9%20%E7%A7%8D%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/"/>
-    <id>http://note.niubishanshan.top/JavaScript/dataStructures-algorithms/NOTE/9%20%E7%A7%8D%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/</id>
-    <published>2020-02-03T17:20:31.000Z</published>
-    <updated>2020-02-14T03:00:57.689Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;业务需求跟的太久了, 回首技术真的落后好多. 即将而立之年, 重拾基础. 不知该感到荣幸还是有点酸楚&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;方法一-两层循环-通过标记判断是否更新结果数组&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://note.niubishanshan.top/categories/JavaScript/"/>
-    
-    
-      <category term="数据结构与算法" scheme="http://note.niubishanshan.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
     <title>parseInt vs Math.floor</title>
     <link href="http://note.niubishanshan.top/JavaScript/basic-js/parseInt-vs-Math-floor/"/>
     <id>http://note.niubishanshan.top/JavaScript/basic-js/parseInt-vs-Math-floor/</id>
@@ -438,6 +462,36 @@
       <category term="Math" scheme="http://note.niubishanshan.top/tags/Math/"/>
     
       <category term="Number" scheme="http://note.niubishanshan.top/tags/Number/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>9 种方式实现数组去重</title>
+    <link href="http://note.niubishanshan.top/JavaScript/dataStructures-algorithms/NOTE/9%20%E7%A7%8D%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/"/>
+    <id>http://note.niubishanshan.top/JavaScript/dataStructures-algorithms/NOTE/9%20%E7%A7%8D%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/</id>
+    <published>2020-02-03T17:20:31.000Z</published>
+    <updated>2020-02-14T03:00:57.689Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;业务需求跟的太久了, 回首技术真的落后好多. 即将而立之年, 重拾基础. 不知该感到荣幸还是有点酸楚&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;方法一-两层循环-通过标记判断是否更新结果数组&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://note.niubishanshan.top/categories/JavaScript/"/>
+    
+    
+      <category term="数据结构与算法" scheme="http://note.niubishanshan.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
@@ -535,64 +589,6 @@
     
     
       <category term="Mac" scheme="http://note.niubishanshan.top/tags/Mac/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Redis 基础</title>
-    <link href="http://note.niubishanshan.top/%E5%90%8E%E7%AB%AF/redis/Redis%20%E5%9F%BA%E7%A1%80/"/>
-    <id>http://note.niubishanshan.top/%E5%90%8E%E7%AB%AF/redis/Redis%20%E5%9F%BA%E7%A1%80/</id>
-    <published>2020-01-30T12:50:31.000Z</published>
-    <updated>2020-01-30T16:56:49.831Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
-        
-      
-    
-    </summary>
-    
-    
-      <category term="后端" scheme="http://note.niubishanshan.top/categories/%E5%90%8E%E7%AB%AF/"/>
-    
-    
-      <category term="数据库" scheme="http://note.niubishanshan.top/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-      <category term="Redis" scheme="http://note.niubishanshan.top/tags/Redis/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>游标 &amp; 索引 &amp; 权限 &amp; 备份</title>
-    <link href="http://note.niubishanshan.top/%E5%90%8E%E7%AB%AF/mongo/%E6%B8%B8%E6%A0%87%20&amp;%20%E7%B4%A2%E5%BC%95%20&amp;%20%E6%9D%83%E9%99%90%20&amp;%20%E5%A4%87%E4%BB%BD/"/>
-    <id>http://note.niubishanshan.top/%E5%90%8E%E7%AB%AF/mongo/%E6%B8%B8%E6%A0%87%20&amp;%20%E7%B4%A2%E5%BC%95%20&amp;%20%E6%9D%83%E9%99%90%20&amp;%20%E5%A4%87%E4%BB%BD/</id>
-    <published>2020-01-29T03:50:31.000Z</published>
-    <updated>2020-01-30T15:55:24.772Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;游标&quot;&gt;&lt;a href=&quot;#游标&quot; class=&quot;headerlink&quot; title=&quot;游标&quot;&gt;&lt;/a&gt;游标&lt;/h2&gt;&lt;p&gt;通过 var cursor = db.user.find() 返回的 cursor 其实是一个游标(迭代器), 可以通过不停的使用
-        
-      
-    
-    </summary>
-    
-    
-      <category term="后端" scheme="http://note.niubishanshan.top/categories/%E5%90%8E%E7%AB%AF/"/>
-    
-    
-      <category term="数据库" scheme="http://note.niubishanshan.top/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-      <category term="MongoDB" scheme="http://note.niubishanshan.top/tags/MongoDB/"/>
     
   </entry>
   
