@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://note.niubishanshan.top/"/>
-  <updated>2020-02-15T11:56:34.168Z</updated>
+  <updated>2020-02-25T10:39:56.975Z</updated>
   <id>http://note.niubishanshan.top/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>常见的小坑</title>
+    <link href="http://note.niubishanshan.top/Tips/tips/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B0%8F%E5%9D%91/"/>
+    <id>http://note.niubishanshan.top/Tips/tips/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B0%8F%E5%9D%91/</id>
+    <published>2020-02-25T09:10:31.000Z</published>
+    <updated>2020-02-25T10:39:56.975Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Safari-中-flex-包含图片高度暴走&quot;&gt;&lt;a href=&quot;#Safari-中-flex-包含图片高度暴走&quot; class=&quot;headerlink&quot; title=&quot;Safari 中 flex 包含图片高度暴走&quot;&gt;&lt;/a&gt;Safari 中 flex
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Tips" scheme="http://note.niubishanshan.top/categories/Tips/"/>
+    
+    
+      <category term="常见的坑" scheme="http://note.niubishanshan.top/tags/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%9D%91/"/>
+    
+  </entry>
   
   <entry>
     <title>URL 跳转漏洞</title>
@@ -319,6 +346,33 @@
   </entry>
   
   <entry>
+    <title>简单写作 &amp; 站点配置</title>
+    <link href="http://note.niubishanshan.top/Blog/hexo-usage/%E7%AE%80%E5%8D%95%E5%86%99%E4%BD%9C-%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE/"/>
+    <id>http://note.niubishanshan.top/Blog/hexo-usage/%E7%AE%80%E5%8D%95%E5%86%99%E4%BD%9C-%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE/</id>
+    <published>2020-02-05T17:50:31.000Z</published>
+    <updated>2020-02-05T19:06:17.123Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;简单写作&quot;&gt;&lt;a href=&quot;#简单写作&quot; class=&quot;headerlink&quot; title=&quot;简单写作&quot;&gt;&lt;/a&gt;简单写作&lt;/h2&gt;&lt;h3 id=&quot;创建一篇文章&quot;&gt;&lt;a href=&quot;#创建一篇文章&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Blog" scheme="http://note.niubishanshan.top/categories/Blog/"/>
+    
+    
+      <category term="hexo" scheme="http://note.niubishanshan.top/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>数据结构与算法概述</title>
     <link href="http://note.niubishanshan.top/Blog/dataStructures-algorithms/%E9%83%9D%E6%96%8C%E7%89%88%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E6%A6%82%E8%BF%B0/"/>
     <id>http://note.niubishanshan.top/Blog/dataStructures-algorithms/%E9%83%9D%E6%96%8C%E7%89%88%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E6%A6%82%E8%BF%B0/</id>
@@ -343,33 +397,6 @@
     
     
       <category term="数据结构与算法" scheme="http://note.niubishanshan.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>简单写作 &amp; 站点配置</title>
-    <link href="http://note.niubishanshan.top/Blog/hexo-usage/%E7%AE%80%E5%8D%95%E5%86%99%E4%BD%9C-%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE/"/>
-    <id>http://note.niubishanshan.top/Blog/hexo-usage/%E7%AE%80%E5%8D%95%E5%86%99%E4%BD%9C-%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE/</id>
-    <published>2020-02-05T17:50:31.000Z</published>
-    <updated>2020-02-05T19:06:17.123Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;简单写作&quot;&gt;&lt;a href=&quot;#简单写作&quot; class=&quot;headerlink&quot; title=&quot;简单写作&quot;&gt;&lt;/a&gt;简单写作&lt;/h2&gt;&lt;h3 id=&quot;创建一篇文章&quot;&gt;&lt;a href=&quot;#创建一篇文章&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Blog" scheme="http://note.niubishanshan.top/categories/Blog/"/>
-    
-    
-      <category term="hexo" scheme="http://note.niubishanshan.top/tags/hexo/"/>
     
   </entry>
   
@@ -434,35 +461,6 @@
   </entry>
   
   <entry>
-    <title>chrome 禁止网页自动跳转 https.md</title>
-    <link href="http://note.niubishanshan.top/Tips/tips/chrome%20%E7%A6%81%E6%AD%A2%E7%BD%91%E9%A1%B5%E8%87%AA%E5%8A%A8%E8%B7%B3%E8%BD%AC%20https/"/>
-    <id>http://note.niubishanshan.top/Tips/tips/chrome%20%E7%A6%81%E6%AD%A2%E7%BD%91%E9%A1%B5%E8%87%AA%E5%8A%A8%E8%B7%B3%E8%BD%AC%20https/</id>
-    <published>2020-02-04T16:10:31.000Z</published>
-    <updated>2020-02-19T07:38:51.648Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ul&gt;
-&lt;li&gt;在地址栏输入 &lt;code&gt;chrome://net-internals/#hsts&lt;/code&gt; 并回车&lt;/li&gt;
-&lt;li&gt;在打开的页面中 &lt;code&gt;Delete domain security policies&lt;/code&gt; 栏目下的输入框输入你要禁止跳转
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Tips" scheme="http://note.niubishanshan.top/categories/Tips/"/>
-    
-    
-      <category term="浏览器" scheme="http://note.niubishanshan.top/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
-    
-  </entry>
-  
-  <entry>
     <title>历史版本浏览器下载</title>
     <link href="http://note.niubishanshan.top/Tips/tips/%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8B%E8%BD%BD/"/>
     <id>http://note.niubishanshan.top/Tips/tips/%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8B%E8%BD%BD/</id>
@@ -491,11 +489,11 @@
   </entry>
   
   <entry>
-    <title>parseInt vs Math.floor</title>
-    <link href="http://note.niubishanshan.top/JavaScript/basic-js/parseInt-vs-Math-floor/"/>
-    <id>http://note.niubishanshan.top/JavaScript/basic-js/parseInt-vs-Math-floor/</id>
-    <published>2020-02-03T17:20:31.000Z</published>
-    <updated>2020-02-04T15:10:27.035Z</updated>
+    <title>chrome 禁止网页自动跳转 https.md</title>
+    <link href="http://note.niubishanshan.top/Tips/tips/chrome%20%E7%A6%81%E6%AD%A2%E7%BD%91%E9%A1%B5%E8%87%AA%E5%8A%A8%E8%B7%B3%E8%BD%AC%20https/"/>
+    <id>http://note.niubishanshan.top/Tips/tips/chrome%20%E7%A6%81%E6%AD%A2%E7%BD%91%E9%A1%B5%E8%87%AA%E5%8A%A8%E8%B7%B3%E8%BD%AC%20https/</id>
+    <published>2020-02-04T16:10:31.000Z</published>
+    <updated>2020-02-19T07:38:51.648Z</updated>
     
     <summary type="html">
     
@@ -503,22 +501,19 @@
       
         
         
-          &lt;blockquote&gt;
-&lt;p&gt;parseInt 和 Math.floor 都可以实现取整, 但是处理的方式存在差别&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;parseInt&quot;&gt;&lt;a href=&quot;#parseInt&quot; class=&quot;headerlink&quot;
+          &lt;ul&gt;
+&lt;li&gt;在地址栏输入 &lt;code&gt;chrome://net-internals/#hsts&lt;/code&gt; 并回车&lt;/li&gt;
+&lt;li&gt;在打开的页面中 &lt;code&gt;Delete domain security policies&lt;/code&gt; 栏目下的输入框输入你要禁止跳转
         
       
     
     </summary>
     
     
-      <category term="JavaScript" scheme="http://note.niubishanshan.top/categories/JavaScript/"/>
+      <category term="Tips" scheme="http://note.niubishanshan.top/categories/Tips/"/>
     
     
-      <category term="Math" scheme="http://note.niubishanshan.top/tags/Math/"/>
-    
-      <category term="Number" scheme="http://note.niubishanshan.top/tags/Number/"/>
+      <category term="浏览器" scheme="http://note.niubishanshan.top/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
     
   </entry>
   
@@ -553,11 +548,11 @@
   </entry>
   
   <entry>
-    <title>生成随机数</title>
-    <link href="http://note.niubishanshan.top/JavaScript/dataStructures-algorithms/NOTE/%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E6%95%B0/"/>
-    <id>http://note.niubishanshan.top/JavaScript/dataStructures-algorithms/NOTE/%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E6%95%B0/</id>
-    <published>2020-02-03T14:50:31.000Z</published>
-    <updated>2020-02-14T03:01:18.799Z</updated>
+    <title>parseInt vs Math.floor</title>
+    <link href="http://note.niubishanshan.top/JavaScript/basic-js/parseInt-vs-Math-floor/"/>
+    <id>http://note.niubishanshan.top/JavaScript/basic-js/parseInt-vs-Math-floor/</id>
+    <published>2020-02-03T17:20:31.000Z</published>
+    <updated>2020-02-04T15:10:27.035Z</updated>
     
     <summary type="html">
     
@@ -565,8 +560,10 @@
       
         
         
-          &lt;h2 id=&quot;基础知识&quot;&gt;&lt;a href=&quot;#基础知识&quot; class=&quot;headerlink&quot; title=&quot;基础知识&quot;&gt;&lt;/a&gt;基础知识&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;Math.ceil(n)&lt;/code&gt; 向上取整, 返回大于等于 n
+          &lt;blockquote&gt;
+&lt;p&gt;parseInt 和 Math.floor 都可以实现取整, 但是处理的方式存在差别&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;parseInt&quot;&gt;&lt;a href=&quot;#parseInt&quot; class=&quot;headerlink&quot;
         
       
     
@@ -578,11 +575,7 @@
     
       <category term="Math" scheme="http://note.niubishanshan.top/tags/Math/"/>
     
-      <category term="数据结构与算法" scheme="http://note.niubishanshan.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="JavaScript" scheme="http://note.niubishanshan.top/tags/JavaScript/"/>
-    
-      <category term="Random" scheme="http://note.niubishanshan.top/tags/Random/"/>
+      <category term="Number" scheme="http://note.niubishanshan.top/tags/Number/"/>
     
   </entry>
   
