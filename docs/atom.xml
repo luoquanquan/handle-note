@@ -491,35 +491,6 @@
   </entry>
   
   <entry>
-    <title>chrome 禁止网页自动跳转 https.md</title>
-    <link href="http://note.niubishanshan.top/Tips/tips/chrome%20%E7%A6%81%E6%AD%A2%E7%BD%91%E9%A1%B5%E8%87%AA%E5%8A%A8%E8%B7%B3%E8%BD%AC%20https/"/>
-    <id>http://note.niubishanshan.top/Tips/tips/chrome%20%E7%A6%81%E6%AD%A2%E7%BD%91%E9%A1%B5%E8%87%AA%E5%8A%A8%E8%B7%B3%E8%BD%AC%20https/</id>
-    <published>2020-02-04T16:10:31.000Z</published>
-    <updated>2020-02-19T07:38:51.648Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ul&gt;
-&lt;li&gt;在地址栏输入 &lt;code&gt;chrome://net-internals/#hsts&lt;/code&gt; 并回车&lt;/li&gt;
-&lt;li&gt;在打开的页面中 &lt;code&gt;Delete domain security policies&lt;/code&gt; 栏目下的输入框输入你要禁止跳转
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Tips" scheme="http://note.niubishanshan.top/categories/Tips/"/>
-    
-    
-      <category term="浏览器" scheme="http://note.niubishanshan.top/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
-    
-  </entry>
-  
-  <entry>
     <title>历史版本浏览器下载</title>
     <link href="http://note.niubishanshan.top/Tips/tips/%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8B%E8%BD%BD/"/>
     <id>http://note.niubishanshan.top/Tips/tips/%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8B%E8%BD%BD/</id>
@@ -534,6 +505,35 @@
         
           &lt;h2 id=&quot;历史版本浏览器-用于-debug&quot;&gt;&lt;a href=&quot;#历史版本浏览器-用于-debug&quot; class=&quot;headerlink&quot; title=&quot;历史版本浏览器, 用于 debug&quot;&gt;&lt;/a&gt;历史版本浏览器, 用于 debug&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Tips" scheme="http://note.niubishanshan.top/categories/Tips/"/>
+    
+    
+      <category term="浏览器" scheme="http://note.niubishanshan.top/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>chrome 禁止网页自动跳转 https.md</title>
+    <link href="http://note.niubishanshan.top/Tips/tips/chrome%20%E7%A6%81%E6%AD%A2%E7%BD%91%E9%A1%B5%E8%87%AA%E5%8A%A8%E8%B7%B3%E8%BD%AC%20https/"/>
+    <id>http://note.niubishanshan.top/Tips/tips/chrome%20%E7%A6%81%E6%AD%A2%E7%BD%91%E9%A1%B5%E8%87%AA%E5%8A%A8%E8%B7%B3%E8%BD%AC%20https/</id>
+    <published>2020-02-04T16:10:31.000Z</published>
+    <updated>2020-02-26T08:47:13.402Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ul&gt;
+&lt;li&gt;在地址栏输入 &lt;a href=&quot;chrome://net-internals/#hsts&quot;&gt;chrome://net-internals/#hsts&lt;/a&gt; 并回车&lt;/li&gt;
+&lt;li&gt;在打开的页面中 &lt;code&gt;Delete domain security
         
       
     
