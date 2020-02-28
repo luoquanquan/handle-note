@@ -74,6 +74,36 @@
   </entry>
   
   <entry>
+    <title>模块打包</title>
+    <link href="http://note.niubishanshan.top/JavaScript/webpack%20%E5%AE%9E%E6%88%98/%E6%A8%A1%E5%9D%97%E6%89%93%E5%8C%85/"/>
+    <id>http://note.niubishanshan.top/JavaScript/webpack%20%E5%AE%9E%E6%88%98/%E6%A8%A1%E5%9D%97%E6%89%93%E5%8C%85/</id>
+    <published>2020-02-25T09:10:31.000Z</published>
+    <updated>2020-02-28T05:16:08.494Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://item.jd.com/12623590.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;webpack 实战&lt;/a&gt; 第二章学习笔记&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://note.niubishanshan.top/categories/JavaScript/"/>
+    
+    
+      <category term="webpack" scheme="http://note.niubishanshan.top/tags/webpack/"/>
+    
+  </entry>
+  
+  <entry>
     <title>URL 跳转漏洞</title>
     <link href="http://note.niubishanshan.top/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%AD%E7%BB%83%E8%AF%BE-%E7%AC%94%E8%AE%B0/%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/url%20%E8%B7%B3%E8%BD%AC%E6%BC%8F%E6%B4%9E/"/>
     <id>http://note.niubishanshan.top/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%AD%E7%BB%83%E8%AF%BE-%E7%AC%94%E8%AE%B0/%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/url%20%E8%B7%B3%E8%BD%AC%E6%BC%8F%E6%B4%9E/</id>
@@ -544,38 +574,6 @@
     
     
       <category term="浏览器" scheme="http://note.niubishanshan.top/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>parseInt vs Math.floor</title>
-    <link href="http://note.niubishanshan.top/JavaScript/basic-js/parseInt-vs-Math-floor/"/>
-    <id>http://note.niubishanshan.top/JavaScript/basic-js/parseInt-vs-Math-floor/</id>
-    <published>2020-02-03T17:20:31.000Z</published>
-    <updated>2020-02-04T15:10:27.035Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;parseInt 和 Math.floor 都可以实现取整, 但是处理的方式存在差别&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;parseInt&quot;&gt;&lt;a href=&quot;#parseInt&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://note.niubishanshan.top/categories/JavaScript/"/>
-    
-    
-      <category term="Math" scheme="http://note.niubishanshan.top/tags/Math/"/>
-    
-      <category term="Number" scheme="http://note.niubishanshan.top/tags/Number/"/>
     
   </entry>
   
