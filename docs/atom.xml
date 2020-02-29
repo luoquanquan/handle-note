@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://note.niubishanshan.top/"/>
-  <updated>2020-02-26T03:18:24.701Z</updated>
+  <updated>2020-02-29T11:43:09.312Z</updated>
   <id>http://note.niubishanshan.top/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>interview-1</title>
+    <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-1/"/>
+    <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-1/</id>
+    <published>2020-02-28T09:50:31.000Z</published>
+    <updated>2020-02-29T11:43:09.312Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;请列举几个HTML5语义化标签，并说说语义化有什么优点&quot;&gt;&lt;a href=&quot;#请列举几个HTML5语义化标签，并说说语义化有什么优点&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://note.niubishanshan.top/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="interview" scheme="http://note.niubishanshan.top/tags/interview/"/>
+    
+  </entry>
   
   <entry>
     <title>常用工具</title>
@@ -47,33 +74,6 @@
   </entry>
   
   <entry>
-    <title>常见的小坑</title>
-    <link href="http://note.niubishanshan.top/Tips/tips/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B0%8F%E5%9D%91/"/>
-    <id>http://note.niubishanshan.top/Tips/tips/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B0%8F%E5%9D%91/</id>
-    <published>2020-02-25T09:10:31.000Z</published>
-    <updated>2020-02-25T10:39:56.975Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Safari-中-flex-包含图片高度暴走&quot;&gt;&lt;a href=&quot;#Safari-中-flex-包含图片高度暴走&quot; class=&quot;headerlink&quot; title=&quot;Safari 中 flex 包含图片高度暴走&quot;&gt;&lt;/a&gt;Safari 中 flex
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Tips" scheme="http://note.niubishanshan.top/categories/Tips/"/>
-    
-    
-      <category term="常见的坑" scheme="http://note.niubishanshan.top/tags/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%9D%91/"/>
-    
-  </entry>
-  
-  <entry>
     <title>模块打包</title>
     <link href="http://note.niubishanshan.top/JavaScript/webpack%20%E5%AE%9E%E6%88%98/%E6%A8%A1%E5%9D%97%E6%89%93%E5%8C%85/"/>
     <id>http://note.niubishanshan.top/JavaScript/webpack%20%E5%AE%9E%E6%88%98/%E6%A8%A1%E5%9D%97%E6%89%93%E5%8C%85/</id>
@@ -100,6 +100,33 @@
     
     
       <category term="webpack" scheme="http://note.niubishanshan.top/tags/webpack/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常见的小坑</title>
+    <link href="http://note.niubishanshan.top/Tips/tips/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B0%8F%E5%9D%91/"/>
+    <id>http://note.niubishanshan.top/Tips/tips/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B0%8F%E5%9D%91/</id>
+    <published>2020-02-25T09:10:31.000Z</published>
+    <updated>2020-02-25T10:39:56.975Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Safari-中-flex-包含图片高度暴走&quot;&gt;&lt;a href=&quot;#Safari-中-flex-包含图片高度暴走&quot; class=&quot;headerlink&quot; title=&quot;Safari 中 flex 包含图片高度暴走&quot;&gt;&lt;/a&gt;Safari 中 flex
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Tips" scheme="http://note.niubishanshan.top/categories/Tips/"/>
+    
+    
+      <category term="常见的坑" scheme="http://note.niubishanshan.top/tags/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%9D%91/"/>
     
   </entry>
   
@@ -406,33 +433,6 @@
   </entry>
   
   <entry>
-    <title>简单写作 &amp; 站点配置</title>
-    <link href="http://note.niubishanshan.top/Blog/hexo-usage/%E7%AE%80%E5%8D%95%E5%86%99%E4%BD%9C-%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE/"/>
-    <id>http://note.niubishanshan.top/Blog/hexo-usage/%E7%AE%80%E5%8D%95%E5%86%99%E4%BD%9C-%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE/</id>
-    <published>2020-02-05T17:50:31.000Z</published>
-    <updated>2020-02-05T19:06:17.123Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;简单写作&quot;&gt;&lt;a href=&quot;#简单写作&quot; class=&quot;headerlink&quot; title=&quot;简单写作&quot;&gt;&lt;/a&gt;简单写作&lt;/h2&gt;&lt;h3 id=&quot;创建一篇文章&quot;&gt;&lt;a href=&quot;#创建一篇文章&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Blog" scheme="http://note.niubishanshan.top/categories/Blog/"/>
-    
-    
-      <category term="hexo" scheme="http://note.niubishanshan.top/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
     <title>数据结构与算法概述</title>
     <link href="http://note.niubishanshan.top/Blog/dataStructures-algorithms/%E9%83%9D%E6%96%8C%E7%89%88%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E6%A6%82%E8%BF%B0/"/>
     <id>http://note.niubishanshan.top/Blog/dataStructures-algorithms/%E9%83%9D%E6%96%8C%E7%89%88%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E6%A6%82%E8%BF%B0/</id>
@@ -457,6 +457,33 @@
     
     
       <category term="数据结构与算法" scheme="http://note.niubishanshan.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>简单写作 &amp; 站点配置</title>
+    <link href="http://note.niubishanshan.top/Blog/hexo-usage/%E7%AE%80%E5%8D%95%E5%86%99%E4%BD%9C-%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE/"/>
+    <id>http://note.niubishanshan.top/Blog/hexo-usage/%E7%AE%80%E5%8D%95%E5%86%99%E4%BD%9C-%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE/</id>
+    <published>2020-02-05T17:50:31.000Z</published>
+    <updated>2020-02-05T19:06:17.123Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;简单写作&quot;&gt;&lt;a href=&quot;#简单写作&quot; class=&quot;headerlink&quot; title=&quot;简单写作&quot;&gt;&lt;/a&gt;简单写作&lt;/h2&gt;&lt;h3 id=&quot;创建一篇文章&quot;&gt;&lt;a href=&quot;#创建一篇文章&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Blog" scheme="http://note.niubishanshan.top/categories/Blog/"/>
+    
+    
+      <category term="hexo" scheme="http://note.niubishanshan.top/tags/hexo/"/>
     
   </entry>
   
@@ -535,35 +562,6 @@
         
           &lt;h2 id=&quot;历史版本浏览器-用于-debug&quot;&gt;&lt;a href=&quot;#历史版本浏览器-用于-debug&quot; class=&quot;headerlink&quot; title=&quot;历史版本浏览器, 用于 debug&quot;&gt;&lt;/a&gt;历史版本浏览器, 用于 debug&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Tips" scheme="http://note.niubishanshan.top/categories/Tips/"/>
-    
-    
-      <category term="浏览器" scheme="http://note.niubishanshan.top/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>chrome 禁止网页自动跳转 https.md</title>
-    <link href="http://note.niubishanshan.top/Tips/tips/chrome%20%E7%A6%81%E6%AD%A2%E7%BD%91%E9%A1%B5%E8%87%AA%E5%8A%A8%E8%B7%B3%E8%BD%AC%20https/"/>
-    <id>http://note.niubishanshan.top/Tips/tips/chrome%20%E7%A6%81%E6%AD%A2%E7%BD%91%E9%A1%B5%E8%87%AA%E5%8A%A8%E8%B7%B3%E8%BD%AC%20https/</id>
-    <published>2020-02-04T16:10:31.000Z</published>
-    <updated>2020-02-26T08:47:13.402Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ul&gt;
-&lt;li&gt;在地址栏输入 &lt;a href=&quot;chrome://net-internals/#hsts&quot;&gt;chrome://net-internals/#hsts&lt;/a&gt; 并回车&lt;/li&gt;
-&lt;li&gt;在打开的页面中 &lt;code&gt;Delete domain security
         
       
     
