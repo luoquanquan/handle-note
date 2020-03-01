@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://note.niubishanshan.top/"/>
-  <updated>2020-02-29T11:43:09.312Z</updated>
+  <updated>2020-03-01T06:24:17.365Z</updated>
   <id>http://note.niubishanshan.top/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>interview-2</title>
+    <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-2/"/>
+    <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-2/</id>
+    <published>2020-03-01T05:50:31.000Z</published>
+    <updated>2020-03-01T06:24:17.365Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;输出的结果是？为什么&quot;&gt;&lt;a href=&quot;#输出的结果是？为什么&quot; class=&quot;headerlink&quot; title=&quot;[] == [] 输出的结果是？为什么&quot;&gt;&lt;/a&gt;[] == [] 输出的结果是？为什么&lt;/h2&gt;&lt;p&gt;返回
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://note.niubishanshan.top/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="interview" scheme="http://note.niubishanshan.top/tags/interview/"/>
+    
+  </entry>
   
   <entry>
     <title>interview-1</title>
@@ -433,6 +460,33 @@
   </entry>
   
   <entry>
+    <title>简单写作 &amp; 站点配置</title>
+    <link href="http://note.niubishanshan.top/Blog/hexo-usage/%E7%AE%80%E5%8D%95%E5%86%99%E4%BD%9C-%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE/"/>
+    <id>http://note.niubishanshan.top/Blog/hexo-usage/%E7%AE%80%E5%8D%95%E5%86%99%E4%BD%9C-%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE/</id>
+    <published>2020-02-05T17:50:31.000Z</published>
+    <updated>2020-02-05T19:06:17.123Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;简单写作&quot;&gt;&lt;a href=&quot;#简单写作&quot; class=&quot;headerlink&quot; title=&quot;简单写作&quot;&gt;&lt;/a&gt;简单写作&lt;/h2&gt;&lt;h3 id=&quot;创建一篇文章&quot;&gt;&lt;a href=&quot;#创建一篇文章&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Blog" scheme="http://note.niubishanshan.top/categories/Blog/"/>
+    
+    
+      <category term="hexo" scheme="http://note.niubishanshan.top/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>数据结构与算法概述</title>
     <link href="http://note.niubishanshan.top/Blog/dataStructures-algorithms/%E9%83%9D%E6%96%8C%E7%89%88%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E6%A6%82%E8%BF%B0/"/>
     <id>http://note.niubishanshan.top/Blog/dataStructures-algorithms/%E9%83%9D%E6%96%8C%E7%89%88%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E6%A6%82%E8%BF%B0/</id>
@@ -457,33 +511,6 @@
     
     
       <category term="数据结构与算法" scheme="http://note.niubishanshan.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>简单写作 &amp; 站点配置</title>
-    <link href="http://note.niubishanshan.top/Blog/hexo-usage/%E7%AE%80%E5%8D%95%E5%86%99%E4%BD%9C-%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE/"/>
-    <id>http://note.niubishanshan.top/Blog/hexo-usage/%E7%AE%80%E5%8D%95%E5%86%99%E4%BD%9C-%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE/</id>
-    <published>2020-02-05T17:50:31.000Z</published>
-    <updated>2020-02-05T19:06:17.123Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;简单写作&quot;&gt;&lt;a href=&quot;#简单写作&quot; class=&quot;headerlink&quot; title=&quot;简单写作&quot;&gt;&lt;/a&gt;简单写作&lt;/h2&gt;&lt;h3 id=&quot;创建一篇文章&quot;&gt;&lt;a href=&quot;#创建一篇文章&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Blog" scheme="http://note.niubishanshan.top/categories/Blog/"/>
-    
-    
-      <category term="hexo" scheme="http://note.niubishanshan.top/tags/hexo/"/>
     
   </entry>
   
@@ -544,34 +571,6 @@
     
     
       <category term="CSS" scheme="http://note.niubishanshan.top/tags/CSS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>历史版本浏览器下载</title>
-    <link href="http://note.niubishanshan.top/Tips/tips/%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8B%E8%BD%BD/"/>
-    <id>http://note.niubishanshan.top/Tips/tips/%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8B%E8%BD%BD/</id>
-    <published>2020-02-04T16:10:31.000Z</published>
-    <updated>2020-02-04T17:59:44.372Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;历史版本浏览器-用于-debug&quot;&gt;&lt;a href=&quot;#历史版本浏览器-用于-debug&quot; class=&quot;headerlink&quot; title=&quot;历史版本浏览器, 用于 debug&quot;&gt;&lt;/a&gt;历史版本浏览器, 用于 debug&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Tips" scheme="http://note.niubishanshan.top/categories/Tips/"/>
-    
-    
-      <category term="浏览器" scheme="http://note.niubishanshan.top/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
     
   </entry>
   
