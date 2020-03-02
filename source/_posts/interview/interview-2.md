@@ -36,6 +36,7 @@ tags:
 box-sizing 定义了用户应该如何计算盒子的宽度和高度, 属性值有两个
 - content-box (默认值), 其中设置的 width 和 height 只包含内容的宽度和高度, 但是不包含内边距(padding) 边框(border) 和 外边距(margin)
 - border-box 设置的 width 和 height 包含了内容的宽度和高度, 同时包含了内边距(padding) 边框(border), 不包含外边距(margin)
+- inherit 规定应从父元素继承 box-sizing 属性的值
 
 ## DOM Tree 与 Render Tree 之间的区别是什么
 
