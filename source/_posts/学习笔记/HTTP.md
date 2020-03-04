@@ -62,3 +62,30 @@ HTTP / 1.0 的缺点, 就是每个 TCP 链接只能发送一个请求. 数据发
 推送功能实例, 一个web页面加载时会要求一些html, css, js等文件, css和js文件是以链接的形式在 html 文本里面显示的, 只有通过浏览器解析了 html 里面的内容之后, 才能根据链接里面包含的URL地址去请求对应的 css 和 js 文件.
 在HTTP/2之前, 这个传输过程会包含顺序问题, 需要先请求到 html 的文件, 通过浏览器运行解析这个 html 文件之后, 才能去发送 css 的请求和 js 的请求.
 HTTP/2 中有了推送功能之后, 在请求 html 的同时, 服务器端可以主动把 html 里面所引用到的 css 和 js 文件推送到客户端, 这样html, css 和 js 的发送就是并行的而不是串行的
+
+## 三次握手
+
+![2020-03-04-21-47-22](http://handle-note-img.niubishanshan.top/2020-03-04-21-47-22.png)
+
+## cache-control
+
+- public, 请求发送过程中的任何一个环节(如, 代理服务器)都可以缓存请求的内容
+- private, 只有发起请求的浏览器能够缓存请求的内容
+- no-cache, 可以存储请求的内容, 但是缓存的内容是否可用需要向服务器发请求查询. no-cache的响应实际是可以存储在本地缓存中的, 只是在与原始服务器进行新鲜度再验证之前, 缓存不能将其提供给客户端使用
+- no-store, 禁用缓存, 禁止本地和代理服务器缓存请求的文件
+- max-age = <second> 缓存到期时间
+- s-max-age = <second> 代理服务器上缓存的内容过期时间
+- max-stale = <second> 即使缓存已经过了有效期, 但是仍然可以使用缓存(浏览器中用不到)
+- must-revalidate, 缓存必须在使用之前验证旧资源的状态, 并且不可使用过期资源. 表示如果页面过期, 则去服务器进行获取
+- proxy-revalidate, 与must-revalidate作用相同, 但它仅适用于共享缓存(例如代理), 并被私有缓存忽略
+- no-transform, 静止代理服务器修改请求信息
+
+## 其他内容
+
+- 数据协商 Accept / Content-Type 这些
+- Redirect (301 from disk cache, 302, 307 / POST)
+- CSP(content security policy)
+
+## 参考文章
+
+[Nginx下关于缓存控制字段cache-control的配置说明](https://www.cnblogs.com/kevingrace/p/10459429.html)
