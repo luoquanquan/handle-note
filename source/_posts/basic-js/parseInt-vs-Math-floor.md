@@ -12,7 +12,7 @@ tags:
 
 ## parseInt
 
-parseInt(string, radix) 将一个字符串 string 转换为 radix 进制的整数, radix 为介于 2 - 36 之间的整数
+parseInt(string, radix) 将一个字符串 string 转换为 radix 进制的整数, radix 为介于 2 - 36 之间的整数, 如果 radix 传入的是 0, 会以默认值 10 处理.
 
 其中
 
