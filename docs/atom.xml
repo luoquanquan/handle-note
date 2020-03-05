@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://note.niubishanshan.top/"/>
-  <updated>2020-03-04T14:04:26.342Z</updated>
+  <updated>2020-03-05T08:30:31.179Z</updated>
   <id>http://note.niubishanshan.top/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>HTTP</title>
-    <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/HTTP/"/>
-    <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/HTTP/</id>
+    <title>HTTP 实践</title>
+    <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/HTTP/HTTP%20%E5%AE%9E%E8%B7%B5/"/>
+    <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/HTTP/HTTP%20%E5%AE%9E%E8%B7%B5/</id>
+    <published>2020-03-05T03:50:31.000Z</published>
+    <updated>2020-03-05T08:30:31.179Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://note.niubishanshan.top/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="HTTP" scheme="http://note.niubishanshan.top/tags/HTTP/"/>
+    
+      <category term="nginx" scheme="http://note.niubishanshan.top/tags/nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTTP 基础</title>
+    <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/HTTP/HTTP%20%E5%9F%BA%E7%A1%80/"/>
+    <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/HTTP/HTTP%20%E5%9F%BA%E7%A1%80/</id>
     <published>2020-03-04T10:50:31.000Z</published>
-    <updated>2020-03-04T14:04:26.342Z</updated>
+    <updated>2020-03-05T08:18:02.517Z</updated>
     
     <summary type="html">
     
@@ -296,33 +325,6 @@
   </entry>
   
   <entry>
-    <title>常见的小坑</title>
-    <link href="http://note.niubishanshan.top/Tips/tips/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B0%8F%E5%9D%91/"/>
-    <id>http://note.niubishanshan.top/Tips/tips/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B0%8F%E5%9D%91/</id>
-    <published>2020-02-25T09:10:31.000Z</published>
-    <updated>2020-02-25T10:39:56.975Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Safari-中-flex-包含图片高度暴走&quot;&gt;&lt;a href=&quot;#Safari-中-flex-包含图片高度暴走&quot; class=&quot;headerlink&quot; title=&quot;Safari 中 flex 包含图片高度暴走&quot;&gt;&lt;/a&gt;Safari 中 flex
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Tips" scheme="http://note.niubishanshan.top/categories/Tips/"/>
-    
-    
-      <category term="常见的坑" scheme="http://note.niubishanshan.top/tags/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%9D%91/"/>
-    
-  </entry>
-  
-  <entry>
     <title>模块打包</title>
     <link href="http://note.niubishanshan.top/JavaScript/webpack%20%E5%AE%9E%E6%88%98/%E6%A8%A1%E5%9D%97%E6%89%93%E5%8C%85/"/>
     <id>http://note.niubishanshan.top/JavaScript/webpack%20%E5%AE%9E%E6%88%98/%E6%A8%A1%E5%9D%97%E6%89%93%E5%8C%85/</id>
@@ -349,6 +351,33 @@
     
     
       <category term="webpack" scheme="http://note.niubishanshan.top/tags/webpack/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常见的小坑</title>
+    <link href="http://note.niubishanshan.top/Tips/tips/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B0%8F%E5%9D%91/"/>
+    <id>http://note.niubishanshan.top/Tips/tips/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B0%8F%E5%9D%91/</id>
+    <published>2020-02-25T09:10:31.000Z</published>
+    <updated>2020-02-25T10:39:56.975Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Safari-中-flex-包含图片高度暴走&quot;&gt;&lt;a href=&quot;#Safari-中-flex-包含图片高度暴走&quot; class=&quot;headerlink&quot; title=&quot;Safari 中 flex 包含图片高度暴走&quot;&gt;&lt;/a&gt;Safari 中 flex
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Tips" scheme="http://note.niubishanshan.top/categories/Tips/"/>
+    
+    
+      <category term="常见的坑" scheme="http://note.niubishanshan.top/tags/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%9D%91/"/>
     
   </entry>
   
@@ -530,33 +559,6 @@
         
         
           &lt;h2 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h2&gt;&lt;p&gt;快速排序是一种分而治之的算法, 通过递归的方式将数据依次分解为包含较小元素和较大元素的不同子序列.不断重复直到所有的数据都是有序的.
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Blog" scheme="http://note.niubishanshan.top/categories/Blog/"/>
-    
-    
-      <category term="数据结构与算法" scheme="http://note.niubishanshan.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>插入排序</title>
-    <link href="http://note.niubishanshan.top/Blog/dataStructures-algorithms/NOTE/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/"/>
-    <id>http://note.niubishanshan.top/Blog/dataStructures-algorithms/NOTE/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/</id>
-    <published>2020-02-13T12:20:31.000Z</published>
-    <updated>2020-02-13T16:21:13.911Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h2&gt;&lt;p&gt;插入排序每次排序一个数组项, 假定第一项已经排序好了. 依次向后扫描所有元素, 比如到第二项时, 和已经排序好的部分比较,
         
       
     
