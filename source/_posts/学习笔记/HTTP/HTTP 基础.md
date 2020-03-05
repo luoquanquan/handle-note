@@ -1,5 +1,5 @@
 ---
-title: HTTP
+title: HTTP 基础
 date: 2020-03-04 18:50:31
 categories:
   - 前端
@@ -74,7 +74,7 @@ HTTP/2 中有了推送功能之后, 在请求 html 的同时, 服务器端可以
 - no-cache, 可以存储请求的内容, 但是缓存的内容是否可用需要向服务器发请求查询. no-cache的响应实际是可以存储在本地缓存中的, 只是在与原始服务器进行新鲜度再验证之前, 缓存不能将其提供给客户端使用
 - no-store, 禁用缓存, 禁止本地和代理服务器缓存请求的文件
 - max-age = <second> 缓存到期时间
-- s-max-age = <second> 代理服务器上缓存的内容过期时间
+- s-maxage = <second> 代理服务器上缓存的内容过期时间
 - max-stale = <second> 即使缓存已经过了有效期, 但是仍然可以使用缓存(浏览器中用不到)
 - must-revalidate, 缓存必须在使用之前验证旧资源的状态, 并且不可使用过期资源. 表示如果页面过期, 则去服务器进行获取
 - proxy-revalidate, 与must-revalidate作用相同, 但它仅适用于共享缓存(例如代理), 并被私有缓存忽略
@@ -89,3 +89,4 @@ HTTP/2 中有了推送功能之后, 在请求 html 的同时, 服务器端可以
 ## 参考文章
 
 [Nginx下关于缓存控制字段cache-control的配置说明](https://www.cnblogs.com/kevingrace/p/10459429.html)
+[Cache-Control](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Cache-Control)
