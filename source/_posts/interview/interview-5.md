@@ -22,6 +22,7 @@ var res = fn(ary)
 console.log(ary)
 console.log(res)
 ```
+<!-- more -->
 
 以上代码执行的流程为
 ![2020-03-08-10-24-04](http://handle-note-img.niubishanshan.top/2020-03-08-10-24-04.png)

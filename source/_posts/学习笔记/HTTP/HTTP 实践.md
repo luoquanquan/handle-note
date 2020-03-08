@@ -24,6 +24,8 @@ nginx
 
 运行 `nginx` 命令没有报错说明安装启动成功, 验证方式为浏览器直接访问 [localhost](http://localhost) 查看是否成功展示 `nginx` 欢迎页面
 
+<!-- more -->
+
 ## 配置
 
 > 正式线上配置的 nginx 需要配置 DNS 来把域名指向我们的服务器 IP. 由于本地开发, 直接修改 hosts 即可

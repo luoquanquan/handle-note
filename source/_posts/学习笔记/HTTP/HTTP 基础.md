@@ -14,6 +14,8 @@ tags:
 
 HTTP (HyperText Transfer Protocol): 超文本传输协议, 它是建立在 TCP/IP 协议之上的应用层规范. 是互联网上应用最广泛的一种网络协议.
 
+<!-- more -->
+
 ## HTTP 5 层网络模型
 
 ![2020-03-04-20-46-44](http://handle-note-img.niubishanshan.top/2020-03-04-20-46-44.png)

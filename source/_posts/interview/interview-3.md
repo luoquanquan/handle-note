@@ -15,6 +15,8 @@ DOMContentLoaded事件比load事件更早执行
 
 load 事件仅仅应该在探测到整个页面完全加载完成时被使用. 一个常见的错误就是在该使用 DOMContentLoaded 的地方使用了load
 
+<!-- more -->
+
 ## innerHTML vs innerText vs outerHTML vs outerText
 
 - innerHTML 设置或者获取标签所包含的 HTML 与文本信息, 不含标签本身
