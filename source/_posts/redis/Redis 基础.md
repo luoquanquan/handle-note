@@ -20,6 +20,8 @@ brew install redis
 /usr/local/etc/redis.conf
 ```
 
+<!-- more -->
+
 ## 启动
 
 ```shell

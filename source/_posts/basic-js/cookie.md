@@ -15,6 +15,8 @@ tags:
 document.cookie="key=quanquan"
 ```
 
+<!-- more -->
+
 ### 文艺一点的方法
 
 ```js

@@ -16,6 +16,8 @@ tags:
 - 执行 `git submodule add https://github.com/luoquanquan/quanquan-hexo-theme-next.git themes/next` 将 `fork` 来的 next 主题项目作为 `submodule` 添加到博客项目下
 - 此时执行 `hexo s` 就可以看到 next 主题的页面啦
 
+<!-- more -->
+
 ### 将主题项目作为子模块的目的
 
 直接 clone 三方的主题, 可以默认直接用, 但是如果想要基于其进行配置就 gg 了, 之前文章中提到过原生的 next 并不是很好看. 我们要修改主题的配置, 注定要修改主题项目的代码, 但是对于三方的主题项目肯定没有提交的权限, 所以只能 fork 一份自己维护. 可以保存自己的配置实现跨多端的文档编写.

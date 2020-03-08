@@ -25,6 +25,8 @@ Cross Site Script
 
 黑客通过 "html 注入" 篡改网页, **插入恶意脚本**. 当用户浏览网页时, 实现控制用户浏览器行为的一种攻击方式.
 
+<!-- more -->
+
 ![2020-02-15-00-22-12](http://handle-note-img.niubishanshan.top/2020-02-15-00-22-12.png)
 
 ## 分类

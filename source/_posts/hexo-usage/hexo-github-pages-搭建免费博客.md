@@ -14,6 +14,8 @@ tags:
 
 本文即将创建的博客系统基于 [hexo](https://hexo.io/), 博客托管平台为 [github](https://github.com/), 基于 [github pages](https://pages.github.com/) 实现 hexo 生成的静态文件的托管能力, 默认读者已经对以上三者有一定的了解...
 
+<!-- more -->
+
 ## 准备工作
 
 - 首先, 到 github 创建一个空的仓库命名为 `handle-note`

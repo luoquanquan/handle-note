@@ -25,6 +25,8 @@ Cross Site request forgery
 
 利用用户已登录的身份, 在用户毫不知情的情况下, 以用户的名义执行非法操作
 
+<!-- more -->
+
 ![2020-02-15-13-51-26](http://handle-note-img.niubishanshan.top/2020-02-15-13-51-26.png)
 
 原理分析
