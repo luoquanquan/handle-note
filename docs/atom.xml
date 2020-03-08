@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://note.niubishanshan.top/"/>
-  <updated>2020-03-08T07:42:18.872Z</updated>
+  <updated>2020-03-08T08:40:26.998Z</updated>
   <id>http://note.niubishanshan.top/</id>
   
   <author>
@@ -21,17 +21,11 @@
     <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-5/"/>
     <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-5/</id>
     <published>2020-03-08T01:50:31.000Z</published>
-    <updated>2020-03-08T07:42:18.872Z</updated>
+    <updated>2020-03-08T08:40:26.998Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;推断以下代码执行的结果&quot;&gt;&lt;a href=&quot;#推断以下代码执行的结果&quot; class=&quot;headerlink&quot; title=&quot;推断以下代码执行的结果&quot;&gt;&lt;/a&gt;推断以下代码执行的结果&lt;/h2&gt;&lt;figure class=&quot;highlight
-        
-      
+      &lt;h2 id=&quot;推断以下代码执行的结果&quot;&gt;&lt;a href=&quot;#推断以下代码执行的结果&quot; class=&quot;headerlink&quot; title=&quot;推断以下代码执行的结果&quot;&gt;&lt;/a&gt;推断以下代码执行的结果&lt;/h2&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; ary = [&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;fn&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;ary&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    ary[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;] = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    ary = [&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    ary[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;] = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; ary&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; res = fn(ary)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(ary)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(res)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
@@ -48,17 +42,11 @@
     <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-4/"/>
     <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-4/</id>
     <published>2020-03-07T13:50:31.000Z</published>
-    <updated>2020-03-07T16:18:48.478Z</updated>
+    <updated>2020-03-08T08:40:47.891Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;推断以下代码执行的结果&quot;&gt;&lt;a href=&quot;#推断以下代码执行的结果&quot; class=&quot;headerlink&quot; title=&quot;推断以下代码执行的结果&quot;&gt;&lt;/a&gt;推断以下代码执行的结果&lt;/h2&gt;&lt;figure class=&quot;highlight
-        
-      
+      &lt;h2 id=&quot;推断以下代码执行的结果&quot;&gt;&lt;a href=&quot;#推断以下代码执行的结果&quot; class=&quot;headerlink&quot; title=&quot;推断以下代码执行的结果&quot;&gt;&lt;/a&gt;推断以下代码执行的结果&lt;/h2&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; foo = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;bar&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (!foo) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; foo = &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(foo)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;bar()&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
@@ -75,17 +63,16 @@
     <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/HTTP/HTTP%20%E5%AE%9E%E8%B7%B5/"/>
     <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/HTTP/HTTP%20%E5%AE%9E%E8%B7%B5/</id>
     <published>2020-03-05T03:50:31.000Z</published>
-    <updated>2020-03-05T08:30:31.179Z</updated>
+    <updated>2020-03-08T09:19:36.429Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
-        
-      
+      &lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;brew install nginx&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;安装成功后 &lt;code&gt;nginx&lt;/code&gt; 的位置在 &lt;code&gt;/usr/local/etc/nginx&lt;/code&gt; 目录下.&lt;/p&gt;
+&lt;h2 id=&quot;启动&quot;&gt;&lt;a href=&quot;#启动&quot; class=&quot;headerlink&quot; title=&quot;启动&quot;&gt;&lt;/a&gt;启动&lt;/h2&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;nginx&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;运行 &lt;code&gt;nginx&lt;/code&gt; 命令没有报错说明安装启动成功, 验证方式为浏览器直接访问 &lt;a href=&quot;http://localhost&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;localhost&lt;/a&gt; 查看是否成功展示 &lt;code&gt;nginx&lt;/code&gt; 欢迎页面&lt;/p&gt;
     
     </summary>
     
@@ -104,18 +91,12 @@
     <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/HTTP/HTTP%20%E5%9F%BA%E7%A1%80/"/>
     <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/HTTP/HTTP%20%E5%9F%BA%E7%A1%80/</id>
     <published>2020-03-04T10:50:31.000Z</published>
-    <updated>2020-03-05T08:18:02.517Z</updated>
+    <updated>2020-03-08T09:19:55.452Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;img src=&quot;http://handle-note-img.niubishanshan.top/2020-03-04-20-55-42.png&quot; alt=&quot;2020-03-04-20-55-42&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot;
-        
-      
+      &lt;p&gt;&lt;img src=&quot;http://handle-note-img.niubishanshan.top/2020-03-04-20-55-42.png&quot; alt=&quot;2020-03-04-20-55-42&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h2&gt;&lt;p&gt;HTTP (HyperText Transfer Protocol): 超文本传输协议, 它是建立在 TCP/IP 协议之上的应用层规范. 是互联网上应用最广泛的一种网络协议.&lt;/p&gt;
     
     </summary>
     
@@ -134,17 +115,13 @@
     <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-3/"/>
     <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-3/</id>
     <published>2020-03-02T13:50:31.000Z</published>
-    <updated>2020-03-07T14:58:17.841Z</updated>
+    <updated>2020-03-08T08:40:52.629Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;关于DOMContentLoaded和load事件说法正确的是&quot;&gt;&lt;a href=&quot;#关于DOMContentLoaded和load事件说法正确的是&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h2 id=&quot;关于DOMContentLoaded和load事件说法正确的是&quot;&gt;&lt;a href=&quot;#关于DOMContentLoaded和load事件说法正确的是&quot; class=&quot;headerlink&quot; title=&quot;关于DOMContentLoaded和load事件说法正确的是&quot;&gt;&lt;/a&gt;关于DOMContentLoaded和load事件说法正确的是&lt;/h2&gt;&lt;p&gt;DOMContentLoaded事件比load事件更早执行&lt;/p&gt;
+&lt;p&gt;当纯HTML被完全加载以及解析时, DOMContentLoaded 事件会被触发, 而不必等待样式表, 图片或者子框架完成加载&lt;/p&gt;
+&lt;p&gt;load 事件仅仅应该在探测到整个页面完全加载完成时被使用. 一个常见的错误就是在该使用 DOMContentLoaded 的地方使用了load&lt;/p&gt;
     
     </summary>
     
@@ -299,17 +276,20 @@
     <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-2/"/>
     <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-2/</id>
     <published>2020-03-01T05:50:31.000Z</published>
-    <updated>2020-03-02T14:06:22.344Z</updated>
+    <updated>2020-03-08T08:40:59.516Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;输出的结果是？为什么&quot;&gt;&lt;a href=&quot;#输出的结果是？为什么&quot; class=&quot;headerlink&quot; title=&quot;[] == [] 输出的结果是？为什么&quot;&gt;&lt;/a&gt;[] == [] 输出的结果是？为什么&lt;/h2&gt;&lt;p&gt;返回
-        
-      
+      &lt;h2 id=&quot;输出的结果是？为什么&quot;&gt;&lt;a href=&quot;#输出的结果是？为什么&quot; class=&quot;headerlink&quot; title=&quot;[] == [] 输出的结果是？为什么&quot;&gt;&lt;/a&gt;[] == [] 输出的结果是？为什么&lt;/h2&gt;&lt;p&gt;返回 false&lt;/p&gt;
+&lt;p&gt;原因:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;字符串与数字之间的比较: 字符串 -&amp;gt; 数字&lt;/li&gt;
+&lt;li&gt;其他类型与布尔值之间的比较: 布尔值先转成数字在比较&lt;/li&gt;
+&lt;li&gt;null 和 undefined 比较: 两者相等&lt;/li&gt;
+&lt;li&gt;对象和非对象(非布尔值)之间的比较: 对象先调用 ToPrimitive 方法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;问题中, 由于 [] == [] 双等号边都是 [], 属于对象类型, 所以直接比较其值, 不进行隐式类型转换. 且两者都是引用类型, 比价其引用地址位置. 故不相等&lt;/p&gt;
+&lt;p&gt;然而, [] == ![] =&amp;gt; true 套用以上的公式就可以得出了&lt;/p&gt;
     
     </summary>
     
@@ -326,17 +306,24 @@
     <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-1/"/>
     <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-1/</id>
     <published>2020-02-28T09:50:31.000Z</published>
-    <updated>2020-02-29T11:43:09.312Z</updated>
+    <updated>2020-03-08T08:41:15.898Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;请列举几个HTML5语义化标签，并说说语义化有什么优点&quot;&gt;&lt;a href=&quot;#请列举几个HTML5语义化标签，并说说语义化有什么优点&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h2 id=&quot;请列举几个HTML5语义化标签，并说说语义化有什么优点&quot;&gt;&lt;a href=&quot;#请列举几个HTML5语义化标签，并说说语义化有什么优点&quot; class=&quot;headerlink&quot; title=&quot;请列举几个HTML5语义化标签，并说说语义化有什么优点&quot;&gt;&lt;/a&gt;请列举几个HTML5语义化标签，并说说语义化有什么优点&lt;/h2&gt;&lt;p&gt;语义化标签:&lt;/p&gt;
+&lt;p&gt;页面结构:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;header&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;nav&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;main   只能拥有一个&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;footer&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;内容划分:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;blockquoto&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;section&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;article&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;aside&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;code&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;abbr&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;语义化标签的优点:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;代码结构清晰, 方便阅读, 有利于团队合作&lt;/li&gt;
+&lt;li&gt;细粒度内容区域通过标签选择器确定 css 元素, 减少选择器创建&lt;/li&gt;
+&lt;li&gt;方便其他设备解析(如屏幕阅读器 盲人阅读器 移动设备)&lt;/li&gt;
+&lt;li&gt;有利于搜索引擎优化(SEO)&lt;/li&gt;
+&lt;/ol&gt;
     
     </summary>
     
