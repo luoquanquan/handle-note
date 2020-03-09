@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://note.niubishanshan.top/"/>
-  <updated>2020-03-08T08:40:26.998Z</updated>
+  <updated>2020-03-09T11:51:24.914Z</updated>
   <id>http://note.niubishanshan.top/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>package.json 中库的版本号符号</title>
+    <link href="http://note.niubishanshan.top/%E5%90%8E%E7%AB%AF/tips/package.json%20%E4%B8%AD%E5%BA%93%E7%9A%84%E7%89%88%E6%9C%AC%E5%8F%B7%E7%AC%A6%E5%8F%B7/"/>
+    <id>http://note.niubishanshan.top/%E5%90%8E%E7%AB%AF/tips/package.json%20%E4%B8%AD%E5%BA%93%E7%9A%84%E7%89%88%E6%9C%AC%E5%8F%B7%E7%AC%A6%E5%8F%B7/</id>
+    <published>2020-03-09T11:10:31.000Z</published>
+    <updated>2020-03-09T11:51:24.914Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;package.json 的依赖库版本号前大多有一个 ^ ~ 这两者有什么区别呢&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;含义&quot;&gt;&lt;a href=&quot;#含义&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="后端" scheme="http://note.niubishanshan.top/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+      <category term="npm" scheme="http://note.niubishanshan.top/tags/npm/"/>
+    
+  </entry>
   
   <entry>
     <title>interview-5</title>
@@ -346,30 +376,6 @@
   </entry>
   
   <entry>
-    <title>模块打包</title>
-    <link href="http://note.niubishanshan.top/JavaScript/webpack%20%E5%AE%9E%E6%88%98/%E6%A8%A1%E5%9D%97%E6%89%93%E5%8C%85/"/>
-    <id>http://note.niubishanshan.top/JavaScript/webpack%20%E5%AE%9E%E6%88%98/%E6%A8%A1%E5%9D%97%E6%89%93%E5%8C%85/</id>
-    <published>2020-02-25T09:10:31.000Z</published>
-    <updated>2020-03-08T09:37:53.634Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://item.jd.com/12623590.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;webpack 实战&lt;/a&gt; 第二章学习笔记&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;模块的概念&quot;&gt;&lt;a href=&quot;#模块的概念&quot; class=&quot;headerlink&quot; title=&quot;模块的概念&quot;&gt;&lt;/a&gt;模块的概念&lt;/h2&gt;&lt;p&gt;模块相之于程序, 就如同细胞之于生物体, 是具有特定功能的组成单元. 不同的模块负责不同的工作. 他们以某种方式联系在一起, 共同保证了程序的正常工作.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://note.niubishanshan.top/categories/JavaScript/"/>
-    
-    
-      <category term="webpack" scheme="http://note.niubishanshan.top/tags/webpack/"/>
-    
-  </entry>
-  
-  <entry>
     <title>常见的小坑</title>
     <link href="http://note.niubishanshan.top/Tips/tips/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B0%8F%E5%9D%91/"/>
     <id>http://note.niubishanshan.top/Tips/tips/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B0%8F%E5%9D%91/</id>
@@ -393,6 +399,30 @@
     
     
       <category term="常见的坑" scheme="http://note.niubishanshan.top/tags/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%9D%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>模块打包</title>
+    <link href="http://note.niubishanshan.top/JavaScript/webpack%20%E5%AE%9E%E6%88%98/%E6%A8%A1%E5%9D%97%E6%89%93%E5%8C%85/"/>
+    <id>http://note.niubishanshan.top/JavaScript/webpack%20%E5%AE%9E%E6%88%98/%E6%A8%A1%E5%9D%97%E6%89%93%E5%8C%85/</id>
+    <published>2020-02-25T09:10:31.000Z</published>
+    <updated>2020-03-08T09:37:53.634Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://item.jd.com/12623590.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;webpack 实战&lt;/a&gt; 第二章学习笔记&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;模块的概念&quot;&gt;&lt;a href=&quot;#模块的概念&quot; class=&quot;headerlink&quot; title=&quot;模块的概念&quot;&gt;&lt;/a&gt;模块的概念&lt;/h2&gt;&lt;p&gt;模块相之于程序, 就如同细胞之于生物体, 是具有特定功能的组成单元. 不同的模块负责不同的工作. 他们以某种方式联系在一起, 共同保证了程序的正常工作.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://note.niubishanshan.top/categories/JavaScript/"/>
+    
+    
+      <category term="webpack" scheme="http://note.niubishanshan.top/tags/webpack/"/>
     
   </entry>
   
@@ -484,34 +514,6 @@
 &lt;h2 id=&quot;中文名称&quot;&gt;&lt;a href=&quot;#中文名称&quot; class=&quot;headerlink&quot; title=&quot;中文名称&quot;&gt;&lt;/a&gt;中文名称&lt;/h2&gt;&lt;p&gt;跨站脚本&lt;/p&gt;
 &lt;h2 id=&quot;常见危害&quot;&gt;&lt;a href=&quot;#常见危害&quot; class=&quot;headerlink&quot; title=&quot;常见危害&quot;&gt;&lt;/a&gt;常见危害&lt;/h2&gt;&lt;p&gt;盗取用户信息, 钓鱼, 制造蠕虫…&lt;/p&gt;
 &lt;h2 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h2&gt;&lt;p&gt;黑客通过 “html 注入” 篡改网页, &lt;strong&gt;插入恶意脚本&lt;/strong&gt;. 当用户浏览网页时, 实现控制用户浏览器行为的一种攻击方式.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="网络安全" scheme="http://note.niubishanshan.top/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
-    
-    
-      <category term="网络安全" scheme="http://note.niubishanshan.top/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>基础知识</title>
-    <link href="http://note.niubishanshan.top/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%AD%E7%BB%83%E8%AF%BE-%E7%AC%94%E8%AE%B0/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    <id>http://note.niubishanshan.top/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%AD%E7%BB%83%E8%AF%BE-%E7%AC%94%E8%AE%B0/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</id>
-    <published>2020-02-14T16:00:31.000Z</published>
-    <updated>2020-02-14T16:13:11.964Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;url&quot;&gt;&lt;a href=&quot;#url&quot; class=&quot;headerlink&quot; title=&quot;url&quot;&gt;&lt;/a&gt;url&lt;/h2&gt;&lt;p&gt;统一资源定位符&lt;/p&gt;
-&lt;p&gt;&lt;img
-        
-      
     
     </summary>
     
