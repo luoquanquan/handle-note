@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://note.niubishanshan.top/"/>
-  <updated>2020-03-09T11:51:24.914Z</updated>
+  <updated>2020-03-10T02:23:35.689Z</updated>
   <id>http://note.niubishanshan.top/</id>
   
   <author>
@@ -21,20 +21,18 @@
     <link href="http://note.niubishanshan.top/%E5%90%8E%E7%AB%AF/tips/package.json%20%E4%B8%AD%E5%BA%93%E7%9A%84%E7%89%88%E6%9C%AC%E5%8F%B7%E7%AC%A6%E5%8F%B7/"/>
     <id>http://note.niubishanshan.top/%E5%90%8E%E7%AB%AF/tips/package.json%20%E4%B8%AD%E5%BA%93%E7%9A%84%E7%89%88%E6%9C%AC%E5%8F%B7%E7%AC%A6%E5%8F%B7/</id>
     <published>2020-03-09T11:10:31.000Z</published>
-    <updated>2020-03-09T11:51:24.914Z</updated>
+    <updated>2020-03-10T02:23:35.689Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;blockquote&gt;
+      &lt;blockquote&gt;
 &lt;p&gt;package.json 的依赖库版本号前大多有一个 ^ ~ 这两者有什么区别呢&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&quot;含义&quot;&gt;&lt;a href=&quot;#含义&quot; class=&quot;headerlink&quot;
-        
-      
+&lt;h2 id=&quot;含义&quot;&gt;&lt;a href=&quot;#含义&quot; class=&quot;headerlink&quot; title=&quot;含义&quot;&gt;&lt;/a&gt;含义&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;波浪符号(~): 当依赖的&lt;strong&gt;修订号&lt;/strong&gt;发生升级后, 使用 &lt;code&gt;npm i&lt;/code&gt; 会自动升级最新版本&lt;/li&gt;
+&lt;li&gt;插入符号(^): 当依赖的&lt;strong&gt;次版本号&lt;/strong&gt;发生升级后, 使用 &lt;code&gt;npm i&lt;/code&gt; 会自动升级最新版本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以上两者均不会更新 &lt;code&gt;package.json&lt;/code&gt;&lt;/p&gt;
     
     </summary>
     
@@ -376,6 +374,30 @@
   </entry>
   
   <entry>
+    <title>模块打包</title>
+    <link href="http://note.niubishanshan.top/JavaScript/webpack%20%E5%AE%9E%E6%88%98/%E6%A8%A1%E5%9D%97%E6%89%93%E5%8C%85/"/>
+    <id>http://note.niubishanshan.top/JavaScript/webpack%20%E5%AE%9E%E6%88%98/%E6%A8%A1%E5%9D%97%E6%89%93%E5%8C%85/</id>
+    <published>2020-02-25T09:10:31.000Z</published>
+    <updated>2020-03-08T09:37:53.634Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://item.jd.com/12623590.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;webpack 实战&lt;/a&gt; 第二章学习笔记&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;模块的概念&quot;&gt;&lt;a href=&quot;#模块的概念&quot; class=&quot;headerlink&quot; title=&quot;模块的概念&quot;&gt;&lt;/a&gt;模块的概念&lt;/h2&gt;&lt;p&gt;模块相之于程序, 就如同细胞之于生物体, 是具有特定功能的组成单元. 不同的模块负责不同的工作. 他们以某种方式联系在一起, 共同保证了程序的正常工作.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://note.niubishanshan.top/categories/JavaScript/"/>
+    
+    
+      <category term="webpack" scheme="http://note.niubishanshan.top/tags/webpack/"/>
+    
+  </entry>
+  
+  <entry>
     <title>常见的小坑</title>
     <link href="http://note.niubishanshan.top/Tips/tips/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B0%8F%E5%9D%91/"/>
     <id>http://note.niubishanshan.top/Tips/tips/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B0%8F%E5%9D%91/</id>
@@ -399,30 +421,6 @@
     
     
       <category term="常见的坑" scheme="http://note.niubishanshan.top/tags/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%9D%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>模块打包</title>
-    <link href="http://note.niubishanshan.top/JavaScript/webpack%20%E5%AE%9E%E6%88%98/%E6%A8%A1%E5%9D%97%E6%89%93%E5%8C%85/"/>
-    <id>http://note.niubishanshan.top/JavaScript/webpack%20%E5%AE%9E%E6%88%98/%E6%A8%A1%E5%9D%97%E6%89%93%E5%8C%85/</id>
-    <published>2020-02-25T09:10:31.000Z</published>
-    <updated>2020-03-08T09:37:53.634Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://item.jd.com/12623590.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;webpack 实战&lt;/a&gt; 第二章学习笔记&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;模块的概念&quot;&gt;&lt;a href=&quot;#模块的概念&quot; class=&quot;headerlink&quot; title=&quot;模块的概念&quot;&gt;&lt;/a&gt;模块的概念&lt;/h2&gt;&lt;p&gt;模块相之于程序, 就如同细胞之于生物体, 是具有特定功能的组成单元. 不同的模块负责不同的工作. 他们以某种方式联系在一起, 共同保证了程序的正常工作.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://note.niubishanshan.top/categories/JavaScript/"/>
-    
-    
-      <category term="webpack" scheme="http://note.niubishanshan.top/tags/webpack/"/>
     
   </entry>
   
