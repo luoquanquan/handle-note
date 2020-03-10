@@ -16,6 +16,8 @@ tags:
 
 以上两者均不会更新 `package.json`
 
+<!-- more -->
+
 ## 原理及使用步骤
 
 使用 `npm i gulp@4.0.0 hexo@4.1.0` 之后修改 `package.json` 文件如下:
