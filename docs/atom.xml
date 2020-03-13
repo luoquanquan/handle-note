@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://note.niubishanshan.top/"/>
-  <updated>2020-03-10T02:23:35.689Z</updated>
+  <updated>2020-03-13T06:09:20.358Z</updated>
   <id>http://note.niubishanshan.top/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Life Long Learning</title>
+    <link href="http://note.niubishanshan.top/Tips/tips/life-long-learning/"/>
+    <id>http://note.niubishanshan.top/Tips/tips/life-long-learning/</id>
+    <published>2020-03-13T04:10:31.000Z</published>
+    <updated>2020-03-13T06:09:20.358Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;前端开发-Tips&quot;&gt;&lt;a href=&quot;#前端开发-Tips&quot; class=&quot;headerlink&quot; title=&quot;前端开发 Tips&quot;&gt;&lt;/a&gt;前端开发 Tips&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;凡是遇到固定大小的内容区域时,
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Tips" scheme="http://note.niubishanshan.top/categories/Tips/"/>
+    
+    
+      <category term="终生学习" scheme="http://note.niubishanshan.top/tags/%E7%BB%88%E7%94%9F%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>package.json 中库的版本号符号</title>
@@ -487,31 +515,6 @@
 &lt;h2 id=&quot;中文名称&quot;&gt;&lt;a href=&quot;#中文名称&quot; class=&quot;headerlink&quot; title=&quot;中文名称&quot;&gt;&lt;/a&gt;中文名称&lt;/h2&gt;&lt;p&gt;跨站请求伪造&lt;/p&gt;
 &lt;h2 id=&quot;常见危害&quot;&gt;&lt;a href=&quot;#常见危害&quot; class=&quot;headerlink&quot; title=&quot;常见危害&quot;&gt;&lt;/a&gt;常见危害&lt;/h2&gt;&lt;p&gt;执行恶意操作(被转账, 被发垃圾评论…), 制造蠕虫…&lt;/p&gt;
 &lt;h2 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h2&gt;&lt;p&gt;利用用户已登录的身份, 在用户毫不知情的情况下, 以用户的名义执行非法操作&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="网络安全" scheme="http://note.niubishanshan.top/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
-    
-    
-      <category term="网络安全" scheme="http://note.niubishanshan.top/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>XSS</title>
-    <link href="http://note.niubishanshan.top/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%AD%E7%BB%83%E8%AF%BE-%E7%AC%94%E8%AE%B0/%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/xss/"/>
-    <id>http://note.niubishanshan.top/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%AD%E7%BB%83%E8%AF%BE-%E7%AC%94%E8%AE%B0/%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/xss/</id>
-    <published>2020-02-14T16:16:30.000Z</published>
-    <updated>2020-03-08T09:34:38.588Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;全称&quot;&gt;&lt;a href=&quot;#全称&quot; class=&quot;headerlink&quot; title=&quot;全称&quot;&gt;&lt;/a&gt;全称&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Cross Site Script&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;中文名称&quot;&gt;&lt;a href=&quot;#中文名称&quot; class=&quot;headerlink&quot; title=&quot;中文名称&quot;&gt;&lt;/a&gt;中文名称&lt;/h2&gt;&lt;p&gt;跨站脚本&lt;/p&gt;
-&lt;h2 id=&quot;常见危害&quot;&gt;&lt;a href=&quot;#常见危害&quot; class=&quot;headerlink&quot; title=&quot;常见危害&quot;&gt;&lt;/a&gt;常见危害&lt;/h2&gt;&lt;p&gt;盗取用户信息, 钓鱼, 制造蠕虫…&lt;/p&gt;
-&lt;h2 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h2&gt;&lt;p&gt;黑客通过 “html 注入” 篡改网页, &lt;strong&gt;插入恶意脚本&lt;/strong&gt;. 当用户浏览网页时, 实现控制用户浏览器行为的一种攻击方式.&lt;/p&gt;
     
     </summary>
     
