@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://note.niubishanshan.top/"/>
-  <updated>2020-03-13T06:09:20.358Z</updated>
+  <updated>2020-03-14T14:04:50.568Z</updated>
   <id>http://note.niubishanshan.top/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>interview-6</title>
+    <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-6/"/>
+    <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-6/</id>
+    <published>2020-03-14T08:50:31.000Z</published>
+    <updated>2020-03-14T14:04:50.568Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;React 以前不知道的那些小点点~&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;React-事件对象处理&quot;&gt;&lt;a href=&quot;#React-事件对象处理&quot; class=&quot;headerlink&quot; title=&quot;React 事件对象处理&quot;&gt;&lt;/a&gt;React 事件对象处理&lt;/h2&gt;&lt;p&gt;猜猜看以下代码执行的逻辑&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;handleClick(e) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// 事件对象 e 是经过处理的一个实例&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(e)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// 事件对象所属的类&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(e.__proto__.constructor)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// e.target 当前触发事件的元素&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// e.currentTarget 绑定事件的元素&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(&lt;span class=&quot;string&quot;&gt;&#39;e.target&#39;&lt;/span&gt;, e.target)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(&lt;span class=&quot;string&quot;&gt;&#39;e.currentTarget&#39;&lt;/span&gt;, e.currentTarget)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// 原生事件对象&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; &amp;#123;nativeEvent&amp;#125; = e&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(&lt;span class=&quot;string&quot;&gt;&#39;nativeEvent.target&#39;&lt;/span&gt;, nativeEvent.target)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(&lt;span class=&quot;string&quot;&gt;&#39;nativeEvent.currentTarget&#39;&lt;/span&gt;, nativeEvent.currentTarget)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://note.niubishanshan.top/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="interview" scheme="http://note.niubishanshan.top/tags/interview/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Life Long Learning</title>
     <link href="http://note.niubishanshan.top/Tips/tips/life-long-learning/"/>
     <id>http://note.niubishanshan.top/Tips/tips/life-long-learning/</id>
     <published>2020-03-13T04:10:31.000Z</published>
-    <updated>2020-03-13T06:09:20.358Z</updated>
+    <updated>2020-03-13T08:29:23.218Z</updated>
     
     <summary type="html">
     
@@ -402,30 +427,6 @@
   </entry>
   
   <entry>
-    <title>模块打包</title>
-    <link href="http://note.niubishanshan.top/JavaScript/webpack%20%E5%AE%9E%E6%88%98/%E6%A8%A1%E5%9D%97%E6%89%93%E5%8C%85/"/>
-    <id>http://note.niubishanshan.top/JavaScript/webpack%20%E5%AE%9E%E6%88%98/%E6%A8%A1%E5%9D%97%E6%89%93%E5%8C%85/</id>
-    <published>2020-02-25T09:10:31.000Z</published>
-    <updated>2020-03-08T09:37:53.634Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://item.jd.com/12623590.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;webpack 实战&lt;/a&gt; 第二章学习笔记&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;模块的概念&quot;&gt;&lt;a href=&quot;#模块的概念&quot; class=&quot;headerlink&quot; title=&quot;模块的概念&quot;&gt;&lt;/a&gt;模块的概念&lt;/h2&gt;&lt;p&gt;模块相之于程序, 就如同细胞之于生物体, 是具有特定功能的组成单元. 不同的模块负责不同的工作. 他们以某种方式联系在一起, 共同保证了程序的正常工作.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://note.niubishanshan.top/categories/JavaScript/"/>
-    
-    
-      <category term="webpack" scheme="http://note.niubishanshan.top/tags/webpack/"/>
-    
-  </entry>
-  
-  <entry>
     <title>常见的小坑</title>
     <link href="http://note.niubishanshan.top/Tips/tips/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B0%8F%E5%9D%91/"/>
     <id>http://note.niubishanshan.top/Tips/tips/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B0%8F%E5%9D%91/</id>
@@ -449,6 +450,30 @@
     
     
       <category term="常见的坑" scheme="http://note.niubishanshan.top/tags/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%9D%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>模块打包</title>
+    <link href="http://note.niubishanshan.top/JavaScript/webpack%20%E5%AE%9E%E6%88%98/%E6%A8%A1%E5%9D%97%E6%89%93%E5%8C%85/"/>
+    <id>http://note.niubishanshan.top/JavaScript/webpack%20%E5%AE%9E%E6%88%98/%E6%A8%A1%E5%9D%97%E6%89%93%E5%8C%85/</id>
+    <published>2020-02-25T09:10:31.000Z</published>
+    <updated>2020-03-08T09:37:53.634Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://item.jd.com/12623590.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;webpack 实战&lt;/a&gt; 第二章学习笔记&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;模块的概念&quot;&gt;&lt;a href=&quot;#模块的概念&quot; class=&quot;headerlink&quot; title=&quot;模块的概念&quot;&gt;&lt;/a&gt;模块的概念&lt;/h2&gt;&lt;p&gt;模块相之于程序, 就如同细胞之于生物体, 是具有特定功能的组成单元. 不同的模块负责不同的工作. 他们以某种方式联系在一起, 共同保证了程序的正常工作.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://note.niubishanshan.top/categories/JavaScript/"/>
+    
+    
+      <category term="webpack" scheme="http://note.niubishanshan.top/tags/webpack/"/>
     
   </entry>
   
@@ -490,31 +515,6 @@
           &lt;h2 id=&quot;就这一张图-内容就不编了&quot;&gt;&lt;a href=&quot;#就这一张图-内容就不编了&quot; class=&quot;headerlink&quot; title=&quot;就这一张图, 内容就不编了&quot;&gt;&lt;/a&gt;就这一张图, 内容就不编了&lt;/h2&gt;&lt;p&gt;&lt;img
         
       
-    
-    </summary>
-    
-    
-      <category term="网络安全" scheme="http://note.niubishanshan.top/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
-    
-    
-      <category term="网络安全" scheme="http://note.niubishanshan.top/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSRF</title>
-    <link href="http://note.niubishanshan.top/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%AD%E7%BB%83%E8%AF%BE-%E7%AC%94%E8%AE%B0/%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/CSRF/"/>
-    <id>http://note.niubishanshan.top/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%AD%E7%BB%83%E8%AF%BE-%E7%AC%94%E8%AE%B0/%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/CSRF/</id>
-    <published>2020-02-15T05:16:30.000Z</published>
-    <updated>2020-03-08T09:34:04.696Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;全称&quot;&gt;&lt;a href=&quot;#全称&quot; class=&quot;headerlink&quot; title=&quot;全称&quot;&gt;&lt;/a&gt;全称&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Cross Site request forgery&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;中文名称&quot;&gt;&lt;a href=&quot;#中文名称&quot; class=&quot;headerlink&quot; title=&quot;中文名称&quot;&gt;&lt;/a&gt;中文名称&lt;/h2&gt;&lt;p&gt;跨站请求伪造&lt;/p&gt;
-&lt;h2 id=&quot;常见危害&quot;&gt;&lt;a href=&quot;#常见危害&quot; class=&quot;headerlink&quot; title=&quot;常见危害&quot;&gt;&lt;/a&gt;常见危害&lt;/h2&gt;&lt;p&gt;执行恶意操作(被转账, 被发垃圾评论…), 制造蠕虫…&lt;/p&gt;
-&lt;h2 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h2&gt;&lt;p&gt;利用用户已登录的身份, 在用户毫不知情的情况下, 以用户的名义执行非法操作&lt;/p&gt;
     
     </summary>
     

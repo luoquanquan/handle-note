@@ -32,6 +32,8 @@ handleClick(e) {
 }
 ```
 
+<!-- more -->
+
 执行的结果如下:
 ![2020-03-14-18-00-56](http://handle-note-img.niubishanshan.top/2020-03-14-18-00-56.png)
 
