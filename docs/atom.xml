@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://note.niubishanshan.top/"/>
-  <updated>2020-03-14T14:04:50.568Z</updated>
+  <updated>2020-03-14T15:24:02.198Z</updated>
   <id>http://note.niubishanshan.top/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>interview-7</title>
+    <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-7/"/>
+    <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-7/</id>
+    <published>2020-03-14T14:50:31.000Z</published>
+    <updated>2020-03-14T15:24:02.198Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;React 以前不知道的那些小点点~&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;组件公共逻辑抽离&quot;&gt;&lt;a href=&quot;#组件公共逻辑抽离&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://note.niubishanshan.top/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="interview" scheme="http://note.niubishanshan.top/tags/interview/"/>
+    
+  </entry>
+  
+  <entry>
     <title>interview-6</title>
     <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-6/"/>
     <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-6/</id>
     <published>2020-03-14T08:50:31.000Z</published>
-    <updated>2020-03-14T14:04:50.568Z</updated>
+    <updated>2020-03-14T15:00:26.987Z</updated>
     
     <summary type="html">
     
@@ -427,6 +457,30 @@
   </entry>
   
   <entry>
+    <title>模块打包</title>
+    <link href="http://note.niubishanshan.top/JavaScript/webpack%20%E5%AE%9E%E6%88%98/%E6%A8%A1%E5%9D%97%E6%89%93%E5%8C%85/"/>
+    <id>http://note.niubishanshan.top/JavaScript/webpack%20%E5%AE%9E%E6%88%98/%E6%A8%A1%E5%9D%97%E6%89%93%E5%8C%85/</id>
+    <published>2020-02-25T09:10:31.000Z</published>
+    <updated>2020-03-08T09:37:53.634Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://item.jd.com/12623590.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;webpack 实战&lt;/a&gt; 第二章学习笔记&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;模块的概念&quot;&gt;&lt;a href=&quot;#模块的概念&quot; class=&quot;headerlink&quot; title=&quot;模块的概念&quot;&gt;&lt;/a&gt;模块的概念&lt;/h2&gt;&lt;p&gt;模块相之于程序, 就如同细胞之于生物体, 是具有特定功能的组成单元. 不同的模块负责不同的工作. 他们以某种方式联系在一起, 共同保证了程序的正常工作.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://note.niubishanshan.top/categories/JavaScript/"/>
+    
+    
+      <category term="webpack" scheme="http://note.niubishanshan.top/tags/webpack/"/>
+    
+  </entry>
+  
+  <entry>
     <title>常见的小坑</title>
     <link href="http://note.niubishanshan.top/Tips/tips/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B0%8F%E5%9D%91/"/>
     <id>http://note.niubishanshan.top/Tips/tips/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B0%8F%E5%9D%91/</id>
@@ -454,30 +508,6 @@
   </entry>
   
   <entry>
-    <title>模块打包</title>
-    <link href="http://note.niubishanshan.top/JavaScript/webpack%20%E5%AE%9E%E6%88%98/%E6%A8%A1%E5%9D%97%E6%89%93%E5%8C%85/"/>
-    <id>http://note.niubishanshan.top/JavaScript/webpack%20%E5%AE%9E%E6%88%98/%E6%A8%A1%E5%9D%97%E6%89%93%E5%8C%85/</id>
-    <published>2020-02-25T09:10:31.000Z</published>
-    <updated>2020-03-08T09:37:53.634Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://item.jd.com/12623590.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;webpack 实战&lt;/a&gt; 第二章学习笔记&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;模块的概念&quot;&gt;&lt;a href=&quot;#模块的概念&quot; class=&quot;headerlink&quot; title=&quot;模块的概念&quot;&gt;&lt;/a&gt;模块的概念&lt;/h2&gt;&lt;p&gt;模块相之于程序, 就如同细胞之于生物体, 是具有特定功能的组成单元. 不同的模块负责不同的工作. 他们以某种方式联系在一起, 共同保证了程序的正常工作.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://note.niubishanshan.top/categories/JavaScript/"/>
-    
-    
-      <category term="webpack" scheme="http://note.niubishanshan.top/tags/webpack/"/>
-    
-  </entry>
-  
-  <entry>
     <title>URL 跳转漏洞</title>
     <link href="http://note.niubishanshan.top/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%AD%E7%BB%83%E8%AF%BE-%E7%AC%94%E8%AE%B0/%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/url%20%E8%B7%B3%E8%BD%AC%E6%BC%8F%E6%B4%9E/"/>
     <id>http://note.niubishanshan.top/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%AD%E7%BB%83%E8%AF%BE-%E7%AC%94%E8%AE%B0/%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/url%20%E8%B7%B3%E8%BD%AC%E6%BC%8F%E6%B4%9E/</id>
@@ -488,33 +518,6 @@
     
       &lt;h2 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h2&gt;&lt;p&gt;URL 跳转漏洞, 就是利用没有验证功能的 Url 跳转能力, 将应用引导到不安全&lt;br&gt;的第三方区域.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://handle-note-img.niubishanshan.top/2020-02-15-19-56-30.png&quot; alt=&quot;2020-02-15-19-56-30&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="网络安全" scheme="http://note.niubishanshan.top/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
-    
-    
-      <category term="网络安全" scheme="http://note.niubishanshan.top/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>点击劫持</title>
-    <link href="http://note.niubishanshan.top/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%AD%E7%BB%83%E8%AF%BE-%E7%AC%94%E8%AE%B0/%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/%E7%82%B9%E5%87%BB%E5%8A%AB%E6%8C%81/"/>
-    <id>http://note.niubishanshan.top/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%AD%E7%BB%83%E8%AF%BE-%E7%AC%94%E8%AE%B0/%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/%E7%82%B9%E5%87%BB%E5%8A%AB%E6%8C%81/</id>
-    <published>2020-02-15T11:16:30.000Z</published>
-    <updated>2020-02-15T11:39:56.831Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;就这一张图-内容就不编了&quot;&gt;&lt;a href=&quot;#就这一张图-内容就不编了&quot; class=&quot;headerlink&quot; title=&quot;就这一张图, 内容就不编了&quot;&gt;&lt;/a&gt;就这一张图, 内容就不编了&lt;/h2&gt;&lt;p&gt;&lt;img
-        
-      
     
     </summary>
     
