@@ -42,6 +42,12 @@ handleClick(e) {
 - 可以通过 `e.nativeEvent` 获取到原生事件对象
 - `React` 包装的事件对象 e 利用事件委托将所有的事件都绑定到了 `document` 上
 
+### React 中使用合成事件的原因
+
+- 更好的兼容性和跨平台实现
+- 所有事件挂载到 document 上, 减少了内存的消耗. 避免了频繁的绑定和解绑事件
+- 方便事件的统一管理(如: transaction 事务机制)
+
 事件对比相关的代码在[这里](https://github.com/luoquanquan/learn-fe/commit/2d89119625f27afde906c2a2da49d19565f449a1)
 
 ## 事件处理函数的 this 指定问题
