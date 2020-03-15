@@ -12,6 +12,7 @@
     "version": "4.2.0"
   },
   "dependencies": {
+    "gulp-cache": "^1.1.3",
     "hexo-deployer-git": "^2.1.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",

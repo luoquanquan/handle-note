@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://note.niubishanshan.top/"/>
-  <updated>2020-03-14T15:24:02.198Z</updated>
+  <updated>2020-03-15T02:44:31.737Z</updated>
   <id>http://note.niubishanshan.top/</id>
   
   <author>
@@ -21,20 +21,15 @@
     <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-7/"/>
     <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-7/</id>
     <published>2020-03-14T14:50:31.000Z</published>
-    <updated>2020-03-14T15:24:02.198Z</updated>
+    <updated>2020-03-15T02:44:31.737Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;blockquote&gt;
+      &lt;blockquote&gt;
 &lt;p&gt;React 以前不知道的那些小点点~&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&quot;组件公共逻辑抽离&quot;&gt;&lt;a href=&quot;#组件公共逻辑抽离&quot; class=&quot;headerlink&quot;
-        
-      
+&lt;h2 id=&quot;组件公共逻辑抽离&quot;&gt;&lt;a href=&quot;#组件公共逻辑抽离&quot; class=&quot;headerlink&quot; title=&quot;组件公共逻辑抽离&quot;&gt;&lt;/a&gt;组件公共逻辑抽离&lt;/h2&gt;&lt;h3 id=&quot;高阶组件&quot;&gt;&lt;a href=&quot;#高阶组件&quot; class=&quot;headerlink&quot; title=&quot;高阶组件&quot;&gt;&lt;/a&gt;高阶组件&lt;/h3&gt;&lt;p&gt;传入一个组件, 返回一个新的组件, 并赋予新的组件公共能力~&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; React &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&#39;react&#39;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;default&lt;/span&gt; Comp =&amp;gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;withMouse&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;React&lt;/span&gt;.&lt;span class=&quot;title&quot;&gt;Component&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;constructor&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;super&lt;/span&gt;()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.state = &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            x: &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            y: &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    componentDidMount() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;window&lt;/span&gt;.addEventListener(&lt;span class=&quot;string&quot;&gt;&#39;mousemove&#39;&lt;/span&gt;, (&amp;#123;x, y&amp;#125;) =&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.setState(&amp;#123;x, y&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    render() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; &amp;#123;x, y&amp;#125; = &lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.state&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; props = &amp;#123;x, y&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;Comp&lt;/span&gt; &amp;#123;&lt;span class=&quot;attr&quot;&gt;...props&lt;/span&gt;&amp;#125; /&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
@@ -457,30 +452,6 @@
   </entry>
   
   <entry>
-    <title>模块打包</title>
-    <link href="http://note.niubishanshan.top/JavaScript/webpack%20%E5%AE%9E%E6%88%98/%E6%A8%A1%E5%9D%97%E6%89%93%E5%8C%85/"/>
-    <id>http://note.niubishanshan.top/JavaScript/webpack%20%E5%AE%9E%E6%88%98/%E6%A8%A1%E5%9D%97%E6%89%93%E5%8C%85/</id>
-    <published>2020-02-25T09:10:31.000Z</published>
-    <updated>2020-03-08T09:37:53.634Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://item.jd.com/12623590.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;webpack 实战&lt;/a&gt; 第二章学习笔记&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;模块的概念&quot;&gt;&lt;a href=&quot;#模块的概念&quot; class=&quot;headerlink&quot; title=&quot;模块的概念&quot;&gt;&lt;/a&gt;模块的概念&lt;/h2&gt;&lt;p&gt;模块相之于程序, 就如同细胞之于生物体, 是具有特定功能的组成单元. 不同的模块负责不同的工作. 他们以某种方式联系在一起, 共同保证了程序的正常工作.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://note.niubishanshan.top/categories/JavaScript/"/>
-    
-    
-      <category term="webpack" scheme="http://note.niubishanshan.top/tags/webpack/"/>
-    
-  </entry>
-  
-  <entry>
     <title>常见的小坑</title>
     <link href="http://note.niubishanshan.top/Tips/tips/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B0%8F%E5%9D%91/"/>
     <id>http://note.niubishanshan.top/Tips/tips/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B0%8F%E5%9D%91/</id>
@@ -504,6 +475,30 @@
     
     
       <category term="常见的坑" scheme="http://note.niubishanshan.top/tags/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%9D%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>模块打包</title>
+    <link href="http://note.niubishanshan.top/JavaScript/webpack%20%E5%AE%9E%E6%88%98/%E6%A8%A1%E5%9D%97%E6%89%93%E5%8C%85/"/>
+    <id>http://note.niubishanshan.top/JavaScript/webpack%20%E5%AE%9E%E6%88%98/%E6%A8%A1%E5%9D%97%E6%89%93%E5%8C%85/</id>
+    <published>2020-02-25T09:10:31.000Z</published>
+    <updated>2020-03-08T09:37:53.634Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://item.jd.com/12623590.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;webpack 实战&lt;/a&gt; 第二章学习笔记&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;模块的概念&quot;&gt;&lt;a href=&quot;#模块的概念&quot; class=&quot;headerlink&quot; title=&quot;模块的概念&quot;&gt;&lt;/a&gt;模块的概念&lt;/h2&gt;&lt;p&gt;模块相之于程序, 就如同细胞之于生物体, 是具有特定功能的组成单元. 不同的模块负责不同的工作. 他们以某种方式联系在一起, 共同保证了程序的正常工作.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://note.niubishanshan.top/categories/JavaScript/"/>
+    
+    
+      <category term="webpack" scheme="http://note.niubishanshan.top/tags/webpack/"/>
     
   </entry>
   

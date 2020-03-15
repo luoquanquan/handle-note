@@ -5,6 +5,7 @@ const htmlclean = require('gulp-htmlclean')
 const imagemin = require('gulp-imagemin')
 const rename = require("gulp-rename")
 const replace = require('gulp-replace')
+const cache = require('gulp-cache')
 
 const uglify = require('gulp-uglify-es').default
 
@@ -32,7 +33,7 @@ const moveImage = () => gulp.src('./source/_posts/**/*.png')
     .pipe(gulp.dest('./docs/note-images'))
 
 const minifyImg = () => gulp.src('./docs/note-images/*.png')
-    .pipe(imagemin())
+    .pipe(cache(imagemin()))
     .pipe(gulp.dest('./docs/note-images'))
 
 exports.default = gulp.series(gulp.parallel(minifyHtml, minifyCss, minifyJs, moveImage))
