@@ -41,6 +41,8 @@ export default Comp => class withMouse extends React.Component {
 }
 ```
 
+<!-- more -->
+
 如上代码就是一个最简单的高阶组件实现...
 
 #### 使用场景
