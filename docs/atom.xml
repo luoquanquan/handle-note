@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://note.niubishanshan.top/"/>
-  <updated>2020-03-15T02:44:31.737Z</updated>
+  <updated>2020-03-16T09:13:33.640Z</updated>
   <id>http://note.niubishanshan.top/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>1. 高阶函数</title>
+    <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/%E8%A7%86%E9%A2%91%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E5%89%8D%E7%AB%AF%E6%9E%B6%E6%9E%84/1.%20%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/"/>
+    <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/%E8%A7%86%E9%A2%91%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E5%89%8D%E7%AB%AF%E6%9E%B6%E6%9E%84/1.%20%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/</id>
+    <published>2020-03-16T06:20:31.000Z</published>
+    <updated>2020-03-16T09:13:33.640Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;如果一个函数的参数是另一个函数, 那么可以称这个函数为高阶函数. 回调函数就是高阶函数的一种实现&lt;/li&gt;
+&lt;li&gt;如果一个函数的返回值是另一个函数, 那么也可以成该函数为高阶函数. 闭包&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;闭包&quot;&gt;&lt;a href=&quot;#闭包&quot; class=&quot;headerlink&quot; title=&quot;闭包&quot;&gt;&lt;/a&gt;闭包&lt;/h2&gt;&lt;p&gt;概念: 一个函数不在定义自己的作用域内执行且能获取到该作用域的变量的情况就是闭包&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://note.niubishanshan.top/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端架构" scheme="http://note.niubishanshan.top/tags/%E5%89%8D%E7%AB%AF%E6%9E%B6%E6%9E%84/"/>
+    
+      <category term="学习笔记" scheme="http://note.niubishanshan.top/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>interview-7</title>
@@ -71,7 +98,7 @@
     <link href="http://note.niubishanshan.top/Tips/tips/life-long-learning/"/>
     <id>http://note.niubishanshan.top/Tips/tips/life-long-learning/</id>
     <published>2020-03-13T04:10:31.000Z</published>
-    <updated>2020-03-13T08:29:23.218Z</updated>
+    <updated>2020-03-16T06:42:23.594Z</updated>
     
     <summary type="html">
     
@@ -499,28 +526,6 @@
     
     
       <category term="webpack" scheme="http://note.niubishanshan.top/tags/webpack/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>URL 跳转漏洞</title>
-    <link href="http://note.niubishanshan.top/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%AD%E7%BB%83%E8%AF%BE-%E7%AC%94%E8%AE%B0/%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/url%20%E8%B7%B3%E8%BD%AC%E6%BC%8F%E6%B4%9E/"/>
-    <id>http://note.niubishanshan.top/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%AD%E7%BB%83%E8%AF%BE-%E7%AC%94%E8%AE%B0/%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/url%20%E8%B7%B3%E8%BD%AC%E6%BC%8F%E6%B4%9E/</id>
-    <published>2020-02-15T11:46:30.000Z</published>
-    <updated>2020-03-08T09:34:20.359Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h2&gt;&lt;p&gt;URL 跳转漏洞, 就是利用没有验证功能的 Url 跳转能力, 将应用引导到不安全&lt;br&gt;的第三方区域.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://handle-note-img.niubishanshan.top/2020-02-15-19-56-30.png&quot; alt=&quot;2020-02-15-19-56-30&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="网络安全" scheme="http://note.niubishanshan.top/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
-    
-    
-      <category term="网络安全" scheme="http://note.niubishanshan.top/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
     
   </entry>
   
