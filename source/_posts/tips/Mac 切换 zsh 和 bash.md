@@ -1,5 +1,5 @@
 ---
-title: 查询指定端口号对应的任务
+title: Mac 切换 zsh 和 bash
 date: 2020-02-01 00:10:31
 categories:
   - Tips
