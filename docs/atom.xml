@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://note.niubishanshan.top/"/>
-  <updated>2020-03-16T09:13:33.640Z</updated>
+  <updated>2020-03-17T08:26:47.024Z</updated>
   <id>http://note.niubishanshan.top/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>brew 安装应用免等待 Updating Homebrew...</title>
+    <link href="http://note.niubishanshan.top/Tips/tips/brew-%E5%AE%89%E8%A3%85%E5%BA%94%E7%94%A8%E5%85%8D%E7%AD%89%E5%BE%85-Updating-Homebrew/"/>
+    <id>http://note.niubishanshan.top/Tips/tips/brew-%E5%AE%89%E8%A3%85%E5%BA%94%E7%94%A8%E5%85%8D%E7%AD%89%E5%BE%85-Updating-Homebrew/</id>
+    <published>2020-03-17T04:10:31.000Z</published>
+    <updated>2020-03-17T08:26:47.024Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;使用-control-c-取消本次操作&quot;&gt;&lt;a href=&quot;#使用-control-c-取消本次操作&quot; class=&quot;headerlink&quot; title=&quot;使用 control + c 取消本次操作&quot;&gt;&lt;/a&gt;使用 control + c
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Tips" scheme="http://note.niubishanshan.top/categories/Tips/"/>
+    
+    
+      <category term="Mac" scheme="http://note.niubishanshan.top/tags/Mac/"/>
+    
+  </entry>
   
   <entry>
     <title>1. 高阶函数</title>
@@ -502,30 +529,6 @@
     
     
       <category term="常见的坑" scheme="http://note.niubishanshan.top/tags/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%9D%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>模块打包</title>
-    <link href="http://note.niubishanshan.top/JavaScript/webpack%20%E5%AE%9E%E6%88%98/%E6%A8%A1%E5%9D%97%E6%89%93%E5%8C%85/"/>
-    <id>http://note.niubishanshan.top/JavaScript/webpack%20%E5%AE%9E%E6%88%98/%E6%A8%A1%E5%9D%97%E6%89%93%E5%8C%85/</id>
-    <published>2020-02-25T09:10:31.000Z</published>
-    <updated>2020-03-08T09:37:53.634Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://item.jd.com/12623590.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;webpack 实战&lt;/a&gt; 第二章学习笔记&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;模块的概念&quot;&gt;&lt;a href=&quot;#模块的概念&quot; class=&quot;headerlink&quot; title=&quot;模块的概念&quot;&gt;&lt;/a&gt;模块的概念&lt;/h2&gt;&lt;p&gt;模块相之于程序, 就如同细胞之于生物体, 是具有特定功能的组成单元. 不同的模块负责不同的工作. 他们以某种方式联系在一起, 共同保证了程序的正常工作.&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaScript" scheme="http://note.niubishanshan.top/categories/JavaScript/"/>
-    
-    
-      <category term="webpack" scheme="http://note.niubishanshan.top/tags/webpack/"/>
     
   </entry>
   
