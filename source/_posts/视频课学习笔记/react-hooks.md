@@ -66,6 +66,8 @@ tags:
 
 ## useRef
 
+可以避免多次创建 ref 对象
+
 ## useMemo useCallback useRef
 
 - useMemo useCallback useRef 本质上都是为了缓存
