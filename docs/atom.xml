@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://note.niubishanshan.top/"/>
-  <updated>2020-03-17T08:26:47.024Z</updated>
+  <updated>2020-05-05T10:37:38.972Z</updated>
   <id>http://note.niubishanshan.top/</id>
   
   <author>
@@ -15,6 +15,64 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>基础使用 hooks</title>
+    <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/%E8%A7%86%E9%A2%91%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/react-hooks/"/>
+    <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/%E8%A7%86%E9%A2%91%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/react-hooks/</id>
+    <published>2020-05-05T06:20:31.000Z</published>
+    <updated>2020-05-05T10:37:38.972Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;解决的问题&quot;&gt;&lt;a href=&quot;#解决的问题&quot; class=&quot;headerlink&quot; title=&quot;解决的问题&quot;&gt;&lt;/a&gt;解决的问题&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;React Hooks 解决了组件之间复用状态逻辑困难, 可能要使用到 HOC or Render
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://note.niubishanshan.top/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="React" scheme="http://note.niubishanshan.top/tags/React/"/>
+    
+      <category term="hook" scheme="http://note.niubishanshan.top/tags/hook/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PS 基础课</title>
+    <link href="http://note.niubishanshan.top/%E4%B8%9A%E4%BD%99%E7%88%B1%E5%A5%BD/PS%20%E5%AD%A6%E4%B9%A0/%E8%B6%85%E7%BA%A7%E9%80%9A%E4%BF%97%E6%98%93%E6%87%82%E7%9A%84ps%E6%95%99%E7%A8%8B/%E5%9F%BA%E7%A1%80%E8%AF%BE/"/>
+    <id>http://note.niubishanshan.top/%E4%B8%9A%E4%BD%99%E7%88%B1%E5%A5%BD/PS%20%E5%AD%A6%E4%B9%A0/%E8%B6%85%E7%BA%A7%E9%80%9A%E4%BF%97%E6%98%93%E6%87%82%E7%9A%84ps%E6%95%99%E7%A8%8B/%E5%9F%BA%E7%A1%80%E8%AF%BE/</id>
+    <published>2020-04-25T11:15:31.000Z</published>
+    <updated>2020-04-26T05:21:21.078Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;图层创建-复制&quot;&gt;&lt;a href=&quot;#图层创建-复制&quot; class=&quot;headerlink&quot; title=&quot;图层创建(复制)&quot;&gt;&lt;/a&gt;图层创建(复制)&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;快捷键 &lt;code&gt;command +
+        
+      
+    
+    </summary>
+    
+    
+      <category term="业余爱好" scheme="http://note.niubishanshan.top/categories/%E4%B8%9A%E4%BD%99%E7%88%B1%E5%A5%BD/"/>
+    
+    
+      <category term="PS" scheme="http://note.niubishanshan.top/tags/PS/"/>
+    
+  </entry>
   
   <entry>
     <title>brew 安装应用免等待 Updating Homebrew...</title>
@@ -472,63 +530,6 @@
     
     
       <category term="interview" scheme="http://note.niubishanshan.top/tags/interview/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>常用工具</title>
-    <link href="http://note.niubishanshan.top/Tips/tips/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
-    <id>http://note.niubishanshan.top/Tips/tips/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/</id>
-    <published>2020-02-26T02:10:31.000Z</published>
-    <updated>2020-02-26T03:18:24.701Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;这里列举了我常用的效率工具, 免去了每次用的时候都需要百度一下的环节…&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;常用链接类-web-工具&quot;&gt;&lt;a href=&quot;#常用链接类-web-工具&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Tips" scheme="http://note.niubishanshan.top/categories/Tips/"/>
-    
-    
-      <category term="工具" scheme="http://note.niubishanshan.top/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>常见的小坑</title>
-    <link href="http://note.niubishanshan.top/Tips/tips/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B0%8F%E5%9D%91/"/>
-    <id>http://note.niubishanshan.top/Tips/tips/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B0%8F%E5%9D%91/</id>
-    <published>2020-02-25T09:10:31.000Z</published>
-    <updated>2020-02-25T10:39:56.975Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Safari-中-flex-包含图片高度暴走&quot;&gt;&lt;a href=&quot;#Safari-中-flex-包含图片高度暴走&quot; class=&quot;headerlink&quot; title=&quot;Safari 中 flex 包含图片高度暴走&quot;&gt;&lt;/a&gt;Safari 中 flex
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Tips" scheme="http://note.niubishanshan.top/categories/Tips/"/>
-    
-    
-      <category term="常见的坑" scheme="http://note.niubishanshan.top/tags/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%9D%91/"/>
     
   </entry>
   
