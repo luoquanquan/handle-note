@@ -1,6 +1,6 @@
 ---
 title: 基础使用 hooks
-date: 2020-03-16 14:20:31
+date: 2020-05-05 14:20:31
 categories:
   - 前端
 tags:
@@ -73,3 +73,16 @@ tags:
 - useMemo useCallback useRef 本质上都是为了缓存
 - 在以前的类组件中, 类组件就是一个实例, 实例一旦创建其属性就得以保持
 - hook 只能使用在函数组件里, 但是函数组件不会创建实例. 当然就没有办法在挂载各种属性,因此就要依靠 useMemo useCallback useRef
+
+## useImperativeHandle
+
+- useImperativeHandle 可以赋予用户在使用 ref 时自定义暴露给父组件的实例的值
+- useImperativeHandle 一般与 forwardRef 一起使用
+
+## 自定义 hook
+
+- 不增加组件的前提下实现组件间重用一些状态逻辑
+- hook 是一种复用状态逻辑的方式, 它不能复用状态本身, 每次调用 hook 都会生成一个完全独立的 state
+- 自定义 hook 更像是一种约定而不是一个功能, 如果函数名义 use 开头, 而且调用了其他的 hook. 那么就认为他是一个自定义的 hook
+
+
