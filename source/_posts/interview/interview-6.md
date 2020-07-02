@@ -124,7 +124,7 @@ this.setState({
 > 组件更新触发时机: 1. 父组件触发 render 2. 组件自身 setState
 
 - `componentWillReceiveProps(nextProps)`
-  - 只有父组件 `render` 时触发, 组件内调用 `setState`
+  - 只有父组件 `render` 时触发, 组件内调用 `setState` 不会触发
   - `nextProps` 的值可能和 `this.props` 的值是一样的
   - 在这个方法中执行 `setState` 只有在 `render` 之后获取的 `this.state` 才是最新的 `state`, `render` 之前获取的 `this.state` 仍然为更新前的 `state`
 - `shouldComponentUpdate(nextProps, nextState)` 决定了是否继续执行更新的过程, 如果该方法返回 `false` 后续的生命周期函数将不再触发
