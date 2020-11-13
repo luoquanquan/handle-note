@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://note.niubishanshan.top/"/>
-  <updated>2020-05-05T10:37:38.972Z</updated>
+  <updated>2020-11-13T10:13:34.202Z</updated>
   <id>http://note.niubishanshan.top/</id>
   
   <author>
@@ -15,6 +15,105 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>sentry 部署记录</title>
+    <link href="http://note.niubishanshan.top/%E5%B7%A5%E7%A8%8B%E5%8C%96/sentry/sentry%20%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/"/>
+    <id>http://note.niubishanshan.top/%E5%B7%A5%E7%A8%8B%E5%8C%96/sentry/sentry%20%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/</id>
+    <published>2020-11-13T05:50:31.000Z</published>
+    <updated>2020-11-13T10:13:34.202Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;安装-docker&quot;&gt;&lt;a href=&quot;#安装-docker&quot; class=&quot;headerlink&quot; title=&quot;安装 docker&quot;&gt;&lt;/a&gt;安装 docker&lt;/h2&gt;&lt;p&gt;执行命令, 一键安装&lt;/p&gt;
+&lt;figure class=&quot;highlight
+        
+      
+    
+    </summary>
+    
+    
+      <category term="工程化" scheme="http://note.niubishanshan.top/categories/%E5%B7%A5%E7%A8%8B%E5%8C%96/"/>
+    
+    
+      <category term="docker" scheme="http://note.niubishanshan.top/tags/docker/"/>
+    
+      <category term="sentry" scheme="http://note.niubishanshan.top/tags/sentry/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>视频课学习笔记/webpack/基础配置</title>
+    <link href="http://note.niubishanshan.top/uncategorized/%E8%A7%86%E9%A2%91%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/webpack/%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/"/>
+    <id>http://note.niubishanshan.top/uncategorized/%E8%A7%86%E9%A2%91%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/webpack/%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/</id>
+    <published>2020-07-02T10:02:05.339Z</published>
+    <updated>2020-07-02T10:02:09.680Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>position fixed 失效</title>
+    <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/tips/position-fixed-%E5%A4%B1%E6%95%88/"/>
+    <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/tips/position-fixed-%E5%A4%B1%E6%95%88/</id>
+    <published>2020-05-20T09:10:31.000Z</published>
+    <updated>2020-07-02T09:59:33.511Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;position-fixed-作为-transform-元素子元素&quot;&gt;&lt;a href=&quot;#position-fixed-作为-transform-元素子元素&quot; class=&quot;headerlink&quot; title=&quot;position: fixed; 作为
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://note.niubishanshan.top/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="CSS" scheme="http://note.niubishanshan.top/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>视频课学习笔记/docker/1</title>
+    <link href="http://note.niubishanshan.top/%E5%85%A8%E6%A0%88/%E8%A7%86%E9%A2%91%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/docker/1/"/>
+    <id>http://note.niubishanshan.top/%E5%85%A8%E6%A0%88/%E8%A7%86%E9%A2%91%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/docker/1/</id>
+    <published>2020-05-06T09:20:31.000Z</published>
+    <updated>2020-05-20T09:25:07.419Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;虚拟机&quot;&gt;&lt;a href=&quot;#虚拟机&quot; class=&quot;headerlink&quot; title=&quot;虚拟机&quot;&gt;&lt;/a&gt;虚拟机&lt;/h2&gt;&lt;p&gt;虚拟机(virtual machine), 环境安装的一种方案. 可以在一个操作系统中安装另一个操作系统,
+        
+      
+    
+    </summary>
+    
+    
+      <category term="全栈" scheme="http://note.niubishanshan.top/categories/%E5%85%A8%E6%A0%88/"/>
+    
+    
+      <category term="Docker" scheme="http://note.niubishanshan.top/tags/Docker/"/>
+    
+  </entry>
   
   <entry>
     <title>基础使用 hooks</title>
@@ -106,7 +205,7 @@
     <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/%E8%A7%86%E9%A2%91%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E5%89%8D%E7%AB%AF%E6%9E%B6%E6%9E%84/1.%20%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/"/>
     <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/%E8%A7%86%E9%A2%91%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E5%89%8D%E7%AB%AF%E6%9E%B6%E6%9E%84/1.%20%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/</id>
     <published>2020-03-16T06:20:31.000Z</published>
-    <updated>2020-03-16T09:13:33.640Z</updated>
+    <updated>2020-06-28T05:07:53.542Z</updated>
     
     <summary type="html">
     
@@ -133,7 +232,7 @@
     <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-7/"/>
     <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-7/</id>
     <published>2020-03-14T14:50:31.000Z</published>
-    <updated>2020-03-15T02:44:31.737Z</updated>
+    <updated>2020-06-28T05:10:12.573Z</updated>
     
     <summary type="html">
     
@@ -158,7 +257,7 @@
     <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-6/"/>
     <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-6/</id>
     <published>2020-03-14T08:50:31.000Z</published>
-    <updated>2020-03-14T15:00:26.987Z</updated>
+    <updated>2020-06-28T07:28:52.194Z</updated>
     
     <summary type="html">
     
@@ -424,112 +523,6 @@
     
     
       <category term="网络安全" scheme="http://note.niubishanshan.top/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>命令注入</title>
-    <link href="http://note.niubishanshan.top/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%AD%E7%BB%83%E8%AF%BE-%E7%AC%94%E8%AE%B0/%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/%E5%91%BD%E4%BB%A4%E6%B3%A8%E5%85%A5/"/>
-    <id>http://note.niubishanshan.top/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%AD%E7%BB%83%E8%AF%BE-%E7%AC%94%E8%AE%B0/%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/%E5%91%BD%E4%BB%A4%E6%B3%A8%E5%85%A5/</id>
-    <published>2020-03-01T09:16:30.000Z</published>
-    <updated>2020-03-08T09:33:43.331Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;命令&quot;&gt;&lt;a href=&quot;#命令&quot; class=&quot;headerlink&quot; title=&quot;命令&quot;&gt;&lt;/a&gt;命令&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://handle-note-img.niubishanshan.top/2020-03-01-17-12-07.png&quot; alt=&quot;2020-03-01-17-12-07&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="网络安全" scheme="http://note.niubishanshan.top/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
-    
-    
-      <category term="网络安全" scheme="http://note.niubishanshan.top/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SQL 注入</title>
-    <link href="http://note.niubishanshan.top/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%AD%E7%BB%83%E8%AF%BE-%E7%AC%94%E8%AE%B0/%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/SQL-%E6%B3%A8%E5%85%A5/"/>
-    <id>http://note.niubishanshan.top/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%AD%E7%BB%83%E8%AF%BE-%E7%AC%94%E8%AE%B0/%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/SQL-%E6%B3%A8%E5%85%A5/</id>
-    <published>2020-03-01T08:16:30.000Z</published>
-    <updated>2020-03-08T09:34:14.219Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h2&gt;&lt;p&gt;SQL 注入, 又叫 SQL Injection. 是一种常见的 web 安全漏洞. 是指 web 应用程序对用户输入数据的合法性没有判断或过滤不严, 攻击者可以在 web 应用程序中事先定义好的查询语句的结尾上添加额外的SQL语句, 在管理员不知情的情况下实现非法操作, 以此来实现欺骗数据库服务器执行非授权的任意查询, 从而进一步得到相应的数据信息的攻击方式&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="网络安全" scheme="http://note.niubishanshan.top/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
-    
-    
-      <category term="网络安全" scheme="http://note.niubishanshan.top/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>interview-2</title>
-    <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-2/"/>
-    <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-2/</id>
-    <published>2020-03-01T05:50:31.000Z</published>
-    <updated>2020-03-08T08:40:59.516Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;输出的结果是？为什么&quot;&gt;&lt;a href=&quot;#输出的结果是？为什么&quot; class=&quot;headerlink&quot; title=&quot;[] == [] 输出的结果是？为什么&quot;&gt;&lt;/a&gt;[] == [] 输出的结果是？为什么&lt;/h2&gt;&lt;p&gt;返回 false&lt;/p&gt;
-&lt;p&gt;原因:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;字符串与数字之间的比较: 字符串 -&amp;gt; 数字&lt;/li&gt;
-&lt;li&gt;其他类型与布尔值之间的比较: 布尔值先转成数字在比较&lt;/li&gt;
-&lt;li&gt;null 和 undefined 比较: 两者相等&lt;/li&gt;
-&lt;li&gt;对象和非对象(非布尔值)之间的比较: 对象先调用 ToPrimitive 方法&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;问题中, 由于 [] == [] 双等号边都是 [], 属于对象类型, 所以直接比较其值, 不进行隐式类型转换. 且两者都是引用类型, 比价其引用地址位置. 故不相等&lt;/p&gt;
-&lt;p&gt;然而, [] == ![] =&amp;gt; true 套用以上的公式就可以得出了&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="http://note.niubishanshan.top/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="interview" scheme="http://note.niubishanshan.top/tags/interview/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>interview-1</title>
-    <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-1/"/>
-    <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-1/</id>
-    <published>2020-02-28T09:50:31.000Z</published>
-    <updated>2020-03-08T08:41:15.898Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;请列举几个HTML5语义化标签，并说说语义化有什么优点&quot;&gt;&lt;a href=&quot;#请列举几个HTML5语义化标签，并说说语义化有什么优点&quot; class=&quot;headerlink&quot; title=&quot;请列举几个HTML5语义化标签，并说说语义化有什么优点&quot;&gt;&lt;/a&gt;请列举几个HTML5语义化标签，并说说语义化有什么优点&lt;/h2&gt;&lt;p&gt;语义化标签:&lt;/p&gt;
-&lt;p&gt;页面结构:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;header&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;nav&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;main   只能拥有一个&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;footer&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;内容划分:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;blockquoto&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;section&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;article&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;aside&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;code&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;abbr&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;语义化标签的优点:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;代码结构清晰, 方便阅读, 有利于团队合作&lt;/li&gt;
-&lt;li&gt;细粒度内容区域通过标签选择器确定 css 元素, 减少选择器创建&lt;/li&gt;
-&lt;li&gt;方便其他设备解析(如屏幕阅读器 盲人阅读器 移动设备)&lt;/li&gt;
-&lt;li&gt;有利于搜索引擎优化(SEO)&lt;/li&gt;
-&lt;/ol&gt;
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="http://note.niubishanshan.top/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="interview" scheme="http://note.niubishanshan.top/tags/interview/"/>
     
   </entry>
   
