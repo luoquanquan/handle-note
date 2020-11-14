@@ -57,3 +57,5 @@ yum install git
 - `git clone https://github.com/getsentry/onpremise.git`
 - `git checkout -b 分支名 {你喜欢的版本号}`
 - 执行 `./install.sh`, 安装 `sentry`
+
+安装过程中会提示是否创建管理员的邮箱. 可以这会儿创建, 也可以安装完成以后再创建.
