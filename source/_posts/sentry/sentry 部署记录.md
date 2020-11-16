@@ -48,14 +48,38 @@ sudo systemctl restart docker
 ## 安装 git
 
 ```bash
-yum install git
+yum install git -y
 ```
 
 ## 获取 sentry
 
-- 访问[onpremise](https://github.com/getsentry/onpremise)
-- `git clone https://github.com/getsentry/onpremise.git`
-- `git checkout -b 分支名 {你喜欢的版本号}`
+- 访问[onpremise](https://github.com/luoquanquan/onpremise.git)
+- `git clone https://github.com/luoquanquan/onpremise.git`
+- `git checkout bjh-sentry` 切换到项目专用分支
 - 执行 `./install.sh`, 安装 `sentry`
 
-安装过程中会提示是否创建管理员的邮箱. 可以这会儿创建, 也可以安装完成以后再创建.
+安装过程中会提示是否创建管理员的邮箱. 可以这会儿创建, 也可以安装完成以后再创建. 安装完成后, 使用命令 `docker-compose up` 就可以启动 sentry. 访问 {IP:9000} 可以访问到相关内容.
+
+## 安装 nginx
+
+- 执行 `yum install nginx -y` 在宿主机安装 `nginx`
+- 修改 `nginx.conf`(默认路径 `/usr/nginx/nginx.conf`)
+- 把 `sentry` 对应的域名指向本地 `9000` 端口号
+- well done
+
+`nginx` 默认限制的可上传文件大小是 `1m`, 但是项目中稍微大一点的 `sourceMap` 文件就会超出限制报 `413` 请求包体过大的错误. 需要在 nginx 配置文件 `http` 配置中添加 `client_max_body_size 50m;` 就行了...
+
+## sentry 后台管理页面限制内网访问
+
+正常情况下, 判断内网直接使用 `nginx` 内置变量 `$remote_addr` 即可, 我们这里由于使用的环境是集群的环境, 所以需要判断的是 `$proxy_add_x_forwarded_for`, 在 `nginx/nginx.conf` 文件中添加一下内容.
+
+```nginx
+location / {
+    if ($proxy_add_x_forwarded_for !~* ^111\.206\.214\.28.*) {
+        add_header Content-Type "text/plain; chartset=utf-8";
+        return 200 "you don't have access to visit this app, please contact the Administrator ~"
+    }
+
+    proxy_pass http://sentry;
+}
+```
