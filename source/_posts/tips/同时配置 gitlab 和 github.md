@@ -1,6 +1,6 @@
 ---
 title: 同时配置 gitlab 和 github
-date: 2020-02-02 23s:10:31
+date: 2020-02-02 23:10:31
 categories:
   - Tips
   - GitHub
