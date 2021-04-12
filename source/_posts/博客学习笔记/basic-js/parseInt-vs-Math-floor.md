@@ -4,7 +4,7 @@ date: 2020-02-04 01:20:31
 categories:
   - JavaScript
 tags:
-  - Math
+  - js
   - Number
 ---
 

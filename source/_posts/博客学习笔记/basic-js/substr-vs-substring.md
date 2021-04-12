@@ -4,7 +4,7 @@ date: 2020-11-14 13:20:31
 categories:
   - 前端
 tags:
-  - String
+  - js
 ---
 
 ## substring 方法

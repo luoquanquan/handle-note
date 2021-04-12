@@ -5,6 +5,7 @@ categories:
   - 前端
 tags:
   - Cookie
+  - js
 ---
 
 ## 添加一条 cookie
