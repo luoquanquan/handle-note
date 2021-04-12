@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://note.niubishanshan.top/"/>
-  <updated>2021-04-12T07:13:01.211Z</updated>
+  <updated>2021-04-12T07:53:27.704Z</updated>
   <id>http://note.niubishanshan.top/</id>
   
   <author>
@@ -21,17 +21,12 @@
     <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/%E5%8D%9A%E5%AE%A2%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/basic-js/%E5%88%A4%E6%96%AD%E8%A7%86%E9%A2%91%E6%98%AF%E5%90%A6%E5%A4%84%E4%BA%8E%E6%92%AD%E6%94%BE%E4%B8%AD/"/>
     <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/%E5%8D%9A%E5%AE%A2%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/basic-js/%E5%88%A4%E6%96%AD%E8%A7%86%E9%A2%91%E6%98%AF%E5%90%A6%E5%A4%84%E4%BA%8E%E6%92%AD%E6%94%BE%E4%B8%AD/</id>
     <published>2021-04-12T05:20:31.000Z</published>
-    <updated>2021-04-12T07:13:01.211Z</updated>
+    <updated>2021-04-12T07:53:27.704Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;原理思路&quot;&gt;&lt;a href=&quot;#原理思路&quot; class=&quot;headerlink&quot; title=&quot;原理思路&quot;&gt;&lt;/a&gt;原理思路&lt;/h2&gt;&lt;p&gt;在 &lt;code&gt;whatwg&lt;/code&gt; 的 &lt;a
-        
-      
+      &lt;h2 id=&quot;原理思路&quot;&gt;&lt;a href=&quot;#原理思路&quot; class=&quot;headerlink&quot; title=&quot;原理思路&quot;&gt;&lt;/a&gt;原理思路&lt;/h2&gt;&lt;p&gt;在 &lt;code&gt;whatwg&lt;/code&gt; 的 &lt;a href=&quot;https://html.spec.whatwg.org/multipage/media.html#playing-the-media-resource&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;官方规范&lt;/a&gt; 里定义了媒体标签的 &lt;code&gt;paused ended played currentTime&lt;/code&gt; 状态, 但是对于开发人员更加关注的 &lt;code&gt;playing&lt;/code&gt; 状态并没有提供. 就很尴尬 …&lt;/p&gt;
+&lt;p&gt;根据官方的规范, 如果一个视频的 &lt;a href=&quot;https://www.w3school.com.cn/tags/av_prop_readystate.asp&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;readState &amp;gt; 2&lt;/a&gt; 也就是说资源加载没有出错. 那么此时视频的状态无非两个: 播放中或者暂停中…&lt;/p&gt;
     
     </summary>
     
