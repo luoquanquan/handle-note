@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>圈圈的随手笔记</title>
+  
+  <subtitle>路漫漫其修远兮, 吾将上下而求索</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://note.niubishanshan.top/"/>
+  <updated>2021-05-28T10:53:00.835Z</updated>
+  <id>http://note.niubishanshan.top/</id>
+  
+  <author>
+    <name>圈圈的圈</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>解决国内 vscode 下载慢问题</title>
+    <link href="http://note.niubishanshan.top/Tips/tips/%E8%A7%A3%E5%86%B3%20vscode%20%E5%9B%BD%E5%86%85%E4%B8%8B%E8%BD%BD%E6%85%A2%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <id>http://note.niubishanshan.top/Tips/tips/%E8%A7%A3%E5%86%B3%20vscode%20%E5%9B%BD%E5%86%85%E4%B8%8B%E8%BD%BD%E6%85%A2%E7%9A%84%E9%97%AE%E9%A2%98/</id>
+    <published>2021-05-28T10:40:31.000Z</published>
+    <updated>2021-05-28T10:53:00.835Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;首先点击官网的下载链接&quot;&gt;&lt;a href=&quot;#首先点击官网的下载链接&quot; class=&quot;headerlink&quot; title=&quot;首先点击官网的下载链接&quot;&gt;&lt;/a&gt;首先点击官网的下载链接&lt;/h2&gt;&lt;p&gt;到下载内容页面, 就能看到下载 vscode
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Tips" scheme="http://note.niubishanshan.top/categories/Tips/"/>
+    
+    
+      <category term="工具" scheme="http://note.niubishanshan.top/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js 判断音(视)频是否正在处于播放中</title>
+    <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/%E5%8D%9A%E5%AE%A2%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/basic-js/%E5%88%A4%E6%96%AD%E8%A7%86%E9%A2%91%E6%98%AF%E5%90%A6%E5%A4%84%E4%BA%8E%E6%92%AD%E6%94%BE%E4%B8%AD/"/>
+    <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/%E5%8D%9A%E5%AE%A2%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/basic-js/%E5%88%A4%E6%96%AD%E8%A7%86%E9%A2%91%E6%98%AF%E5%90%A6%E5%A4%84%E4%BA%8E%E6%92%AD%E6%94%BE%E4%B8%AD/</id>
+    <published>2021-04-12T05:20:31.000Z</published>
+    <updated>2021-04-12T07:55:58.579Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;原理思路&quot;&gt;&lt;a href=&quot;#原理思路&quot; class=&quot;headerlink&quot; title=&quot;原理思路&quot;&gt;&lt;/a&gt;原理思路&lt;/h2&gt;&lt;p&gt;在 &lt;code&gt;whatwg&lt;/code&gt; 的 &lt;a href=&quot;https://html.spec.whatwg.org/multipage/media.html#playing-the-media-resource&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;官方规范&lt;/a&gt; 里定义了媒体标签的 &lt;code&gt;paused ended played currentTime&lt;/code&gt; 状态, 但是对于开发人员更加关注的 &lt;code&gt;playing&lt;/code&gt; 状态并没有提供. 就很尴尬 …&lt;/p&gt;
+&lt;p&gt;根据官方的规范, 如果一个视频的 &lt;a href=&quot;https://www.w3school.com.cn/tags/av_prop_readystate.asp&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;readState &amp;gt; 2&lt;/a&gt; 也就是说资源加载没有出错. 那么此时视频的状态无非两个: 播放中或者暂停中…&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://note.niubishanshan.top/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="js" scheme="http://note.niubishanshan.top/tags/js/"/>
+    
+      <category term="video" scheme="http://note.niubishanshan.top/tags/video/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>将滴答清单同步到手机自带的日历里边</title>
+    <link href="http://note.niubishanshan.top/Tips/tips/%E5%B0%86%E6%BB%B4%E7%AD%94%E6%B8%85%E5%8D%95%E5%90%8C%E6%AD%A5%E5%88%B0%E6%89%8B%E6%9C%BA%E8%87%AA%E5%B8%A6%E7%9A%84%E6%97%A5%E5%8E%86%E9%87%8C%E8%BE%B9/"/>
+    <id>http://note.niubishanshan.top/Tips/tips/%E5%B0%86%E6%BB%B4%E7%AD%94%E6%B8%85%E5%8D%95%E5%90%8C%E6%AD%A5%E5%88%B0%E6%89%8B%E6%9C%BA%E8%87%AA%E5%B8%A6%E7%9A%84%E6%97%A5%E5%8E%86%E9%87%8C%E8%BE%B9/</id>
+    <published>2020-11-18T07:10:31.000Z</published>
+    <updated>2021-03-16T08:54:47.936Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;滴答清单获取订阅邮件的链接&quot;&gt;&lt;a href=&quot;#滴答清单获取订阅邮件的链接&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Tips" scheme="http://note.niubishanshan.top/categories/Tips/"/>
+    
+    
+      <category term="iPhone" scheme="http://note.niubishanshan.top/tags/iPhone/"/>
+    
+      <category term="效率" scheme="http://note.niubishanshan.top/tags/%E6%95%88%E7%8E%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>字符串中的 substring 和 substr 方法</title>
+    <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/%E5%8D%9A%E5%AE%A2%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/basic-js/substr-vs-substring/"/>
+    <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/%E5%8D%9A%E5%AE%A2%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/basic-js/substr-vs-substring/</id>
+    <published>2020-11-14T05:20:31.000Z</published>
+    <updated>2021-04-12T02:54:54.618Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;substring-方法&quot;&gt;&lt;a href=&quot;#substring-方法&quot; class=&quot;headerlink&quot; title=&quot;substring 方法&quot;&gt;&lt;/a&gt;substring 方法&lt;/h2&gt;&lt;p&gt;&lt;code&gt;substring&lt;/code&gt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://note.niubishanshan.top/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="js" scheme="http://note.niubishanshan.top/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>sentry 部署记录</title>
+    <link href="http://note.niubishanshan.top/%E5%B7%A5%E7%A8%8B%E5%8C%96/%E5%8D%9A%E5%AE%A2%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/sentry%20%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/"/>
+    <id>http://note.niubishanshan.top/%E5%B7%A5%E7%A8%8B%E5%8C%96/%E5%8D%9A%E5%AE%A2%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/sentry%20%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/</id>
+    <published>2020-11-13T05:50:31.000Z</published>
+    <updated>2021-03-25T02:32:39.291Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;安装-docker&quot;&gt;&lt;a href=&quot;#安装-docker&quot; class=&quot;headerlink&quot; title=&quot;安装 docker&quot;&gt;&lt;/a&gt;安装 docker&lt;/h2&gt;&lt;p&gt;执行命令, 一键安装&lt;/p&gt;
+&lt;figure class=&quot;highlight
+        
+      
+    
+    </summary>
+    
+    
+      <category term="工程化" scheme="http://note.niubishanshan.top/categories/%E5%B7%A5%E7%A8%8B%E5%8C%96/"/>
+    
+    
+      <category term="docker" scheme="http://note.niubishanshan.top/tags/docker/"/>
+    
+      <category term="sentry" scheme="http://note.niubishanshan.top/tags/sentry/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>position fixed 失效</title>
+    <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/tips/position-fixed-%E5%A4%B1%E6%95%88/"/>
+    <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/tips/position-fixed-%E5%A4%B1%E6%95%88/</id>
+    <published>2020-05-20T09:10:31.000Z</published>
+    <updated>2021-03-16T08:54:47.936Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;position-fixed-作为-transform-元素子元素&quot;&gt;&lt;a href=&quot;#position-fixed-作为-transform-元素子元素&quot; class=&quot;headerlink&quot; title=&quot;position: fixed; 作为
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://note.niubishanshan.top/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="CSS" scheme="http://note.niubishanshan.top/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基础使用 hooks</title>
+    <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/%E6%95%99%E5%AD%A6%E8%A7%86%E9%A2%91%E7%AC%94%E8%AE%B0/%E5%89%8D%E7%AB%AF%E6%9E%B6%E6%9E%84/react-hooks/"/>
+    <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/%E6%95%99%E5%AD%A6%E8%A7%86%E9%A2%91%E7%AC%94%E8%AE%B0/%E5%89%8D%E7%AB%AF%E6%9E%B6%E6%9E%84/react-hooks/</id>
+    <published>2020-05-05T06:20:31.000Z</published>
+    <updated>2021-03-24T12:43:00.020Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;解决的问题&quot;&gt;&lt;a href=&quot;#解决的问题&quot; class=&quot;headerlink&quot; title=&quot;解决的问题&quot;&gt;&lt;/a&gt;解决的问题&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;React Hooks 解决了组件之间复用状态逻辑困难, 可能要使用到 HOC or Render
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://note.niubishanshan.top/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="React" scheme="http://note.niubishanshan.top/tags/React/"/>
+    
+      <category term="hook" scheme="http://note.niubishanshan.top/tags/hook/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PS 基础课</title>
+    <link href="http://note.niubishanshan.top/%E4%B8%9A%E4%BD%99%E7%88%B1%E5%A5%BD/%E6%95%99%E5%AD%A6%E8%A7%86%E9%A2%91%E7%AC%94%E8%AE%B0/PS%20%E5%AD%A6%E4%B9%A0/%E8%B6%85%E7%BA%A7%E9%80%9A%E4%BF%97%E6%98%93%E6%87%82%E7%9A%84ps%E6%95%99%E7%A8%8B/%E5%9F%BA%E7%A1%80%E8%AF%BE/"/>
+    <id>http://note.niubishanshan.top/%E4%B8%9A%E4%BD%99%E7%88%B1%E5%A5%BD/%E6%95%99%E5%AD%A6%E8%A7%86%E9%A2%91%E7%AC%94%E8%AE%B0/PS%20%E5%AD%A6%E4%B9%A0/%E8%B6%85%E7%BA%A7%E9%80%9A%E4%BF%97%E6%98%93%E6%87%82%E7%9A%84ps%E6%95%99%E7%A8%8B/%E5%9F%BA%E7%A1%80%E8%AF%BE/</id>
+    <published>2020-04-25T11:15:31.000Z</published>
+    <updated>2021-03-16T08:54:47.874Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;图层创建-复制&quot;&gt;&lt;a href=&quot;#图层创建-复制&quot; class=&quot;headerlink&quot; title=&quot;图层创建(复制)&quot;&gt;&lt;/a&gt;图层创建(复制)&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;快捷键 &lt;code&gt;command +
+        
+      
+    
+    </summary>
+    
+    
+      <category term="业余爱好" scheme="http://note.niubishanshan.top/categories/%E4%B8%9A%E4%BD%99%E7%88%B1%E5%A5%BD/"/>
+    
+    
+      <category term="PS" scheme="http://note.niubishanshan.top/tags/PS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>brew 安装应用免等待 Updating Homebrew...</title>
+    <link href="http://note.niubishanshan.top/Tips/tips/brew-%E5%AE%89%E8%A3%85%E5%BA%94%E7%94%A8%E5%85%8D%E7%AD%89%E5%BE%85-Updating-Homebrew/"/>
+    <id>http://note.niubishanshan.top/Tips/tips/brew-%E5%AE%89%E8%A3%85%E5%BA%94%E7%94%A8%E5%85%8D%E7%AD%89%E5%BE%85-Updating-Homebrew/</id>
+    <published>2020-03-17T04:10:31.000Z</published>
+    <updated>2021-03-16T08:54:47.934Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;使用-control-c-取消本次操作&quot;&gt;&lt;a href=&quot;#使用-control-c-取消本次操作&quot; class=&quot;headerlink&quot; title=&quot;使用 control + c 取消本次操作&quot;&gt;&lt;/a&gt;使用 control + c
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Tips" scheme="http://note.niubishanshan.top/categories/Tips/"/>
+    
+    
+      <category term="Mac" scheme="http://note.niubishanshan.top/tags/Mac/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>1. 高阶函数</title>
+    <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/%E6%95%99%E5%AD%A6%E8%A7%86%E9%A2%91%E7%AC%94%E8%AE%B0/%E5%89%8D%E7%AB%AF%E6%9E%B6%E6%9E%84/1.%20%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/"/>
+    <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/%E6%95%99%E5%AD%A6%E8%A7%86%E9%A2%91%E7%AC%94%E8%AE%B0/%E5%89%8D%E7%AB%AF%E6%9E%B6%E6%9E%84/1.%20%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/</id>
+    <published>2020-03-16T06:20:31.000Z</published>
+    <updated>2021-03-16T08:54:48.114Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;如果一个函数的参数是另一个函数, 那么可以称这个函数为高阶函数. 回调函数就是高阶函数的一种实现&lt;/li&gt;
+&lt;li&gt;如果一个函数的返回值是另一个函数, 那么也可以成该函数为高阶函数. 闭包&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;闭包&quot;&gt;&lt;a href=&quot;#闭包&quot; class=&quot;headerlink&quot; title=&quot;闭包&quot;&gt;&lt;/a&gt;闭包&lt;/h2&gt;&lt;p&gt;概念: 一个函数不在定义自己的作用域内执行且能获取到该作用域的变量的情况就是闭包&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://note.niubishanshan.top/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端架构" scheme="http://note.niubishanshan.top/tags/%E5%89%8D%E7%AB%AF%E6%9E%B6%E6%9E%84/"/>
+    
+      <category term="学习笔记" scheme="http://note.niubishanshan.top/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>interview-7</title>
+    <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-7/"/>
+    <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-7/</id>
+    <published>2020-03-14T14:50:31.000Z</published>
+    <updated>2021-03-16T08:54:47.932Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;React 以前不知道的那些小点点~&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;组件公共逻辑抽离&quot;&gt;&lt;a href=&quot;#组件公共逻辑抽离&quot; class=&quot;headerlink&quot; title=&quot;组件公共逻辑抽离&quot;&gt;&lt;/a&gt;组件公共逻辑抽离&lt;/h2&gt;&lt;h3 id=&quot;高阶组件&quot;&gt;&lt;a href=&quot;#高阶组件&quot; class=&quot;headerlink&quot; title=&quot;高阶组件&quot;&gt;&lt;/a&gt;高阶组件&lt;/h3&gt;&lt;p&gt;传入一个组件, 返回一个新的组件, 并赋予新的组件公共能力~&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; React &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&#39;react&#39;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;default&lt;/span&gt; Comp =&amp;gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;withMouse&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;React&lt;/span&gt;.&lt;span class=&quot;title&quot;&gt;Component&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;constructor&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;super&lt;/span&gt;()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.state = &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            x: &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            y: &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    componentDidMount() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;window&lt;/span&gt;.addEventListener(&lt;span class=&quot;string&quot;&gt;&#39;mousemove&#39;&lt;/span&gt;, (&amp;#123;x, y&amp;#125;) =&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.setState(&amp;#123;x, y&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    render() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; &amp;#123;x, y&amp;#125; = &lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.state&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; props = &amp;#123;x, y&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;Comp&lt;/span&gt; &amp;#123;&lt;span class=&quot;attr&quot;&gt;...props&lt;/span&gt;&amp;#125; /&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://note.niubishanshan.top/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="interview" scheme="http://note.niubishanshan.top/tags/interview/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>interview-6</title>
+    <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-6/"/>
+    <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-6/</id>
+    <published>2020-03-14T08:50:31.000Z</published>
+    <updated>2021-03-16T08:54:47.932Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;React 以前不知道的那些小点点~&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;React-事件对象处理&quot;&gt;&lt;a href=&quot;#React-事件对象处理&quot; class=&quot;headerlink&quot; title=&quot;React 事件对象处理&quot;&gt;&lt;/a&gt;React 事件对象处理&lt;/h2&gt;&lt;p&gt;猜猜看以下代码执行的逻辑&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;handleClick(e) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// 事件对象 e 是经过处理的一个实例&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(e)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// 事件对象所属的类&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(e.__proto__.constructor)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// e.target 当前触发事件的元素&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// e.currentTarget 绑定事件的元素&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(&lt;span class=&quot;string&quot;&gt;&#39;e.target&#39;&lt;/span&gt;, e.target)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(&lt;span class=&quot;string&quot;&gt;&#39;e.currentTarget&#39;&lt;/span&gt;, e.currentTarget)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// 原生事件对象&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; &amp;#123;nativeEvent&amp;#125; = e&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(&lt;span class=&quot;string&quot;&gt;&#39;nativeEvent.target&#39;&lt;/span&gt;, nativeEvent.target)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(&lt;span class=&quot;string&quot;&gt;&#39;nativeEvent.currentTarget&#39;&lt;/span&gt;, nativeEvent.currentTarget)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://note.niubishanshan.top/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="interview" scheme="http://note.niubishanshan.top/tags/interview/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Life Long Learning</title>
+    <link href="http://note.niubishanshan.top/Tips/tips/life-long-learning/"/>
+    <id>http://note.niubishanshan.top/Tips/tips/life-long-learning/</id>
+    <published>2020-03-13T04:10:31.000Z</published>
+    <updated>2021-03-16T08:54:47.935Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;前端开发-Tips&quot;&gt;&lt;a href=&quot;#前端开发-Tips&quot; class=&quot;headerlink&quot; title=&quot;前端开发 Tips&quot;&gt;&lt;/a&gt;前端开发 Tips&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;凡是遇到固定大小的内容区域时,
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Tips" scheme="http://note.niubishanshan.top/categories/Tips/"/>
+    
+    
+      <category term="终生学习" scheme="http://note.niubishanshan.top/tags/%E7%BB%88%E7%94%9F%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>package.json 中库的版本号符号</title>
+    <link href="http://note.niubishanshan.top/%E5%90%8E%E7%AB%AF/tips/package.json%20%E4%B8%AD%E5%BA%93%E7%9A%84%E7%89%88%E6%9C%AC%E5%8F%B7%E7%AC%A6%E5%8F%B7/"/>
+    <id>http://note.niubishanshan.top/%E5%90%8E%E7%AB%AF/tips/package.json%20%E4%B8%AD%E5%BA%93%E7%9A%84%E7%89%88%E6%9C%AC%E5%8F%B7%E7%AC%A6%E5%8F%B7/</id>
+    <published>2020-03-09T11:10:31.000Z</published>
+    <updated>2021-03-16T08:54:47.936Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;package.json 的依赖库版本号前大多有一个 ^ ~ 这两者有什么区别呢&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;含义&quot;&gt;&lt;a href=&quot;#含义&quot; class=&quot;headerlink&quot; title=&quot;含义&quot;&gt;&lt;/a&gt;含义&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;波浪符号(~): 当依赖的&lt;strong&gt;修订号&lt;/strong&gt;发生升级后, 使用 &lt;code&gt;npm i&lt;/code&gt; 会自动升级最新版本&lt;/li&gt;
+&lt;li&gt;插入符号(^): 当依赖的&lt;strong&gt;次版本号&lt;/strong&gt;发生升级后, 使用 &lt;code&gt;npm i&lt;/code&gt; 会自动升级最新版本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以上两者均不会更新 &lt;code&gt;package.json&lt;/code&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="后端" scheme="http://note.niubishanshan.top/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+      <category term="npm" scheme="http://note.niubishanshan.top/tags/npm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>interview-5</title>
+    <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-5/"/>
+    <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-5/</id>
+    <published>2020-03-08T01:50:31.000Z</published>
+    <updated>2021-03-16T08:54:47.932Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;推断以下代码执行的结果&quot;&gt;&lt;a href=&quot;#推断以下代码执行的结果&quot; class=&quot;headerlink&quot; title=&quot;推断以下代码执行的结果&quot;&gt;&lt;/a&gt;推断以下代码执行的结果&lt;/h2&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; ary = [&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;fn&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;ary&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    ary[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;] = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    ary = [&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    ary[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;] = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; ary&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; res = fn(ary)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(ary)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(res)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://note.niubishanshan.top/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="interview" scheme="http://note.niubishanshan.top/tags/interview/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>interview-4</title>
+    <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-4/"/>
+    <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-4/</id>
+    <published>2020-03-07T13:50:31.000Z</published>
+    <updated>2021-03-16T08:54:47.931Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;推断以下代码执行的结果&quot;&gt;&lt;a href=&quot;#推断以下代码执行的结果&quot; class=&quot;headerlink&quot; title=&quot;推断以下代码执行的结果&quot;&gt;&lt;/a&gt;推断以下代码执行的结果&lt;/h2&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; foo = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;bar&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (!foo) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; foo = &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(foo)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;bar()&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://note.niubishanshan.top/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="interview" scheme="http://note.niubishanshan.top/tags/interview/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTTP</title>
+    <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/%E6%95%99%E5%AD%A6%E8%A7%86%E9%A2%91%E7%AC%94%E8%AE%B0/HTTP/"/>
+    <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/%E6%95%99%E5%AD%A6%E8%A7%86%E9%A2%91%E7%AC%94%E8%AE%B0/HTTP/</id>
+    <published>2020-03-04T10:50:31.000Z</published>
+    <updated>2021-03-23T03:11:41.123Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;慕课网 http 协议原理与实战学习笔记~&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;http://handle-note-img.niubishanshan.top/2020-03-04-20-55-42.png&quot; alt=&quot;2020-03-04-20-55-42&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;基础部分&quot;&gt;&lt;a href=&quot;#基础部分&quot; class=&quot;headerlink&quot; title=&quot;基础部分&quot;&gt;&lt;/a&gt;基础部分&lt;/h2&gt;&lt;h3 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h3&gt;&lt;p&gt;HTTP (HyperText Transfer Protocol): 超文本传输协议, 它是建立在 TCP/IP 协议之上的应用层规范. 是互联网上应用最广泛的一种网络协议.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://note.niubishanshan.top/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="HTTP" scheme="http://note.niubishanshan.top/tags/HTTP/"/>
+    
+      <category term="nginx" scheme="http://note.niubishanshan.top/tags/nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>interview-3</title>
+    <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-3/"/>
+    <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/interview/interview-3/</id>
+    <published>2020-03-02T13:50:31.000Z</published>
+    <updated>2021-03-16T08:54:47.931Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;关于DOMContentLoaded和load事件说法正确的是&quot;&gt;&lt;a href=&quot;#关于DOMContentLoaded和load事件说法正确的是&quot; class=&quot;headerlink&quot; title=&quot;关于DOMContentLoaded和load事件说法正确的是&quot;&gt;&lt;/a&gt;关于DOMContentLoaded和load事件说法正确的是&lt;/h2&gt;&lt;p&gt;DOMContentLoaded事件比load事件更早执行&lt;/p&gt;
+&lt;p&gt;当纯HTML被完全加载以及解析时, DOMContentLoaded 事件会被触发, 而不必等待样式表, 图片或者子框架完成加载&lt;/p&gt;
+&lt;p&gt;load 事件仅仅应该在探测到整个页面完全加载完成时被使用. 一个常见的错误就是在该使用 DOMContentLoaded 的地方使用了load&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://note.niubishanshan.top/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="interview" scheme="http://note.niubishanshan.top/tags/interview/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>伪类和伪元素</title>
+    <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/%E5%8D%9A%E5%AE%A2%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/CSS/%E4%BC%AA%E7%B1%BB%E5%92%8C%E4%BC%AA%E5%85%83%E7%B4%A0/"/>
+    <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/%E5%8D%9A%E5%AE%A2%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/CSS/%E4%BC%AA%E7%B1%BB%E5%92%8C%E4%BC%AA%E5%85%83%E7%B4%A0/</id>
+    <published>2020-03-02T12:10:31.000Z</published>
+    <updated>2021-03-16T08:54:47.856Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;伪类和伪元素是为了格式化文档以外的信息, 也就是说, 伪类和伪元素是用来修饰不在文档树中的部分. 比如, 一句话中的第一个字母, 或者是列表中的第一个元素…&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;伪类&quot;&gt;&lt;a href=&quot;#伪类&quot; class=&quot;headerlink&quot; title=&quot;伪类&quot;&gt;&lt;/a&gt;伪类&lt;/h2&gt;&lt;p&gt;伪类用于当已有元素处于的某个状态时, 为其添加对应的样式, 这个状态是根据用户行为而动态变化的.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://handle-note-img.niubishanshan.top/2020-03-02-22-34-04.png&quot; alt=&quot;2020-03-02-22-34-04&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;伪元素&quot;&gt;&lt;a href=&quot;#伪元素&quot; class=&quot;headerlink&quot; title=&quot;伪元素&quot;&gt;&lt;/a&gt;伪元素&lt;/h2&gt;&lt;p&gt;伪元素用于创建一些不在文档树中的元素, 并为其添加样式&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://handle-note-img.niubishanshan.top/2020-03-02-22-34-56.png&quot; alt=&quot;2020-03-02-22-34-56&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://note.niubishanshan.top/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="CSS" scheme="http://note.niubishanshan.top/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cookie</title>
+    <link href="http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/%E5%8D%9A%E5%AE%A2%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/basic-js/cookie/"/>
+    <id>http://note.niubishanshan.top/%E5%89%8D%E7%AB%AF/%E5%8D%9A%E5%AE%A2%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/basic-js/cookie/</id>
+    <published>2020-03-02T05:20:31.000Z</published>
+    <updated>2021-04-12T02:55:05.283Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;添加一条-cookie&quot;&gt;&lt;a href=&quot;#添加一条-cookie&quot; class=&quot;headerlink&quot; title=&quot;添加一条 cookie&quot;&gt;&lt;/a&gt;添加一条 cookie&lt;/h2&gt;&lt;h3 id=&quot;简单粗暴的方法&quot;&gt;&lt;a href=&quot;#简单粗暴的方法&quot; class=&quot;headerlink&quot; title=&quot;简单粗暴的方法&quot;&gt;&lt;/a&gt;简单粗暴的方法&lt;/h3&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;document&lt;/span&gt;.cookie=&lt;span class=&quot;string&quot;&gt;&quot;key=quanquan&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://note.niubishanshan.top/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="js" scheme="http://note.niubishanshan.top/tags/js/"/>
+    
+      <category term="Cookie" scheme="http://note.niubishanshan.top/tags/Cookie/"/>
+    
+  </entry>
+  
+</feed>
